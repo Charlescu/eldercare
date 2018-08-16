@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1-1首页</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+     <header class="mui_bar">
+        <img class="backup" src="../images/backup.png" alt="">
+        <p>···</p>
+        <h1 class="mui_title">我要购买-商品类别</h1>
+    </header>
+    <div class="container">
+        <div class="swiper">
+            <div class="swiper-container swiper-container-horizontal swiper-container-ios">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-top swiper-slide-prev"><img src="images/lunbo.png"></div>
+                    <div class="swiper-slide swiper-slide-top swiper-slide-active"><img src="images/lunbo.png"></div>
+                    <div class="swiper-slide swiper-slide-top swiper-slide-next"><img src="images/lunbo.png"></div>
+                </div>
+                <!-- Add Pagination -->
+            </div>
+            <div class="swiper-pagination swiper-pagination-bullets">
+                <span class="swiper-pagination-bullet"></span>
+                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                <span class="swiper-pagination-bullet"></span>
+            </div>
+        </div>
+        <div class="content_body">
+            <div class="content_head">
+                <img class="index_decoration" src="images/juchi.png" alt="">
+                <ul class="select_card con_title">
+                    <li class="select_card_list con_curr">
+                        <img src="images/buy_car.png" alt="">
+                        <span>我要租赁</span>
+                    </li>
+                    <li class="select_card_list ">
+                        <img src="images/youhui_card.png" alt="">
+                        <span>我要购买</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="con_all">
+                <div class="con_warp" >
+                    <ul class="lease">
+                        <li class="lease_list">
+                            <div class="lease_list_box">
+                                <span>取货日期  周四</span>
+                                <p>7月20日</p>
+                            </div>
+                        </li>
+                        <li class="lease_list">
+                            <div class="lease_list_box">
+                                <span>归还日期</span>
+                                <img src="" alt="">
+                                <p>添加日期</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="local_location">
+                        <p>我的位置</p>
+                        <p>天津市西青区理工大学</p>
+                    </div>
+                    <div class="lookup_equipment lookup">
+                        查找器材（共9天）
+                    </div>
+                </div>
+                <div class="con_warp" style="display: none">
+                    <ul class="con_list">
+                        <li>
+                            <img src="images/buy_list1.png" alt="">
+                            <span>血压计<span>
+                            <p>查看</p>
+                        </li>
+                         <li>
+                            <img src="images/buy_list2.png" alt="">
+                            <span>血压计<span>
+                            <p>查看</p>
+                        </li> <li>
+                            <img src="images/buy_list3.png" alt="">
+                            <span>血压计<span>
+                            <p>查看</p>
+                        </li> <li>
+                            <img src="images/buy_list1.png" alt="">
+                            <span>血压计<span>
+                            <p>查看</p>
+                        </li>
+                       
+                    </ul>
+                    <div class="Select_goods lookup">
+                        去挑选商品吧
+                    </div>
+                </div>
+            </div>
+            <div class="paper_box">
+                <ul>
+                    <li class="paper_box_list "><img src="images/zulin.png" alt=""><a class="leasehold_guide" href="javascript:void(0)"> 租赁指南</a</li>
+                    <li class="paper_box_list "><img src="images/about_us.png" alt=""><a class="about_us" href="javascript:void(0)"> 关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="bottom_list">
+                <li class="mainpage_botlist"><img src="images/main372@2x.png" alt=""><span>首页</span></li>
+                        <li class="mainpage_botlist"><img src="images/cdvcd@2x.png" alt=""><span>购物车</span></li>
+                        <li class="mainpage_botlist"><img src="images/personal.png" alt=""><span>我的</span></li>
+                    </ul>
+                    </footer>
+                </div>
+                <script>
+                $(document).ready(function() {
+                    get_main_content();
+
+                    var $menu_box = $('.content_body .con_title>li');
+                    $menu_box.click(function() {
+                        $(this).addClass('con_curr').siblings().removeClass('con_curr');
+                        var index = $menu_box.index(this);
+                        $('.con_all .con_warp').eq(index).show().siblings().hide();
+                    });
+                })
+
+                function get_main_content() {
+
+                }
+                //首页轮播图
+                var swiper = new Swiper('.swiper-container', {
+
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                });
+                //我要租赁-查找器材跳转
+                 $('.lookup_equipment').on('click',function(){
+                    window.location.href = 'common/zhinan.html'
+                 })
+                    //地理位置跳转
+                 $('.local_location').on('click',function(){
+                   window.location.href = 'common/map.html'
+                 })
+                 //我要购买-去挑选商品跳转
+
+                //租赁指南跳转
+                $('.leasehold_guide').on('click', function() {
+                    window.location.href = 'common/leasehold_guide.html'
+                });
+                //关于我们跳转
+                $('.about_us').on('click', function() {
+                    window.location.href = 'common/about_us.html'
+                })
+                </script>
+</body>
+
+</html>

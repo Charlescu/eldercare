@@ -1,0 +1,19 @@
+.container img {
+    width: 7.5rem;
+    height: 4.62rem;
+}
+
+.us_title {
+    text-align: center;
+    font-size: 0.36rem;
+    margin: 0.46rem auto;
+    font-weight: 600;
+}
+
+.us_content {
+    text-indent: 0.4rem;
+    width: 6.347rem;
+    margin: 0 auto;
+    font-size: 0.26rem;
+    line-height: 0.48rem;
+}

@@ -1,0 +1,71 @@
+html,body{
+	width:100%;
+	height:100%;
+	position: relative;
+	font-size: 0.24rem;
+	background:#FFF;
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration: none;
+	color:inherit;
+}
+input[type=color], 
+input[type=date], 
+input[type=datetime-local], 
+input[type=datetime], 
+input[type=email], 
+input[type=month], 
+input[type=number], 
+input[type=password], 
+input[type=search], 
+input[type=tel], 
+input[type=text], 
+input[type=time], 
+input[type=url], 
+input[type=week], 
+select, 
+textarea{
+	background: inherit;
+	border: none;
+	padding: 0;
+	padding-left: 0.2rem;
+	font-size: 0.32rem;
+	margin-bottom: 0;
+	height: auto;
+	font-size: 0.24rem;
+}
+p{
+	margin:0;
+	padding:0;
+}
+.mui_bar{
+	height: 0.77rem;
+	line-height: 0.77rem;    
+	background-color: #FAFAFA;
+	overflow: hidden;
+}
+
+.mui_title{
+	font-size: 0.3rem;
+	color: #1A1A1A;
+	text-align: center;
+	margin:0 0 0 0.5rem;
+}
+.mui_bar img{
+	position: absolute;
+	width:0.45rem;
+	top:0.155rem;
+	left: 0.35rem;
+}
+.mui_bar p{
+	float:right;
+	margin-right:0.3rem;
+	font-size: 0.6rem;
+}

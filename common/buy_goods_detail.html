@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2-22-3商品详情</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common/buy_goods_detail.css">
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header class="mui_bar">
+        <img class="backup" src="../images/backup.png" alt="">
+        <p>···</p>
+        <h1 class="mui_title">我要购买-商品类别</h1>
+    </header>
+    <div class="container">
+        <div class="swiper">
+            <div class="swiper-container swiper-container-horizontal swiper-container-ios">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-top swiper-slide-prev"><img src="../images/mainimage.png"></div>
+                    <div class="swiper-slide swiper-slide-top swiper-slide-active"><img src="../images/mainimage.png"></div>
+                    <div class="swiper-slide swiper-slide-top swiper-slide-next"><img src="../images/mainimage.png"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-bullets">
+                    <span class="swiper-pagination-bullet"></span>
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                    <span class="swiper-pagination-bullet"></span>
+                </div>
+            </div>
+        </div>
+        <div class="goods_detail_desc">
+            <p class="goods_detail_desc_money">$200.00/天 <span>联系客服<img src="../images/kefu_icon.png" alt=""></span></p>
+            <p class="goods_detail_desc_title">HO56C手动轮椅车 </p>
+            <p class="goods_detail_desc_content">体积更小轻松放入汽车后备箱</p>
+        </div>
+        <div class="content_body">
+            <div class="content_head">
+                <ul class="select_card con_title">
+                    <li class="select_card_list con_curr">
+                        <img src="../images/sf@2x.png" alt="">
+                        <span>商品详情</span>
+                    </li>
+                    <li class="select_card_list ">
+                        <img src="../images/acsasaca@2x.png" alt="">
+                        <span>用户评价</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="con_all">
+                <div class="con_warp">
+                    <img class="detail_img" src="../images/746765392722094109@2x.png" alt="">
+                </div>
+                <div class="con_warp" style="display: none">
+                    <ul class="con_list">
+                        <li>
+                            <div class="head_img_box">
+                                <img src="../images/detail_head_img.png" alt="">
+                                <p class="user_name">穷艾尔雅</p>
+                                <span class="release_time">2018-07-14<span>
+                            </div>
+                            <div class="pingjia_box">
+                                <p class="pingjia_content">出行收纳更方便,体积更小轻松放入汽车后备箱，非常好的
+一次租赁体验！期待下一次租赁！
+</p>
+<img  class="pingjia_image" src="../images/111.png" alt="">
+<img  class="pingjia_image" src="../images/111.png" alt="">
+<img  class="pingjia_image" src="../images/111.png" alt="">
+<img  class="pingjia_image" src="../images/111.png" alt="">
+                            </div>
+                            
+                            
+                        </li>
+                        
+                       
+                    </ul>
+                   
+                </div>
+            </div>
+            
+        </div>
+        <footer class="footer">
+            <div class="buycar_box">
+                <span class="goods_num"></span>
+                <img class="footer_buycar_img" src="../images/cdvcd@1x.png" alt="">
+
+            </div>
+            
+            
+            <p class="footer_pay">前往支付</p>
+            <p class="footer_buycar">加入购物车</p>
+         </footer>
+                </div>
+                <script>
+                $(document).ready(function() {
+                    get_main_content();
+
+                    var $menu_box = $('.content_body .con_title>li');
+                    $menu_box.click(function() {
+                        $(this).addClass('con_curr').siblings().removeClass('con_curr');
+                        var index = $menu_box.index(this);
+                        $('.con_all .con_warp').eq(index).show().siblings().hide();
+                    });
+                })
+
+                function get_main_content() {
+
+                }
+                //购买商品轮播图
+                var swiper = new Swiper('.swiper-container', {
+
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                });
+                //点击添加购物车
+                var goods_num = 0;
+                $('.footer_buycar').on('click',function(){
+                    goods_num++;
+                    $('.footer_buycar_img').attr('src',"../images/cdvcd@2x.png")
+                    $('.goods_num').text(goods_num);
+                })
+                </script>
+</body>
+
+</html>

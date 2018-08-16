@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1-7自提</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common/take_it.css">
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header class="mui_bar">
+        <img class="backup" src="../images/backup.png" alt="">
+        <p>···</p>
+        <h1 class="mui_title">轮椅之家</h1>
+    </header>
+    <div class="container">
+        <div class="address_box">
+            <div class="local_box">
+                <p class="take_local">A自提点（有货） <span>   <img src="../images/location.png" alt="">距离20KM</span></p>
+                <img class="top_juchi" src="../images/asca@2x.png" alt="">
+            </div>
+            <div class="address_boxs">
+                <div class="user_address">
+                    <p class="location_add">地址：<span class="date_content"> 天津市北辰区双街镇第五大道</span></p>
+                    <p class="location_tel">电话：<span class="date_content">123456789</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="address_box">
+            <div class="local_box">
+                <p class="take_local">A自提点（有货） <span>   <img src="../images/location.png" alt="">距离20KM</span></p>
+                <img class="top_juchi" src="../images/asca@2x.png" alt="">
+            </div>
+            <div class="address_boxs">
+                <div class="user_address">
+                    <p class="location_add">地址：<span class="date_content"> 天津市北辰区双街镇第五大道</span></p>
+                    <p class="location_tel">电话：<span class="date_content">123456789</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="address_box">
+            <div class="local_box">
+                <p class="take_local">A自提点（打样） <span>   <img src="../images/location.png" alt="">距离20KM</span></p>
+                <img class="top_juchi" src="../images/asca@1x.png" alt="">
+            </div>
+            <div class="address_boxs">
+                <div class="user_address">
+                    <p class="location_add">地址：<span class="date_content"> 天津市北辰区双街镇第五大道</span></p>
+                    <p class="location_tel">电话：<span class="date_content">123456789</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="address_box">
+            <div class="local_box">
+                <p class="take_local">A自提点（无货） <span>   <img src="../images/location.png" alt="">距离20KM</span></p>
+                <img class="top_juchi" src="../images/asca@1x.png" alt="">
+            </div>
+            <div class="address_boxs">
+                <div class="user_address">
+                    <p class="location_add">地址：<span class="date_content"> 天津市北辰区双街镇第五大道</span></p>
+                    <p class="location_tel">电话：<span class="date_content">123456789</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="choose_box"> <img src="../images/about_us.png" alt="">没有合适的自提点？<span class="choose_peisong">  可选择配送</span></p>
+        <p class="find_map">查看地图</p>
+    </footer>
+    </div>
+    <script>
+    $(document).ready(function() {
+        get_main_content();
+
+        var $menu_box = $('.content_body .con_title>li');
+        $menu_box.click(function() {
+            $(this).addClass('con_curr').siblings().removeClass('con_curr');
+            var index = $menu_box.index(this);
+            $('.con_all .con_warp').eq(index).show().siblings().hide();
+        });
+    })
+
+    function get_main_content() {
+
+    }
+    //购买商品轮播图
+    var swiper = new Swiper('.swiper-container', {
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+    //点击添加购物车
+    var goods_num = 0;
+    $('.footer_buycar').on('click', function() {
+        goods_num++;
+        $('.footer_buycar_img').attr('src', "../images/cdvcd@2x.png")
+        $('.goods_num').text(goods_num);
+    })
+    </script>
+</body>
+
+</html>

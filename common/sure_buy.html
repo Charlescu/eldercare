@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2-4确认购买</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common/sure_buy.css">
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header class="mui_bar">
+        <img class="backup" src="../images/backup.png" alt="">
+        <p>···</p>
+        <h1 class="mui_title">确认购买</h1>
+    </header>
+    <div class="container">
+        <div class="address_box">
+            <img class="youjiantou" src="../images/youjiantou1.png" alt="">
+            <div class="user_box">
+                <img class="head_img" src="../images/head_img.png" alt="">
+                <span class="user_name">赵先生</span>
+                <p class="user_phone">15122953260</p>
+            </div>
+            <div class="local_box">
+                <img class="location_img" src="../images/3336556@2x.png" alt="">
+                <span class="address_content">天津阿达宽大的</span>
+            </div>
+        </div>
+        <div class="con_warp">
+            <p class="buy_message"> 购买信息</p>
+            <ul class="con_list_ul">
+                <li class="con_list_li">
+                    <img class="con_list_img" src="../images/5653ceba1a219@2x.png" alt="">
+                    <div class="goods_box">
+                        <p class="goods_title">HO56C手动轮椅车</p>
+                        <span class="goods_content">体积更小轻松放入汽车后备箱</span>
+                        <p class="goods_money">$2000.00</p>
+                        <span class="goods_nums">  X1</span>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="join">
+                 <img class="subtract_img" src="../images/asasa@2x.png  " alt="">
+                 <p>21 </p>
+                 <img class="add_img" src="../images/asasa@2x.png" alt="">  
+            </div>
+            <p class="buy_message"> 购买数量 </p>
+
+        </div>
+        <div class="peisong">   
+           <div class="peisong_box">    
+             <p>  配送方式<span>    快递：￥8.00</span></p>
+           </div>
+            <div class="beizhu_box">    
+             <p>  备注信息：晚一些的发货</p>
+           </div>
+        </div>
+        <div class="zhifu">   
+            <div class="wx_pay">
+             <p>  微信支付<span><img class="hand" src="../images/hand.png" alt="">推荐使用</span><img class="sure" src="../images/sure.png" alt=""></p>
+           </div>
+            <div class="ali_pay">    
+             <p>  支付宝支付<img class="sure" src="../images/sure.png" alt=""></p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="buycar_box">
+            <p> 微信支付</p>
+            <span>$2000.00</span>
+        </div>
+       
+        <p class="footer_buycar">前往支付</p>
+    </footer>
+    </div>
+    <script>
+    $(document).ready(function() {
+        get_main_content();
+
+        var $menu_box = $('.content_body .con_title>li');
+        $menu_box.click(function() {
+            $(this).addClass('con_curr').siblings().removeClass('con_curr');
+            var index = $menu_box.index(this);
+            $('.con_all .con_warp').eq(index).show().siblings().hide();
+        });
+    })
+
+    function get_main_content() {
+
+    }
+    //购买商品轮播图
+    var swiper = new Swiper('.swiper-container', {
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+    //点击添加购物车
+    var goods_num = 0;
+    $('.footer_buycar').on('click', function() {
+        goods_num++;
+        $('.footer_buycar_img').attr('src', "../images/cdvcd@2x.png")
+        $('.goods_num').text(goods_num);
+    })
+    </script>
+</body>
+
+</html>

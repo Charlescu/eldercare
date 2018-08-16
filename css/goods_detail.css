@@ -1,0 +1,249 @@
+ .container {
+     background-color: #53A6FA;
+ }
+
+ .swiper-pagination-bullet {
+     width: 0.08rem;
+     height: 0.08rem;
+     border-radius: 50%;
+ }
+
+ .swiper-slide-top {
+     text-align: center;
+     font-size: 0.24;
+     background: #fff;
+     width: 7.5rem;
+     height: 5rem;
+     /* Center slide text vertically */
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     -webkit-align-items: center;
+     align-items: center;
+ }
+
+ .swiper-pagination {
+     position: relative;
+ }
+
+ .swiper-pagination span {
+     margin: 0 0.1rem;
+ }
+ /* 闲情叶商品描述 */
+
+ .goods_detail_desc {
+     width: 7.5rem;
+     height: 2.45rem;
+ }
+
+ .goods_detail_desc {
+     background-color: #FFF;
+ }
+
+ .goods_detail_desc p.goods_detail_desc_money {
+     background-color: #53A6FA;
+     color: #fff;
+     font-size: 0.41rem;
+     line-height: 1rem;
+     height: 1rem;
+     padding-left: 0.37rem;
+ }
+
+ .goods_detail_desc span {
+     color: #fff;
+     font-size: 0.29rem;
+     float: right;
+     margin: auto;
+ }
+
+ .goods_detail_desc img {
+     width: 0.32rem;
+     height: 0.28rem;
+     margin: 0 0.23rem 0 0.18rem;
+ }
+
+ .goods_detail_desc_title {
+     margin-left: 0.37rem;
+     font-size: 0.32rem;
+     margin-top: 0.29rem;
+ }
+
+ .goods_detail_desc_content {
+     margin-left: 0.37rem;
+     font-size: 0.27rem;
+     margin-top: 0.26rem;
+     color: #999999;
+ }
+
+ .content_body {
+     background-color: #FFF;
+     margin-top: 0.2rem;
+ }
+
+ .content_head {
+     width: 100%;
+     text-align: center;
+     background-color: transparent;
+     border-bottom: 1px solid #999999;
+ }
+
+ .index_decoration {
+     margin: 0 auto;
+     width: 7.28rem;
+     height: 0.24rem;
+ }
+ /*<!-- 详情选项卡 -->*/
+
+ .select_card {
+     border-radius: 0.1rem 0.1rem 0 0;
+ }
+
+ .select_card_list {
+     font-size: 0.28rem;
+     vertical-align: center;
+     display: inline-block;
+     width: 2.5rem;
+     height: 0.105rem;
+     margin: 0 0.6rem;
+     line-height: 0.105rem;
+     padding: 0.39rem 0 0.39rem 0;
+ }
+
+ .select_card_list img {
+     width: 0.21rem;
+     height: 0.25rem;
+ }
+
+ .detail_img {
+     width: 7.5rem;
+ }
+ /*<!-- 2-->*/
+
+ .con_title li {
+     display: inline-block;
+ }
+
+ .con_title li.con_curr {
+     color: #53A6FA;
+     border-bottom: 2px solid #53A6FA;
+ }
+
+ .con_list li {
+     width: 7.5rem;
+     background-color: #fff;
+     white-space: nowrap;
+     border-bottom: 1px solid #cccccc;
+ }
+
+ .head_img_box img {
+     margin: 0.26rem 0 0 0.5rem;
+     width: 0.66rem;
+     border-radius: 0.33rem;
+     vertical-align: middle;
+ }
+
+ .release_time {
+     margin: 0.2rem auto;
+     display: block;
+     font-size: 0.25rem;
+     color: #999999;
+     float: right;
+     margin: 0.53rem 0.3rem 0 0;
+ }
+
+ .user_name {
+     vertical-align: middle;
+     color: #000000;
+     font-size: 0.25rem;
+     display: inline-block;
+     padding-top: 0.25rem;
+     margin-left: 0.27rem;
+ }
+
+ .pingjia_box {
+     margin: 0.28rem 0 0 0.7rem;
+     color: #999999;
+     font-size: 0.24rem;
+     white-space: normal;
+ }
+
+ .pingjia_content {
+     width: 6.03rem;
+ }
+
+ .pingjia_image {
+     margin: 0.32rem 0.24rem 0.31rem 0;
+     width: 1.21rem;
+
+ }
+ /*<!-- 地理定位-->\*/
+
+ .local_location {
+     margin: 0.32rem auto;
+     width: 6rem;
+     height: 0.8rem;
+     background-color: #FAFAFA;
+     border-radius: 0.05rem;
+     border: 0.02rem solid #EBEBEB;
+ }
+
+ .local_location p {
+     margin: 0.2rem;
+     display: inline-block;
+ }
+
+ .lookup {
+     color: #FFFFFF;
+     font-size: 0.3rem;
+     text-align: center;
+     margin: 0.5rem auto;
+     width: 6rem;
+     height: 0.8rem;
+     line-height: 0.8rem;
+     background-color: #53A6FA;
+     border-radius: 0.1rem;
+     border: 0.01rem solid #EBEBEB;
+ }
+ /*<!-- 文本 -->*/
+
+ .paper_box ul {
+     margin: 0.6rem auto;
+     width: 6rem;
+     height: 1rem;
+ }
+
+ .paper_box ul li {
+     text-align: center;
+     width: 2.8rem;
+
+     line-height: 1rem;
+     display: inline-block;
+ }
+
+ .paper_box ul li img {
+     border-radius: 50%;
+     box-shadow: 0.05rem 0.05rem 0.1rem #ccc;
+     width: 0.3rem;
+ }
+ /*<!-- 底部导航 -->*/
+
+ .footer {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     text-align: center;
+     font-size: 0.34rem;
+     color: #FFF;
+     width: 7.5rem;
+     height: 0.96rem;
+     line-height: 0.96rem;
+     border-radius: 0.1rem 0.1rem 0 0;
+     background-color: #53A6FA;
+ }

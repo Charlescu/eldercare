@@ -1,0 +1,108 @@
+body {
+    background-color: #F6FDFC;
+}
+
+
+/* 租赁日期 */
+
+.address_box {
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    width: 6.9rem;
+    border-radius: 0.1rem;
+    box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
+}
+
+.take_local {
+    position: absolute;
+    color: #FFF;
+    width: 6.25rem;
+    margin-top: 0.24rem;
+    margin-left: 0.34rem;
+    vertical-align: middle;
+}
+
+.take_local img {
+    margin-right: 0.19rem;
+    width: 0.24rem;
+}
+
+.take_local span {
+    float: right;
+}
+
+.top_juchi {
+    width: 6.93rem;
+}
+
+.address_boxs {
+    background-color: #fff;
+}
+
+.date_content {
+    vertical-align: top;
+    margin-left: 0.21rem;
+    font-size: 0.26rem;
+}
+
+.address_boxs {
+    position: relative;
+    top: -0.05rem;
+}
+
+.location_add {
+    font-size: 0.25rem;
+    padding: 0.3rem 0 0 0.39rem;
+}
+
+.location_tel {
+    font-size: 0.25rem;
+    padding: 0.3rem 0 0.3rem 0.39rem;
+}
+
+.user_address {
+    background-color: #fff;
+}
+
+
+
+/* 底部支付 */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 0.29rem;
+    background-color: #fff;
+    width: 7.5rem;
+    height: 1.69rem;
+    line-height: 1rem;
+    border-radius: 0.1rem 0.1rem 0 0;
+}
+
+.choose_box{
+   font-size: 0.23rem;
+   color:#9E9E9E;
+}
+
+.choose_box img{
+   position: relative;
+   top:0.1rem;
+    width:0.3rem;
+}
+.choose_peisong{
+    color:#53A6FA;
+}
+.find_map{
+    width:6.59rem;
+    height:0.8rem;
+    border-radius: 0.1rem;
+    color:#FFF;
+    background-color: #53A6FA ;
+    margin:0 auto;
+    margin-bottom: 0.1rem;
+    line-height: 0.8rem;
+    position: relative;
+    bottom:0.2rem;
+}

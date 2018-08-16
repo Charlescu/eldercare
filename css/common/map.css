@@ -1,0 +1,29 @@
+#wrap {
+    width: 7.5rem;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#wrap div ._left {
+    width: 281px;
+    float: left;
+    height: 339px;
+    border-right: 1px solid #CCCCCC;
+}
+
+    
+
+#dituContent{
+	width: 7.5rem; 
+	height:  7.5rem;
+	float: left; 
+	}
+
+/*搜索框城市*/
+
+#input {
+    width: 360px;
+    height: 37px;
+    margin-left: 51px;
+}

@@ -1,0 +1,37 @@
+body{
+	background-color: #F1FEFE;
+}
+.juxing{
+	width:6.9rem;
+	text-align:center;
+	display: block;
+	margin:0 auto;
+	margin-top:0.2rem;
+}
+.content_box{
+	margin-top:-0.1rem;
+	background-color: #fff;
+	margin:0 auto;
+	width:6.4rem;
+	min-height: 8rem;
+}
+.title{
+	padding:0.5rem;
+	font-weight: 600;
+	font-size: 0.34rem;
+	height:0.34rem;
+	text-align:center;
+}
+.content_box p{
+	width:5.54rem;
+	margin:0 auto;
+}
+p.content{
+	font-size: 0.26rem;
+	line-height:0.48rem;
+}
+.juchixing{
+	display: block;
+	margin:0 auto;
+  width:6.4rem;
+}
