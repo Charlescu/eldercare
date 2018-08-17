@@ -92,21 +92,12 @@
     function get_main_content() {
 
     }
-    //购买商品轮播图
-    var swiper = new Swiper('.swiper-container', {
-
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-    //点击添加购物车
-    var goods_num = 0;
-    $('.footer_buycar').on('click', function() {
-        goods_num++;
-        $('.footer_buycar_img').attr('src', "../images/cdvcd@2x.png")
-        $('.goods_num').text(goods_num);
-    })
+   $('.choose_peisong').on('click',function(){
+    window.location.href = "distribution_rule.html"
+   })
+   $('.find_map').on('click',function(){
+    window.location.href = "map.html"
+   })
     </script>
 </body>
 

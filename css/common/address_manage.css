@@ -2,39 +2,47 @@ body {
     background-color: #F6FDFC;
 }
 
-
 /* 租赁日期 */
 
-.address_box {
+.address_out_box {
     margin: 0 auto;
-    
+    margin: 0.2rem 0 0 0;
     width: 7.5rem;
-    
-   
 }
-.address_boxs{
-  background-color: #fff;
-  height:1.55rem;
-  border-bottom:0.01rem solid #EBEBEB;
-}
-.user_name{
- padding:0.34rem 0 0 0.3rem;
-}
-.user_address{
-  margin:0.28rem 0 0 0.3rem;
 
+.address_in_box {
+    background-color: #fff;
+    height: 1.55rem;
+    border-bottom: 0.01rem solid #EBEBEB;
 }
-.edit_box{
-    float:right;
-}
-.edit_box img{
-    width:0.34rem;
-    margin:0 0.15rem;
-}
-.del_icon{
 
-    margin-right:0.36rem;
+.user_name {
+    display: inline-block;
+    padding: 0.34rem 0 0 0.3rem;
 }
+
+.phone {
+    margin-left: 0.41rem;
+}
+
+.address_box {
+    padding: 0.34rem 0 0.5rem 0.3rem;
+}
+
+.edit_box {
+    float: right;
+}
+
+.edit_box img {
+    width: 0.34rem;
+    margin: 0 0.15rem;
+}
+
+.del_icon {
+    padding-right: 0.36rem;
+}
+
+
 /* 底部支付 */
 
 .footer {
@@ -51,15 +59,14 @@ body {
 }
 
 
-.add_address{
-    width:6.59rem;
-    height:0.8rem;
+.add_address {
+    width: 6.59rem;
+    height: 0.8rem;
     border-radius: 0.4rem;
-    color:#FFF;
-    background-color: #53A6FA ;
-    margin:0 auto;
+    color: #FFF;
+    background-color: #53A6FA;
+    margin: 0 auto;
     position: relative;
-    top:0.4rem;
+    top: 0.4rem;
     line-height: 0.8rem;
-  
 }

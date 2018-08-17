@@ -4,10 +4,10 @@ document.documentElement.style.fontSize = baseWidth / 750 * 100 + 'px';
 
 //返回按钮
 window.onload = function(){
-	var backup = document.getElementsByClassName('backup');
-	backup.onclick = function(){
-		window.history.go(-1);
-	}
+	var back_page = document.getElementsByClassName('backup')[0];
+    back_page.onclick = function() {
+        window.history.go(-1);
+    }
 }
 
 //弹窗

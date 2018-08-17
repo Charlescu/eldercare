@@ -24,7 +24,7 @@
     </header>
     <div class="container">
         <div class="goods_box">
-            <img src="../images/goods_images.png" alt="">
+            <img class="goods_pic" src="../images/goods_images.png" alt="">
             <p class="goodS_name">HO56C手动轮椅车</p>
             <span class="goods_desc">出行收纳更方便,体积更小轻松放入汽车后备箱</span>
         </div>
@@ -59,6 +59,10 @@
     function get_main_content() {
 
     }
+    //商品跳转
+    $('.goods_pic').on('click',function(){
+        window.location.href = "buy_goods_category.html"
+    })
     </script>
 </body>
 

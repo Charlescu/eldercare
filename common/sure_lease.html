@@ -101,20 +101,17 @@
     function get_main_content() {
 
     }
-    //购买商品轮播图
-    var swiper = new Swiper('.swiper-container', {
-
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-    //点击添加购物车
-    var goods_num = 0;
-    $('.footer_buycar').on('click', function() {
-        goods_num++;
-        $('.footer_buycar_img').attr('src', "../images/cdvcd@2x.png")
-        $('.goods_num').text(goods_num);
+    //前往支付
+    $('.footer_buycar').on('click',function(){
+        window.location.href = "take_it.html"
+    })
+    //申请免押金
+    $('.cash_p').on('click',function(){
+        window.location.href = "deposit_free.html"
+    })
+    //选择自提点
+    $('.take_it').on('click',function(){
+        window.location.href = "take_it.html"
     })
     </script>
 </body>

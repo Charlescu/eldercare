@@ -68,7 +68,7 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="local_location">
+                    <div class="local_location" data-href="common/map.html">
                         <p>我的位置</p>
                         <p>天津市西青区理工大学</p>
                     </div>
@@ -81,20 +81,20 @@
                         <li>
                             <img src="images/buy_list1.png" alt="">
                             <span>血压计<span>
-                            <p>查看</p>
+                            <p class="check">查看</p>
                         </li>
                          <li>
                             <img src="images/buy_list2.png" alt="">
                             <span>血压计<span>
-                            <p>查看</p>
+                            <p class="check">查看</p>
                         </li> <li>
                             <img src="images/buy_list3.png" alt="">
                             <span>血压计<span>
-                            <p>查看</p>
+                            <p class="check">查看</p>
                         </li> <li>
                             <img src="images/buy_list1.png" alt="">
                             <span>血压计<span>
-                            <p>查看</p>
+                            <p class="check">查看</p>
                         </li>
                        
                     </ul>
@@ -144,11 +144,15 @@
 
                 //我要租赁-查找器材跳转
                  $('.lookup_equipment').on('click',function(){
-                    window.location.href = 'common/equipment.html'
+                    window.location.href = 'common/lease_goods_category.html'
                  })
                     //地理位置跳转
                  $('.local_location').on('click',function(){
-                   
+                    window.location.href = 'common/map.html'
+                 })
+                 //查看商品跳转
+                 $('.check').on('click',function(){
+                    window.location.href = 'common/select_goods.html'
                  })
                  //我要购买-去挑选商品跳转
                  $('.Select_goods').on('click',function(){

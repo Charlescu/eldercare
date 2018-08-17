@@ -20,7 +20,7 @@
      <header class="mui_bar">
         <img class="backup" src="../images/backup.png" alt="">
         <p>···</p>
-        <h1 class="mui_title">我要购买-商品类别</h1>
+        <h1 class="mui_title">商品详情</h1>
     </header>
     <div class="container">
         <div class="swiper">
@@ -107,14 +107,11 @@
                 function get_main_content() {
 
                 }
-                //首页轮播图
-                var swiper = new Swiper('.swiper-container', {
-
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                });
+                //租赁跳转
+                $('.footer').on('click',function(){
+                    window.location.href = "sure_lease.html"
+                })
+                 
                 </script>
 </body>
 
