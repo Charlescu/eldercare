@@ -45,6 +45,13 @@ p{
 	margin:0;
 	padding:0;
 }
+input{
+	outline：none;
+}
+input:focus{
+	outline: none;
+}
+/* 公共头部 */
 .mui_bar{
 	height: 0.77rem;
 	line-height: 0.77rem;    
@@ -69,3 +76,31 @@ p{
 	margin-right:0.3rem;
 	font-size: 0.6rem;
 }
+/* 公共底栏 */
+.footer{
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+}
+ .bottom_list {
+     border-radius: 5px 5px 0 0;
+     height: 1.2rem;
+     text-align: center;
+     background-color: #E9EFF3;
+ }
+
+ .mainpage_botlist {
+
+     vertical-align: bottom;
+     display: inline-block;
+     margin: 0.2rem 0.6rem 0 0.6rem;
+ }
+ .mainpage_botlist img{
+   width:0.5rem;
+   height:0.5rem;
+ }
+
+ .mainpage_botlist span {
+     display: block;
+ }

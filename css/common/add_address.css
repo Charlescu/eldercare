@@ -1,0 +1,79 @@
+body {
+    background-color: #F6FDFC;
+}
+
+/* 租赁日期 */
+.link_man{
+    height:0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.25rem;
+    color:#999999;
+}
+.user_pic{
+    
+    width:0.21rem;
+    margin:0 0.11rem 0 0.34rem;
+}
+.user_box{
+    background-color: #fff;
+     padding-left: 0.31rem;
+     padding-right:0.31rem;
+}
+.user_name{
+    width:6.7rem;
+    height: 0.8rem;
+    line-height: 0.8rem; 
+    border-bottom: 1px solid #cccccc;
+    margin:0 auto;
+}
+.user_tel{
+    width:6.7rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin:0 auto;
+}
+.address_box{
+    background-color: #fff;
+     padding-left: 0.31rem;
+     padding-right:0.31rem;
+}
+.user_diqu{
+    width:6.7rem;
+    height: 0.8rem;
+    line-height: 0.8rem; 
+    border-bottom: 1px solid #cccccc;
+    margin:0 auto;
+}
+.user_dizhi{
+    width:6.7rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin:0 auto;
+}
+/* 底部支付 */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 0.29rem;
+    background-color: #fff;
+    width: 7.5rem;
+    height: 1.6rem;
+    line-height: 1rem;
+    border-radius: 0.1rem 0.1rem 0 0;
+}
+
+
+.add_address {
+    width: 6.59rem;
+    height: 0.8rem;
+    border-radius: 0.4rem;
+    color: #FFF;
+    background-color: #53A6FA;
+    margin: 0 auto;
+    position: relative;
+    top: 0.4rem;
+    line-height: 0.8rem;
+}

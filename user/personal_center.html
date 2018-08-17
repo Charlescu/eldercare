@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3-1个人中心</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/user/personal_center.css">
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header class="mui_bar">
+        <img class="backup" src="../images/backup.png" alt="">
+        <p>···</p>
+        <h1 class="mui_title">个人中心</h1>
+    </header>
+    <div class="container">
+        <div class="head_box">
+            <div class="pic_box">
+                <img class="head_pic" src="../images/user_pic.png" alt="">
+            </div>
+            <p class="user_name">合欢花</p>
+        </div>
+        <div class="jifen_box">
+            <img class="jifen" src="../images/asvfvadv@2x.png" alt="">
+        </div>
+        <div class="order">
+            <p class="my_order">
+                <span class="order_left"><img src="" alt="">我的订单</span>
+                <span class="order_right">查看更多订单<img src="../images/youjiantou1.png" alt=""></span>
+            </p>
+            <ul class="person_list">
+                <li class="person_botlist"><img src="../images/SDFAGFDAW@2x.png" alt=""><span>待支付</span></li>
+                <li class="person_botlist"><img src="../images/orderclick.png" alt=""><span>待完成</span></li>
+                <li class="person_botlist"><img src="../images/orderpingjia.png" alt=""><span>待评价</span></li>
+                <li class="person_botlist"><img src="../images/ordersure.png" alt=""><span>待完成</span></li>
+            </ul>
+        </div>
+        <div class="list_box">
+            <ul>
+                <li class="list_item">
+                    <span class="list_left"><img src="../images/ACSACA@2x.png" alt="">我的积分</span>
+                    <span class="list_right">查看全部积分<img src="../images/youjiantou1.png" alt=""></span>
+                </li>
+                <li class="list_item">
+                    <span class="list_left"><img src="../images/acsc@2x.png" alt="">地址管理</span>
+                    <span class="list_right"><img src="../images/youjiantou1.png" alt=""></span>
+                </li>
+                 <li class="list_item">
+                    <span class="list_left"><img src="../images/acsc@2x.png" alt="">效力等级说明</span>
+                    <span class="list_right"><img src="../images/youjiantou1.png" alt=""></span>
+                </li>
+                 <li class="list_item">
+                    <span class="list_left"><img src="../images/acsc@2x.png" alt="">租赁协议</span>
+                    <span class="list_right"><img src="../images/youjiantou1.png" alt=""></span>
+                </li>
+                 <li class="list_item">
+                    <span class="list_left"><img src="../images/acsc@2x.png" alt="">分享有礼</span>
+                    <span class="list_right"><img src="../images/youjiantou1.png" alt=""></span>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <ul class="bottom_list">
+            <li class="mainpage_botlist"><img src="../images/main372@2x.png" alt=""><span>首页</span></li>
+            <li class="mainpage_botlist"><img src="../images/cdvcd@2x.png" alt=""><span>购物车</span></li>
+            <li class="mainpage_botlist"><img src="../images/personal.png" alt=""><span>我的</span></li>
+        </ul>
+    </footer>
+    </div>
+    <script>
+    $(document).ready(function() {
+        get_main_content();
+
+        var $menu_box = $('.content_body .con_title>li');
+        $menu_box.click(function() {
+            $(this).addClass('con_curr').siblings().removeClass('con_curr');
+            var index = $menu_box.index(this);
+            $('.con_all .con_warp').eq(index).show().siblings().hide();
+        });
+    })
+
+    function get_main_content() {
+
+    }
+    //首页轮播图
+    var swiper = new Swiper('.swiper-container', {
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+    //我要租赁-查找器材跳转
+    $('.lookup_equipment').on('click', function() {
+        window.location.href = 'common/zhinan.html'
+    })
+    //地理位置跳转
+    $('.local_location').on('click', function() {
+        window.location.href = 'common/map.html'
+    })
+    //我要购买-去挑选商品跳转
+
+    //租赁指南跳转
+    $('.zulin').on('click', function() {
+        window.location.href = 'common/zhinan.html'
+    });
+    //关于我们跳转
+    $('.us').on('click', function() {
+        window.location.href = 'common/zhinan.html'
+    })
+    </script>
+</body>
+
+</html>

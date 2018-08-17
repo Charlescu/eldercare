@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2.6新增地址</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common/add_address.css">
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header class="mui_bar">
+        <img class="backup" src="../images/backup.png" alt="">
+        <p>···</p>
+        <h1 class="mui_title">新增地址</h1>
+    </header>
+    <div class="container">
+        <p class="link_man"><img class="user_pic" src="../images/user.png" alt="">联系人</p>
+        <div class="user_box">
+            <p class="user_name">姓名：<input type="text" placeholder="请输入名字"></p>
+            <p class="user_tel">姓名：<input type="text" placeholder="请输入手机或固定电话"></p>
+        </div>
+         <p class="link_man"><img class="user_pic" src="../images/dizhi.png" alt="">收货地址</p>
+        <div class="address_box">
+             <p class="user_diqu">选择地区：<input type="text" placeholder="请输入省份/城市/地区"></p>
+            <p class="user_dizhi">详细地址：<input type="text" placeholder="请输入街道/楼层/门牌号"></p>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <p class="add_address">保存收货地址</p>
+    </footer>
+    </div>
+    <script>
+    $(document).ready(function() {
+        get_main_content();
+
+        var $menu_box = $('.content_body .con_title>li');
+        $menu_box.click(function() {
+            $(this).addClass('con_curr').siblings().removeClass('con_curr');
+            var index = $menu_box.index(this);
+            $('.con_all .con_warp').eq(index).show().siblings().hide();
+        });
+    })
+
+    function get_main_content() {
+
+    }
+    //购买商品轮播图
+    var swiper = new Swiper('.swiper-container', {
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+    //点击添加购物车
+    var goods_num = 0;
+    $('.footer_buycar').on('click', function() {
+        goods_num++;
+        $('.footer_buycar_img').attr('src', "../images/cdvcd@2x.png")
+        $('.goods_num').text(goods_num);
+    })
+    </script>
+</body>
+
+</html>

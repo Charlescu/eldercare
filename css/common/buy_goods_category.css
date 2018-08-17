@@ -1,0 +1,101 @@
+.goods_box_top img {
+    width: 7.5rem;
+    height: 3.2rem;
+}
+
+
+
+/*     搜索框 */
+
+.category_search_box {
+    margin: 0.25rem auto;
+    text-align: center;
+    border-radius: 0.1rem;
+    width: 6.7rem;
+    height: 0.6rem;
+    background-color: #F5F5F5;
+}
+
+.category_search_input {
+    line-height: 0.6rem;
+    margin-left: 0.3rem;
+}
+
+.category_search_icon {
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    float: right;
+    margin: 0.15rem auto;
+    padding-right: 0.25rem;
+}
+
+input::-webkit-input-placeholder {
+    color: #CCCCCC;
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #CCCCCC;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #CCCCCC;
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #CCCCCC;
+}
+
+
+/* 选择列表 */
+
+.select_card_list {
+    float: left;
+    font-size: 0.28rem;
+    width: 1.18rem;
+    color:#999999;
+    margin: 0 0.3rem;
+    line-height: 0.6rem;
+}
+.con_title{
+	text-align: center;
+	height:0.6rem;
+	margin-bottom:0.22rem;
+}
+.con_title li.con_curr{
+     color: #53A6FA;
+ }
+ .con_list_li{
+ 	border-top: 0.01rem solid #EBEBEB;
+ 	line-height: 0.6rem;
+ }
+ .con_list_img {
+ 	margin-left: 0.43rem;
+ 	display: inline-block;
+ 	width:1.82rem;
+ } 
+
+ .goods_icon{
+ 	width:0.51rem;
+ 	float:right;
+ }
+ .goods_box{
+    margin:0.28rem auto;
+ 	margin-left: 0.5rem;
+ 	width:4.38rem;
+ 	display: inline-block;
+ }
+ .goods_title{
+ 	font-size: 0.34rem;
+ }
+ .goods_content{
+ 	font-size: 0.28rem;
+ 	color:#999999;
+ }
+ .goods_money{
+ 	font-size: 0.28rem;
+ 	color:#53A6FA;
+ }

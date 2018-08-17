@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <title>2-7购物车</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common/buy_car.css">
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
     <style>
 
     </style>
@@ -18,148 +18,94 @@
 
 <body>
     <header class="mui_bar">
-        <i class="iconfont icon-fanhui"></i>
-        <h1 class="mui_title">购物车</h1>
+        <img class="backup" src="../images/backup.png" alt="">
+        <p>···</p>
+        <h1 class="mui_title">我要购买-商品类别</h1>
     </header>
     <div class="container">
-        <div class="swiper">
-            <div class="swiper-container swiper-container-horizontal swiper-container-ios">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide swiper-slide-top swiper-slide-prev"><img src="images/lunbo.png"></div>
-                    <div class="swiper-slide swiper-slide-top swiper-slide-active"><img src="images/lunbo.png"></div>
-                    <div class="swiper-slide swiper-slide-top swiper-slide-next"><img src="images/lunbo.png"></div>
-                </div>
-                <!-- Add Pagination -->
-            </div>
-            <div class="swiper-pagination swiper-pagination-bullets">
-                <span class="swiper-pagination-bullet"></span>
-                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-                <span class="swiper-pagination-bullet"></span>
-            </div>
+        <div class="con_warp">
+            <ul class="con_list_ul">
+                <li class="con_list_li">
+                    <div class="check_radio">
+                        <!-- <input type="radio"> -->
+                        <img style="display: none;" src="../images/sure.png" alt="">
+                    </div>
+                    <img class="con_list_img" src="../images/5653ceba1a219@2x.png" alt="">
+                    <div class="goods_box">
+                        <p class="goods_title">HO56C手动轮椅车</p>
+                        <span class="goods_content">体积更小轻松放入汽车后备箱</span>
+                        <p class="goods_money">$2000.00</p>
+                        <div class="join">
+                            <img class="subtract_img" src="../images/asasa@2x.png  " alt="">
+                            <p>1 </p>
+                            <img class="add_img" src="../images/asasa@2x.png" alt="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="content_body">
-            <div class="content_head">
-                <img class="index_decoration" src="images/juchi.png" alt="">
-                <ul class="select_card con_title">
-                    <li class="select_card_list con_curr">
-                        <img src="images/buy_car.png" alt="">
-                        <span>我要租赁</span>
-                    </li>
-                    <li class="select_card_list ">
-                        <img src="images/youhui_card.png" alt="">
-                        <span>我要购买</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="con_all">
-                <div class="con_warp" >
-                    <ul class="lease">
-                        <li class="lease_list">
-                            <div class="lease_list_box">
-                                <span>取货日期  周四</span>
-                                <p>7月20日</p>
-                            </div>
-                        </li>
-                        <li class="lease_list">
-                            <div class="lease_list_box">
-                                <span>归还日期</span>
-                                <img src="" alt="">
-                                <p>添加日期</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="local_location">
-                        <p>我的位置</p>
-                        <p>天津市西青区理工大学</p>
-                    </div>
-                    <div class="lookup_equipment lookup">
-                        查找器材（共9天）
-                    </div>
+        <div class="zhifu">
+            <div class="radio_box">
+                <div class="all_ckeck ">
+                    <!-- <input type="radio"> -->
+                    <img style="display: none;" src="../images/sure.png" alt="">
+                    
                 </div>
-                <div class="con_warp" style="display: none">
-                    <ul class="con_list">
-                        <li>
-                            <img src="images/buy_list1.png" alt="">
-                            <span>血压计<span>
-                            <p>查看</p>
-                        </li>
-                         <li>
-                            <img src="images/buy_list2.png" alt="">
-                            <span>血压计<span>
-                            <p>查看</p>
-                        </li> <li>
-                            <img src="images/buy_list3.png" alt="">
-                            <span>血压计<span>
-                            <p>查看</p>
-                        </li> <li>
-                            <img src="images/buy_list1.png" alt="">
-                            <span>血压计<span>
-                            <p>查看</p>
-                        </li>
-                       
-                    </ul>
-                    <div class="Select_goods lookup">
-                        去挑选商品吧
-                    </div>
-                </div>
+                 <p>全选</p>
             </div>
-            <div class="paper_box">
-                <ul>
-                    <li class="paper_box_list "><img src="images/zulin.png" alt=""><a class="zulin" href="javascript:void(0)"> 租赁指南</a</li>
-                    <li class="paper_box_list "><img src="images/about_us.png" alt=""><a class="us" href="javascript:void(0)"> 关于我们</a></li>
-                </ul>
+            <div class="pay">
+                <p class="all_price"> 合计：<span>$4000.00</span></p>
+                <p class="to_pay">前往支付</p>
             </div>
         </div>
         <footer class="footer">
             <ul class="bottom_list">
-                <li class="mainpage_botlist"><img src="images/main372@2x.png" alt=""><span>首页</span></li>
-                        <li class="mainpage_botlist"><img src="images/cdvcd@2x.png" alt=""><span>购物车</span></li>
-                        <li class="mainpage_botlist"><img src="images/personal.png" alt=""><span>我的</span></li>
-                    </ul>
-                    </footer>
-                </div>
-                <script>
-                $(document).ready(function() {
-                    get_main_content();
+                <li class="mainpage_botlist index"><img src="../images/main372@2x.png" alt=""><span>首页</span></li>
+                <li class="mainpage_botlist buy_car"><img src="../images/cdvcd@2x.png" alt=""><span>购物车</span></li>
+                <li class="mainpage_botlist personal_center"><img src="../images/personal.png" alt=""><span>我的</span></li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+    $(document).ready(function() {
+        get_main_content();
 
-                    var $menu_box = $('.content_body .con_title>li');
-                    $menu_box.click(function() {
-                        $(this).addClass('con_curr').siblings().removeClass('con_curr');
-                        var index = $menu_box.index(this);
-                        $('.con_all .con_warp').eq(index).show().siblings().hide();
-                    });
-                })
+        var $menu_box = $('.content_body .con_title>li');
+        $menu_box.click(function() {
+            $(this).addClass('con_curr').siblings().removeClass('con_curr');
+            var index = $menu_box.index(this);
+            $('.con_all .con_warp').eq(index).show().siblings().hide();
+        });
+    })
 
-                function get_main_content() {
+    function get_main_content() {
 
-                }
-                //首页轮播图
-                var swiper = new Swiper('.swiper-container', {
+    }
+    //首页轮播图
+    var swiper = new Swiper('.swiper-container', {
 
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                });
-                //我要租赁-查找器材跳转
-                 $('.lookup_equipment').on('click',function(){
-                    window.location.href = 'common/zhinan.html'
-                 })
-                    //地理位置跳转
-                 $('.local_location').on('click',function(){
-                   window.location.href = 'common/map.html'
-                 })
-                 //我要购买-去挑选商品跳转
-
-                //租赁指南跳转
-                $('.zulin').on('click', function() {
-                    window.location.href = 'common/zhinan.html'
-                });
-                //关于我们跳转
-                $('.us').on('click', function() {
-                    window.location.href = 'common/zhinan.html'
-                })
-                </script>
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+    //勾选
+    $('.check_radio').on('click', function() {
+        if ($('.check_radio img').is(':hidden')) { //如果当前隐藏
+            $('.check_radio img').show(); //那么就显示div
+        } else { //否则
+            $('.check_radio img').hide(); //就隐藏div
+        }
+    })
+    //全部勾选
+    $('.all_ckeck').on('click', function() {
+        if ($('.all_ckeck img').is(':hidden')) { //如果当前隐藏
+            $('.all_ckeck img').show(); //那么就显示div
+        } else { //否则
+            $('.all_ckeck img').hide(); //就隐藏div
+        }
+    })
+    </script>
 </body>
 
 </html>
