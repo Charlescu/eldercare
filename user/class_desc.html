@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3-9效力等级说明</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common/distribution_rule.css">
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header class="mui_bar">
+        <img class="backup" src="../images/backup.png" alt="">
+        <p>···</p>
+        <h1 class="mui_title">效力等级说明</h1>
+    </header>
+    <div class="container">
+        <img class="juxing" src="../images/juxing.png" alt="">
+        <div class="content_box">
+            <p class="title">孝力等级说明</p>
+            <p class="content">用户等级（名称孝力等级）设定：随用户完成租赁行为次数或购买行为次数增加，积分（孝力）相应增加，每次10分，行为过程中违约（主要是损坏或逾期的）扣减用户积分，每次5分。默认100分，设三个等级ABC，A级（260以上）免押金，B级（180-260）50%押金，C级（100-180）正常押金</p>
+        
+        </div>
+        <img class="juchixing" src="../images/juchixing.png" alt="">
+    </div>
+    <script>
+    $(document).ready(function() {
+        get_main_content();
+
+        var $menu_box = $('.content_body .con_title>li');
+        $menu_box.click(function() {
+            $(this).addClass('con_curr').siblings().removeClass('con_curr');
+            var index = $menu_box.index(this);
+            $('.con_all .con_warp').eq(index).show().siblings().hide();
+        });
+    })
+
+    function get_main_content() {
+
+    }
+    </script>
+</body>
+
+</html>
