@@ -1,0 +1,88 @@
+body {
+    background: url('../../images/axcvsav@2x.png');
+    background-size: 7.5rem 4rem;
+    background-repeat: no-repeat;
+    background-color: #F9FDFD;
+}
+
+.pwd_ul {
+    width: 100%;
+    margin-top:0.38rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.pwd_list {
+    width: 6rem;
+    
+    line-height: 1rem;
+    margin-top: 0.3rem;
+}
+.head_pic{
+    width:1.16rem;  
+    border: 0.1rem solid #5BBDFC;
+    border-radius: 50%;
+}
+.pwd_pic {
+    line-height: 0.5rem;
+    text-align: center;
+    width: 4.04rem;
+}
+
+
+.pwd_list p{
+    margin-left:0.2rem;
+    display: inline-block;  
+}
+.pwd_box {
+    vertical-align: middle;
+    border-radius: 0.05rem;
+    background-color: #EBEBEB;
+}
+
+.pwd_box img {
+    margin-left: 0.62rem;
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.36rem;
+    line-height: 1rem;
+}
+
+.pwd_box input {
+    font-size: 0.28rem;
+    height: 1rem;
+    line-height: 1rem;
+}
+
+.pwd_box_tel {
+    margin-top: 2rem;
+}
+
+.pwd_btn {
+    margin-top: 0.71rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.34rem;
+    color: #FFF;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: #53A6FA;
+}
+
+.recode_input{
+  width:1.8rem;
+  
+}
+.get_recode{
+    line-height: 0.5rem;
+    font-size: 0.20rem;
+    color:#53A6FA;
+    padding: 0 0.1rem 0 0.1rem;
+    border: 0.01rem solid #53A6FA;
+    border-radius: 0.1rem;
+}

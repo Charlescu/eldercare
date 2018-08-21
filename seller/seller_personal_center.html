@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>1-11我要免押金</title>
+    <title>3-1个人中心</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/swiper.min.css">
-
+    <link rel="stylesheet" href="../css/seller/seller_personal_center.css">
     <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
@@ -20,15 +20,30 @@
     <header class="mui_bar">
         <img class="backup" src="../images/backup.png" alt="">
         <p>···</p>
-        <h1 class="mui_title">我要免押金</h1>
+        <h1 class="mui_title">个人中心</h1>
     </header>
     <div class="container">
-      <div class="content_text_box">
-          <p class="text_title">我要免押金</p>
-          <p class="content_text">用户等级（名称孝力等级）设定：随用户完成租赁行为次数或购买行为次数增加，积分（孝力）相应增加，每次10分，行为过程中违约（主要是损坏或逾期的）扣减用户积分，每次5分。默认100分，设三个等级ABC，A级（260以上）免押金，B级（180-260）50%押金，C级（100-180）正常押金</p>
-
-      </div>
-      
+        <div class="head_box">
+            <div class="pic_box">
+                <img class="head_pic" src="../images/user_pic.png" alt="">
+            </div>
+            <p class="user_name">合欢花</p>
+        </div>
+       
+        <div class="list_box">
+            <ul>
+                <li class="list_item">
+                    <span class="list_left"><img src="../images/ASFAfs@2x.png" alt="">租赁金额</span>
+                    <span class="list_right">共2000元<img src="../images/youjiantou1.png" alt=""></span>
+                </li>
+                <li class="list_item">
+                    <span class="list_left"><img src="../images/wallet.png" alt="">我的钱包</span>
+                    <span class="list_right"><img src="../images/youjiantou1.png" alt=""></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+   
     </div>
     <script>
     $(document).ready(function() {
@@ -46,7 +61,10 @@
 
     }
     
-   
+    //关于我们跳转
+    $('.us').on('click', function() {
+        window.location.href = 'common/zhinan.html'
+    })
     </script>
 </body>
 

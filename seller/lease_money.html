@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3-6-1租赁金额</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/seller/lease_money.css">
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header class="mui_bar">
+        <img class="backup" src="../images/backup.png" alt="">
+        <p>···</p>
+        <h1 class="mui_title">租赁金额</h1>
+    </header>
+    <div class="container">
+        <div class="head_box">
+            <p class="all_jifen">￥20000.00</p>
+            <p class="use_jifen">租赁金额</p>
+        </div>
+        <div class="jifen_card">
+            <div class="content_head">
+                <ul class="lease">
+                    <li class="lease_list">
+                        <div class="lease_list_box">
+                            <p class="take_time times">开始日期 周四</p>
+                            <p class="now_time times base_time">7月20日</p>
+                        </div>
+                    </li>
+                    <li class="lease_list">
+                        <div class="lease_list_box">
+                            <p class="back_times times">归还日期</p>
+                            <p class=" add_time times base_time"> <img src="../images/join.png" alt="">添加日期</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="con_all">
+            <div class="lease_box ">
+                <ul class="lease_listhead_ul">
+                    <li class="head_item lease_head_li">商品名称</li>
+                    <li class="head_item lease_head_li">租赁次数</li>
+                    <li class="head_item lease_head_li">租赁金额</li>
+                    <li class="head_item lease_head_li">佣金金额</li>
+                </ul>
+                <div class="list_box">
+                    <ul class="lease_list_ul">
+                        <li class="list_liem">A轮椅</li>
+                        <li class="list_liem">3次</li>
+                        <li class="list_liem">4000元</li>
+                        <li class="list_liem">200元</li>
+                    </ul>
+                    <ul class="lease_list_ul">
+                        <li class="list_liem">A轮椅</li>
+                        <li class="list_liem">3次</li>
+                        <li class="list_liem">4000元</li>
+                        <li class="list_liem">200元</li>
+                    </ul>
+                    <ul class="lease_list_ul">
+                        <li class="list_liem">A轮椅</li>
+                        <li class="list_liem">3次</li>
+                        <li class="list_liem">4000元</li>
+                        <li class="list_liem">200元</li>
+                    </ul>
+                    <ul class="lease_list_ul">
+                        <li class="list_liem">A轮椅</li>
+                        <li class="list_liem">3次</li>
+                        <li class="list_liem">4000元</li>
+                        <li class="list_liem">200元</li>
+                    </ul>
+                    <ul class="lease_list_ul">
+                        <li class="list_liem">A轮椅</li>
+                        <li class="list_liem">3次</li>
+                        <li class="list_liem">4000元</li>
+                        <li class="list_liem">200元</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    $(document).ready(function() {
+        get_main_content();
+
+        var $menu_box = $('.content_head .con_title>li');
+        $menu_box.click(function() {
+            $(this).attr('background', "#000");
+            $(this).addClass('con_curr').siblings().removeClass('con_curr');
+            var index = $menu_box.index(this);
+            $('.con_all .con_warp').eq(index).show().siblings().hide();
+        });
+    })
+
+    function get_main_content() {
+
+    }
+    //首页轮播图
+    var swiper = new Swiper('.swiper-container', {
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+    //我要租赁-查找器材跳转
+    $('.lookup_equipment').on('click', function() {
+        window.location.href = 'common/zhinan.html'
+    })
+    //地理位置跳转
+    $('.local_location').on('click', function() {
+        window.location.href = 'common/map.html'
+    })
+    //我要购买-去挑选商品跳转
+
+    //租赁指南跳转
+    $('.zulin').on('click', function() {
+        window.location.href = 'common/zhinan.html'
+    });
+    //关于我们跳转
+    $('.us').on('click', function() {
+        window.location.href = 'common/zhinan.html'
+    })
+    </script>
+</body>
+
+</html>

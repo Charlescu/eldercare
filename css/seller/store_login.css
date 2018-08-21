@@ -1,0 +1,88 @@
+body {
+    background: url('../../images/personal_center.png');
+    background-size: 7.5rem 4rem;
+    background-repeat: no-repeat;
+    background-color: #F9FDFD;
+}
+
+.login_ul {
+    width: 100%;
+    margin-top: 1.2rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wel_pic {
+    width: 2.56rem;
+}
+
+.login_list {
+    width: 5rem;
+    height: 1rem;
+    line-height: 1rem;
+    margin-top: 0.3rem;
+    text-align: center;
+}
+
+.login_box {
+    vertical-align: middle;
+    border-radius: 0.05rem;
+    background-color: #EBEBEB;
+}
+
+.login_box img {
+    margin-left: 0.62rem;
+
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.36rem;
+    line-height: 1rem;
+}
+
+.login_box input {
+    font-size: 0.28rem;
+    height: 1rem;
+    line-height: 1rem;
+}
+
+.login_box_tel {
+    margin-top: 3rem;
+}
+
+.login_btn {
+    margin-top: 1.74rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.34rem;
+    color: #FFF;
+    border-radius: 0.5rem;
+    background-color: #53A6FA;
+}
+
+.others {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    color: #B3B3B3;
+}
+
+.others p {
+   margin-top: 1rem;
+    font-size: 0.24rem;
+    height:0.24rem;
+    line-height: 0.24rem;
+    padding: 0 0.32rem 0 0.32rem;
+}
+
+.kefu {
+    border-right: 0.026rem solid #B3B3B3;
+}

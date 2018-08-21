@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>4-1门店登录</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/seller/store_login.css">
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header class="mui_bar">
+        <img class="backup" src="../images/backup.png" alt="">
+        <p>···</p>
+        <h1 class="mui_title">个人中心</h1>
+    </header>
+    <div class="container">
+        <ul class="login_ul">
+            <li class="login_list  wel-box">
+                <img class="wel_pic" src="../images/welcome@2x.png" alt="">
+            </li>
+            <li class="login_list login_box login_box_tel">
+                <img src="../images/tel.png" alt="">
+                <input type="text" placeholder="请输入您的手机号码">
+            </li>
+            <li class="login_list login_box">
+                <img src="../images/see.png" alt="">
+                <input type="text" placeholder="请输入您的密码">
+            </li>
+            <li class="login_list login_btn">   
+                <p>登录</p>
+            </li>
+            <li class="login_list others">
+               <p class="kefu">联系客服</p>
+               <p class="find_pwd">找回密码</p>
+                
+            </li>
+        </ul>
+        <footer class="footer">
+        </footer>
+    </div>
+    <script>
+    $(document).ready(function() {
+        get_main_content();
+
+        var $menu_box = $('.content_body .con_title>li');
+        $menu_box.click(function() {
+            $(this).addClass('con_curr').siblings().removeClass('con_curr');
+            var index = $menu_box.index(this);
+            $('.con_all .con_warp').eq(index).show().siblings().hide();
+        });
+    })
+
+    function get_main_content() {
+
+    }
+    //首页轮播图
+    var swiper = new Swiper('.swiper-container', {
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+    //我要租赁-查找器材跳转
+    $('.lookup_equipment').on('click', function() {
+        window.location.href = 'common/zhinan.html'
+    })
+    //地理位置跳转
+    $('.local_location').on('click', function() {
+        window.location.href = 'common/map.html'
+    })
+    //我要购买-去挑选商品跳转
+
+    //租赁指南跳转
+    $('.zulin').on('click', function() {
+        window.location.href = 'common/zhinan.html'
+    });
+    //关于我们跳转
+    $('.us').on('click', function() {
+        window.location.href = 'common/zhinan.html'
+    })
+    </script>
+</body>
+
+</html>

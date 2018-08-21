@@ -2,6 +2,8 @@ body {
     background-color: #F7FEFC;
 }
 
+
+
 /* 租赁日期 */
 
 .address_box {
@@ -63,6 +65,8 @@ body {
     margin-top: 0.02rem;
     font-size: 0.24rem;
 }
+
+
 
 
 /* 商品 */
@@ -142,7 +146,9 @@ body {
     margin: 0;
     background-color: #DFEEFC;
     display: inline-block;
-    width: 1.55rem;
+    text-align: center;
+    border-radius: 0.05rem;
+    width: 0.93rem;
     height: 0.31rem;
     margin: 0.27rem 0.7rem 0 0;
 }
@@ -163,6 +169,8 @@ body {
 
 
 
+
+
 /* 配送方式 */
 
 .peisong {
@@ -170,7 +178,7 @@ body {
     margin: 0 auto;
     margin-top: 0.2rem;
     width: 6.9rem;
-    border-radius: 0.1rem;
+    border-radius: 0.1rem 0.1rem 0 0;
     box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
 }
 
@@ -181,9 +189,11 @@ body {
 }
 
 
+
 /* 布局居中 */
 
 .take_it span {
+
     font-size: 0.25rem;
     color: #999999;
     float: right;
@@ -191,30 +201,7 @@ body {
 }
 
 .take_it img {
-
-    width: 0.14rem;
-}
-
-.qrcode_box {}
-
-.img_box {
-    text-align: center;
-}
-
-.qrcode_img {
-    width: 5rem;
-    vertical-align: center;
-    margin: 0 auto;
-}
-
-.tips {
-    text-align: center;
-    color: #53A6FA;
-}
-
-.back_title {
-    font-weight: 600;
-    margin: 0.2rem 0 0 0.3rem;
+    width: 0.18rem;
 }
 
 .peisong_box {
@@ -260,94 +247,17 @@ body {
     padding-bottom: 0.3rem;
 }
 
-
-
-/* 支付方式 */
-
-.zhifu {
-    background-color: #fff;
-    margin: 0 auto;
-    margin-top: 0.2rem;
+.xiaoji_box {
     width: 6.9rem;
-    height: 1.76rem;
-    border-radius: 0.1rem;
-    box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
-}
-
-.sure {
-    width: 0.3rem;
-    float: right;
-    margin-right: 0.4rem;
-}
-
-.wx_pay {
-    font-size: 0.28rem;
-    padding-top: 0.31rem;
-    margin-left: 0.32rem;
-}
-
-
-
-.hand {
-    width: 0.22rem;
-    margin: 0 0.07rem;
-}
-
-.wx_pay span {
-    margin-left: 0.3rem;
-    background-color: #53A6FA;
-    font-size: 0.22rem;
-    border-radius: 0.04rem;
-    color: #FFF;
-}
-
-.ali_pay {
-    font-size: 0.28rem;
-    padding-top: 0.31rem;
-    margin-left: 0.32rem;
-}
-
-
-
-/* 底部支付 */
-
-.footer {
-    text-align: center;
-    font-size: 0.24rem;
+    height: 0.93rem;
     background-color: #fff;
-    width: 7.5rem;
-    height: 1rem;
-    line-height: 1rem;
+    box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
+    border-radius: 0 0 0.1rem 0.1rem;
 }
 
-
-.pay_box {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: row-reverse;
-    height: 0.48rem;
-    line-height: 0.48rem;
-    margin-top: 0.2rem;
-    font-weight: 400;
-    margin-top: 0.48rem;
-    margin-right: 0.2rem;
+.xiaoji {
+    margin-right: 0.39rem;
+    float: right;
+    line-height: 0.93rem;
+    color: #53A6FA;
 }
-
-.choose_item {
-    width: 0.8rem;
-    margin: 0 0.26rem;
-    font-size: 0.24rem;
-    border-radius: 0.38rem;
-    padding: 0 0.2rem 0 0.2rem;
-    border: 1px solid #CCC;
-}
-
-.pay_box p.choose {
-    border: none;
-    color: #FFF;
-    background-color: #53A6FA;
-}
-

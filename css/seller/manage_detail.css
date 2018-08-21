@@ -1,0 +1,113 @@
+body {
+    background-color: #F3FCFB;
+}
+
+.select_card{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width:7.5rem;
+    height:1rem;
+    background-color: #fff;
+}
+.select_list{
+    font-size: 0.26rem;
+    margin:0 auto;
+    line-height: 1rem;
+}
+.choose{
+    color:#53A6FA;
+    border-bottom: 0.02rem solid #53A6FA;
+}
+/* 商品 */
+
+/* 商品 */
+
+.top_orderstatus_box {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.28rem;
+    font-weight: 600;
+}
+
+.top_orderstatus {
+    margin-right: 0.2rem;
+    color: #53A6FA;
+}
+
+.con_warp {
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    width: 6.9rem;
+    border-radius: 0.1rem;
+    box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
+}
+
+.buy_message {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.28rem;
+    margin-left: 0.3rem;
+    font-weight: 600;
+}
+
+.con_title {
+    text-align: center;
+    height: 0.6rem;
+    margin-bottom: 0.22rem;
+}
+
+.con_list_li {
+    border-top: 0.01rem solid #EBEBEB;
+
+    border-bottom: 0.01rem solid #EBEBEB;
+}
+
+.con_list_img {
+    margin: 0.2rem 0 0.37rem 0.2rem;
+    display: inline-block;
+    width: 1.8rem;
+}
+
+.goods_box {
+    vertical-align: top;
+    margin-left: 0.31rem;
+    width: 4.38rem;
+    display: inline-block;
+}
+
+.goods_title {
+    font-size: 0.34rem;
+    margin-top: 0.35rem;
+}
+
+.goods_content {
+    font-size: 0.28rem;
+    margin-top: 0.18rem;
+    color: #999999;
+}
+
+.goods_money {
+    font-size: 0.28rem;
+    margin-top: 0.32rem;
+    color: #53A6FA;
+}
+
+.goods_nums {
+    float: right;
+    margin: -0.6rem 0.24rem 0 0;
+    text-align: center;
+    color:#666666;
+}
+.import_pic{
+    width:0.56rem;
+}

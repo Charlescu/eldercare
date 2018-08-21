@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>4-9增加器械</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/commonlist.css">
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header class="mui_bar">
+        <img class="backup" src="../images/backup.png" alt="">
+        <p>···</p>
+        <h1 class="mui_title">4-9增加器械</h1>
+    </header>
+    <div class="container">
+        <div class="reason_box">
+            <div class="img_box">
+                <p>增加器械</p>
+                <img class="top_pic" src="../images/asca@2x.png" alt="">
+            </div>
+            <div class="content_box">
+                <p class="reason_title">请填写增加数量</p>
+                <p class="num_box"><input type="text"><span>台</span></p>
+                <p class="reason_title">期望到货时间</p>
+                <p class="num_box"><input type="text"><span>日期</span></p>
+                <p class="reason_title">请填写增加原因</p>
+                <textarea name="" id="" cols="49" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>提交申请</p>
+    </footer>
+    <script>
+    $(document).ready(function() {
+        get_main_content();
+
+        /*选项卡*/
+        var $select_list = $('.select_list');
+        $select_list.click(function() {
+            $(this).addClass('choose').siblings().removeClass('choose');
+            var i = $('.select_list').index(this);
+            $('.con_warp').eq(i).show().siblings().hide();
+        });
+
+
+    })
+
+    function get_main_content() {
+
+    }
+    </script>
+</body>
+
+</html>
