@@ -1,24 +1,28 @@
-body{
-background-color: #EDFCFA;
+body {
+    background-color: #EDFCFA;
 }
-.manage_ul{
-	padding-top:0.43rem;
-	margin-top:0.43rem;
-	text-align: center;
-	}
-.manage_list{	
-	margin:0 auto;
-	width:6.5rem;
-	height:3rem;
-	margin-top:0.43rem;
-	background-color: #fff;
+
+.manage_ul {
+    padding-top: 0.43rem;
+    margin-top: 0.43rem;
+    text-align: center;
 }
-.manage_pic{
-	width:0.93rem;
-	margin-top:0.69rem;
+
+.manage_list {
+    margin: 0 auto;
+    width: 6.5rem;
+    height: 3rem;
+    margin-top: 0.43rem;
+    background-color: #fff;
 }
-.manage_list p{
-	font-weight: 600;
-	font-size: 0.35rem;
-	line-height: 0.7rem;
+
+.manage_pic {
+    width: 0.93rem;
+    margin-top: 0.69rem;
+}
+
+.manage_list p {
+    font-weight: 600;
+    font-size: 0.35rem;
+    line-height: 0.7rem;
 }

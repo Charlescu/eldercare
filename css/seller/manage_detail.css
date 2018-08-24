@@ -2,26 +2,31 @@ body {
     background-color: #F3FCFB;
 }
 
-.select_card{
+.select_card {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    width:7.5rem;
-    height:1rem;
+    width: 7.5rem;
+    height: 1rem;
     background-color: #fff;
 }
-.select_list{
+
+.select_list {
     font-size: 0.26rem;
-    margin:0 auto;
+    margin: 0 auto;
     line-height: 1rem;
 }
-.choose{
-    color:#53A6FA;
+
+.choose {
+    color: #53A6FA;
     border-bottom: 0.02rem solid #53A6FA;
 }
+
+
 /* 商品 */
+
 
 /* 商品 */
 
@@ -106,8 +111,9 @@ body {
     float: right;
     margin: -0.6rem 0.24rem 0 0;
     text-align: center;
-    color:#666666;
+    color: #666666;
 }
-.import_pic{
-    width:0.56rem;
+
+.import_pic {
+    width: 0.56rem;
 }

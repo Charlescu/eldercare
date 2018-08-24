@@ -1,7 +1,9 @@
 /* 商品 */
-body{
+
+body {
     background-color: #53A6FA;
 }
+
 .top_orderstatus_box {
     display: -webkit-flex;
     display: -moz-flex;
@@ -83,4 +85,3 @@ body{
     float: right;
     margin: -0.2rem 0.44rem 0 0;
 }
-

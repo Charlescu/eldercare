@@ -2,7 +2,7 @@ body {
     background: url('../../images/axcvsav@2x.png');
     background-size: 7.5rem 4rem;
     background-repeat: no-repeat;
-    background-color: #BEF6F6;
+    background-color: #F5F8FA;
 }
 
 .head_box {
@@ -14,7 +14,7 @@ body {
 .all_jifen {
     font-size: 0.54rem;
     font-weight: 600;
-    
+
     color: #FFF;
     border-radius: 50%;
     margin: 0 auto;
@@ -33,14 +33,16 @@ body {
 }
 
 
+
+
 /* 选项卡 */
 
 .lease {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     width: 6.9rem;
     height: 1.5rem;
     margin: 0 auto;
@@ -48,7 +50,6 @@ body {
     margin-top: 0.4rem;
     text-align: center;
     border-radius: 0.1rem;
-   
 }
 
 .lease_list {
@@ -59,20 +60,24 @@ body {
     border-radius: 0.05rem;
     border: 0.02rem solid #EBEBEB;
     margin: 0 auto;
-    margin-top:0.25rem;
+    margin-top: 0.25rem;
 }
+
 .times {
     color: #999999;
 }
+
 .now_time {
-    
+
     color: #000;
     font-size: 0.28rem;
     font-weight: 600;
 }
-.base_time{
-	margin: 0.1rem auto;
+
+.base_time {
+    margin: 0.1rem auto;
 }
+
 .lease_list_box {
     width: 2rem;
     margin: 0 auto;
@@ -83,6 +88,8 @@ body {
 .lease_list_box img {
     width: 0.21rem;
 }
+
+
 
 
 

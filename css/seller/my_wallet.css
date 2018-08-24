@@ -6,7 +6,7 @@ body {
 }
 
 .head_box {
-    
+
     margin: 0 auto;
     margin: 0.8rem 0 0 0.76rem;
     display: -webkit-flex;
@@ -15,17 +15,20 @@ body {
     display: -o-flex;
     display: flex;
 }
-.money_pic{
-   
-    width:2.64rem;
-    height:2.06rem;
+
+.money_pic {
+
+    width: 2.64rem;
+    height: 2.06rem;
 }
-.money_box{
-     margin:0.54rem 0 0 0.33rem;
+
+.money_box {
+    margin: 0.54rem 0 0 0.33rem;
 }
+
 .all_jifen {
     font-size: 0.54rem;
-    font-weight: 600;  
+    font-weight: 600;
     color: #FFF;
     border-radius: 50%;
     margin: 0 auto;
@@ -45,11 +48,13 @@ body {
 
 
 
+
+
 /* 选项卡 */
 
 .select_card {
     width: 6.9rem;
-    
+
     margin: 0 auto;
     background-color: #fff;
     border-radius: 0.1rem 0.1rem 0 0;
@@ -58,24 +63,28 @@ body {
 .select_card_list {
     font-size: 0.28rem;
     color: #999999;
-     
+
     display: inline-block;
     width: 3.4rem;
     height: 1.5rem;
-
 }
 
 .select_card_list img {
-    margin-top:0.25rem;
+    margin-top: 0.25rem;
     width: 0.49rem;
     height: 0.5rem;
 }
+
 .con_title li.con_curr {
-     border-radius: 0.1rem 0.1rem 0 0;
-     color: #53A6FA;
-     background-color: #F8FAFA;
- }
+    border-radius: 0.1rem 0.1rem 0 0;
+    color: #53A6FA;
+    background-color: #F8FAFA;
+}
+
+
+
 /* 积分使用记录 */
+
 .list_box {
     margin: 0 auto;
     border-radius: 0.1rem;
@@ -94,7 +103,7 @@ body {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    margin:0 auto;
+    margin: 0 auto;
     font-size: 0.3rem;
     justify-content: space-between;
     border-bottom: 1px solid #EBEBEB;
@@ -102,20 +111,26 @@ body {
 
 .list_left {
     margin-left: 0.3rem;
-    
-    line-height: 1.25rem; 
+
+    line-height: 1.25rem;
 }
+
 .list_right {
     margin-right: 0.3rem;
-   
-    line-height: 1.25rem; 
-}
-.jiantou_pic{
 
-    width:0.3rem;
-    height:0.4rem;
+    line-height: 1.25rem;
 }
+
+.jiantou_pic {
+
+    width: 0.3rem;
+    height: 0.4rem;
+}
+
+
+
 /* 模态框确定按钮 */
-.my_sure{
-    top:1.7rem;
+
+.my_sure {
+    top: 1.7rem;
 }

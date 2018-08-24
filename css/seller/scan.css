@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #fff;
-    border-bottom:0.01rem solid #CCCCCC;
+    border-bottom: 0.01rem solid #CCCCCC;
 }
 
 .scan_list {
@@ -38,6 +38,7 @@ body {
 }
 
 
+
 /* 扫一扫// */
 
 .switch_box {
@@ -54,16 +55,19 @@ body {
 }
 
 
+
 /* 订单管理 */
 
 
 /* 搜索框 */
-.search_box{
-	width: 7.5rem;
-	height:1rem;
-	background-color: #fff;
-	padding-top: 0.25rem;
+
+.search_box {
+    width: 7.5rem;
+    height: 1rem;
+    background-color: #fff;
+    padding-top: 0.25rem;
 }
+
 .category_search_box {
     margin: 0 auto;
     text-align: center;
@@ -115,12 +119,16 @@ input:-ms-input-placeholder {
     justify-content: center;
     background-color: #fff;
 }
-.select_card_list{
-	margin:0 0.8rem;
+
+.select_card_list {
+    margin: 0 0.8rem;
 }
-.con_curr{
-	color: #53A6FA;
+
+.con_curr {
+    color: #53A6FA;
 }
+
+
 /* 商品 */
 
 .top_orderstatus_box {
