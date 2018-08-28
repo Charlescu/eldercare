@@ -3,6 +3,8 @@ body {
 }
 
 
+
+
 /* 租赁日期 */
 
 .address_box {
@@ -13,10 +15,10 @@ body {
     border-radius: 0.1rem;
     box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
 }
+
 .local_box {
-     padding-top: 0.39rem;
+    padding-top: 0.39rem;
     margin-left: 0.32rem;
-    
 }
 
 .location_img {
@@ -26,23 +28,27 @@ body {
 
 .date_content {
     vertical-align: top;
-    margin-left: 0.21rem;
+    color: #53A6FA;
     font-size: 0.26rem;
-    color:#53A6FA;
 }
-.time_end{
-    float:right;
+
+.start_date {
+    margin-left: 0.21rem;
+}
+
+.time_end {
+    float: right;
     margin-top: -0.05rem;
     margin-left: 0.21rem;
     font-size: 0.26rem;
-    color:#53A6FA;
+    color: #53A6FA;
     margin-right: 0.27rem;
 }
+
 .user_box {
-  margin-top: 0.22rem;
+    margin-top: 0.22rem;
     margin-left: 0.32rem;
     padding-bottom: 0.49rem;
-   
 }
 
 .head_img {
@@ -63,6 +69,8 @@ body {
     margin-top: 0.02rem;
     font-size: 0.24rem;
 }
+
+
 
 /* 商品 */
 
@@ -161,6 +169,8 @@ body {
 
 
 
+
+
 /* 配送方式 */
 
 .peisong {
@@ -171,47 +181,58 @@ body {
     border-radius: 0.1rem;
     box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
 }
-.take_it{
-     font-size: 0.28rem;
+
+.take_it {
+    font-size: 0.28rem;
     padding-top: 0.31rem;
     margin-left: 0.32rem;
 }
-/* 布局居中 */
-.take_it span{
 
-     font-size: 0.25rem;
-     color: #999999;
-     float:right;
-     margin-right:0.4rem;
+
+
+/* 布局居中 */
+
+.take_it span {
+
+    font-size: 0.25rem;
+    color: #999999;
+    float: right;
+    margin-right: 0.4rem;
 }
-.take_it img{
-    width:0.18rem;
+
+.take_it img {
+    width: 0.18rem;
 }
+
 .peisong_box {
     font-size: 0.28rem;
     padding-top: 0.31rem;
     margin-left: 0.32rem;
 }
-.peisong_box p{
-     display: inline-block;
-}
-.cash_p{
-    height:0.44rem;
-    line-height: 0.44rem;
-    color:#53A6FA;
-    font-size: 0.23rem;
-    border:0.01rem solid #53A6FA;
-    border-radius: 0.1rem;
-    margin-left:0.52rem;
+
+.peisong_box p {
     display: inline-block;
-    width:1.8rem;
 }
-.cash_p img{
+
+.cash_p {
+    height: 0.44rem;
+    line-height: 0.44rem;
+    color: #53A6FA;
+    font-size: 0.23rem;
+    border: 0.01rem solid #53A6FA;
+    border-radius: 0.1rem;
+    margin-left: 0.52rem;
+    display: inline-block;
+    width: 1.8rem;
+}
+
+.cash_p img {
     margin-left: 0.05rem;
     margin-right: 0.2rem;
     vertical-align: middle;
-   width:0.3rem; 
+    width: 0.3rem;
 }
+
 .peisong_box span {
     font-size: 0.25rem;
     margin-right: 0.41rem;
@@ -227,6 +248,8 @@ body {
 }
 
 
+
+
 /* 支付方式 */
 
 .zhifu {
@@ -238,11 +261,13 @@ body {
     border-radius: 0.1rem;
     box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
 }
-.sure{
-     width:0.3rem;
-     float:right;
-     margin-right: 0.4rem;
+
+.sure {
+    width: 0.3rem;
+    float: right;
+    margin-right: 0.4rem;
 }
+
 .wx_pay {
     font-size: 0.28rem;
     padding-top: 0.31rem;
@@ -251,22 +276,26 @@ body {
 
 
 
-.hand{
-     width:0.22rem;
-     margin:0 0.07rem;
+.hand {
+    width: 0.22rem;
+    margin: 0 0.07rem;
 }
-.wx_pay span{
-     margin-left:0.3rem;
-   background-color: #53A6FA; 
-   font-size: 0.22rem; 
-   border-radius: 0.04rem;
-   color:#FFF;
+
+.wx_pay span {
+    margin-left: 0.3rem;
+    background-color: #53A6FA;
+    font-size: 0.22rem;
+    border-radius: 0.04rem;
+    color: #FFF;
 }
+
 .ali_pay {
     font-size: 0.28rem;
     padding-top: 0.31rem;
     margin-left: 0.32rem;
 }
+
+
 
 
 /* 底部支付 */

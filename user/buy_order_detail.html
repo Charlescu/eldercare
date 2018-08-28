@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ZH-cn">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -78,15 +78,15 @@
         <div class="pay_box">
            <p class="choose_item choose">付款</p>
            <p class="choose_item">取消</p>
-           
-       </div> 
+
+       </div>
        <!-- 再来一单 -->
         <div class="pay_box " style="display: none">
-            <p class="choose_item choose sigle_again">再来一单</p>        
+            <p class="choose_item choose sigle_again">再来一单</p>
         </div>
         <!-- 评价 -->
         <div class="pay_box " style="display: none">
-            <p class="choose_item choose evaluate">评价</p>        
+            <p class="choose_item choose evaluate">评价</p>
         </div>
     </footer>
     </div>
@@ -94,13 +94,13 @@
     $(document).ready(function() {
         get_main_content();
 
-       
+
 
         //取消支付切换
         var $spay_status = $('.pay_box>p');
         $spay_status.click(function() {
             $(this).addClass('choose').siblings().removeClass('choose');
-            
+
         });
     })
 

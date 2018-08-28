@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ZH-cn">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -49,9 +49,8 @@
                 <div class="all_ckeck ">
                     <!-- <input type="radio"> -->
                     <img style="display: none;" src="../images/sure.png" alt="">
-                    
                 </div>
-                 <p>全选</p>
+                <p>全选</p>
             </div>
             <div class="pay">
                 <p class="all_price"> 合计：<span>$4000.00</span></p>
@@ -60,9 +59,9 @@
         </div>
         <footer class="footer">
             <ul class="bottom_list">
-                <li class="mainpage_botlist index"><img src="../images/main372@2x.png" alt=""><span>首页</span></li>
-                <li class="mainpage_botlist buy_car"><img src="../images/cdvcd@2x.png" alt=""><span>购物车</span></li>
-                <li class="mainpage_botlist personal_center"><img src="../images/personal.png" alt=""><span>我的</span></li>
+                <li id="index_bar" class="mainpage_botlist index"><img src="../images/main372@2x.png" alt=""><span>首页</span></li>
+                <li id="buy_car" class="mainpage_botlist buy_car"><img src="../images/cdvcd@2x.png" alt=""><span>购物车</span></li>
+                <li id="personal_center" class="mainpage_botlist personal_center"><img src="../images/personal.png" alt=""><span>我的</span></li>
             </ul>
         </footer>
     </div>
@@ -104,6 +103,15 @@
         } else { //否则
             $('.all_ckeck img').hide(); //就隐藏div
         }
+    })
+    //
+    //导航栏跳转
+    $('#index_bar').on('click', function() {
+        window.location.href = '../index.html'
+    });
+
+    $('#personal_center').on('click', function() {
+        window.location.href = '../user/personal_center.html'
     })
     </script>
 </body>

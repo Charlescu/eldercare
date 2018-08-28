@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ZH-cn">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -49,7 +49,7 @@
                 <div class="mid_select">
                     <div class="mid_select_box">
                         <ul class="select_card_ul con_title">
-                            <li class="select_card_list con_curr">
+                            <li class="select_card_list scan-box">
                                 <span>待取货</span>
                             </li>
                             <li class="select_card_list ">
@@ -65,7 +65,7 @@
                         <div class="con_all quhuo">
                             <div class="con_warp">
                                 <div class="top_orderstatus_box">
-                                    <p class="buy_message">订单号:123456</p>
+                                    <p class="buy_message order_number">订单号:123456</p>
                                     <p class="top_orderstatus">待取货</p>
                                 </div>
                                 <ul class="con_list_ul">
@@ -85,7 +85,7 @@
                         <div class="con_all guihuan" style="display: none">
                             <div class="con_warp">
                                 <div class="top_orderstatus_box">
-                                    <p class="buy_message">订单号:123456</p>
+                                    <p class="buy_message">订单号:sdfsdfsdfsdf</p>
                                     <p class="top_orderstatus">待归还</p>
                                 </div>
                                 <ul class="con_list_ul">
@@ -105,7 +105,7 @@
                         <div class="con_all wancheng" style="display: none">
                             <div class="con_warp">
                                 <div class="top_orderstatus_box">
-                                    <p class="buy_message">订单号:123456</p>
+                                    <p class="buy_message">订单号:1234567895fs</p>
                                     <p class="top_orderstatus">待完成</p>
                                 </div>
                                 <ul class="con_list_ul">
@@ -130,6 +130,7 @@
         <script>
         $(document).ready(function() {
             get_main_content();
+            //第一个选项卡
             var $scan_list = $('.scan_list');
             $scan_list.click(function() {
                 $(this).addClass('scan-box').siblings().removeClass('scan-box');
@@ -137,6 +138,7 @@
                 $('.switch_box').eq(index).show().siblings().hide();
             });
 
+            //第二个选项卡
             var $select_card_list = $('.select_card_list');
             $select_card_list.on('click', function() {
                 $(this).addClass('scan-box').siblings().removeClass('scan-box');
@@ -144,36 +146,12 @@
                 $('.con_all').eq(index).show().siblings().hide();
             });
         })
+        //查看详情跳转
+        $('.order_number').on('click', function() { window.location.href = 'user_lease_order_detail.html' })
 
         function get_main_content() {
 
         }
-        //首页轮播图
-        var swiper = new Swiper('.swiper-container', {
-
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-        //我要租赁-查找器材跳转
-        $('.lookup_equipment').on('click', function() {
-            window.location.href = 'common/zhinan.html'
-        })
-        //地理位置跳转
-        $('.local_location').on('click', function() {
-            window.location.href = 'common/map.html'
-        })
-        //我要购买-去挑选商品跳转
-
-        //租赁指南跳转
-        $('.zulin').on('click', function() {
-            window.location.href = 'common/zhinan.html'
-        });
-        //关于我们跳转
-        $('.us').on('click', function() {
-            window.location.href = 'common/zhinan.html'
-        })
         </script>
 </body>
 

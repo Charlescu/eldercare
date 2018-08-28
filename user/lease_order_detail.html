@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ZH-cn">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -12,9 +12,7 @@
     <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
     <style>
-    .footer {
-        position: static;
-    }
+
     </style>
 </head>
 
@@ -133,6 +131,10 @@
     //申请免押金
     $('.cash_p').on('click', function() {
         window.location.href = "deposit_free.html"
+    })
+    //续租
+    $('.choose_item').on('click', function() {
+        $('.popup-box').show();
     })
     </script>
 </body>

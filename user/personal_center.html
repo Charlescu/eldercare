@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ZH-cn">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -35,7 +35,7 @@
         <div class="order">
             <p class="my_order">
                 <span class="order_left"><img src="" alt="">我的订单</span>
-                <span class="order_right">查看更多订单<img src="../images/youjiantou1.png" alt=""></span>
+                <span class="order_right" data-href="my_order.html ">查看更多订单<img src="../images/youjiantou1.png" alt=""></span>
             </p>
             <ul class="person_list">
                 <li class="person_botlist"><img src="../images/SDFAGFDAW@2x.png" alt=""><span>待支付</span></li>
@@ -46,35 +46,34 @@
         </div>
         <div class="list_box">
             <ul>
-                <li class="list_item">
+                <li class="list_item jifen">
                     <span class="list_left"><img src="../images/ACSACA@2x.png" alt="">我的积分</span>
                     <span class="list_right">查看全部积分<img src="../images/youjiantou1.png" alt=""></span>
                 </li>
-                <li class="list_item">
+                <li class="list_item adress">
                     <span class="list_left"><img src="../images/acsc@2x.png" alt="">地址管理</span>
                     <span class="list_right"><img src="../images/youjiantou1.png" alt=""></span>
                 </li>
-                 <li class="list_item">
+                <li class="list_item xiaoli">
                     <span class="list_left"><img src="../images/acsc@2x.png" alt="">效力等级说明</span>
                     <span class="list_right"><img src="../images/youjiantou1.png" alt=""></span>
                 </li>
-                 <li class="list_item">
+                <li class="list_item lease">
                     <span class="list_left"><img src="../images/acsc@2x.png" alt="">租赁协议</span>
                     <span class="list_right"><img src="../images/youjiantou1.png" alt=""></span>
                 </li>
-                 <li class="list_item">
+                <li class="list_item share">
                     <span class="list_left"><img src="../images/acsc@2x.png" alt="">分享有礼</span>
                     <span class="list_right"><img src="../images/youjiantou1.png" alt=""></span>
                 </li>
-                
             </ul>
         </div>
     </div>
     <footer class="footer">
         <ul class="bottom_list">
-            <li class="mainpage_botlist"><img src="../images/main372@2x.png" alt=""><span>首页</span></li>
-            <li class="mainpage_botlist"><img src="../images/cdvcd@2x.png" alt=""><span>购物车</span></li>
-            <li class="mainpage_botlist"><img src="../images/personal.png" alt=""><span>我的</span></li>
+            <li id="index_bar" class="mainpage_botlist index"><img src="../images/main372@2x.png" alt=""><span>首页</span></li>
+            <li id="buy_car" class="mainpage_botlist buy_car"><img src="../images/cdvcd@2x.png" alt=""><span>购物车</span></li>
+            <li id="personal_center" class="mainpage_botlist personal_center"><img src="../images/personal.png" alt=""><span>我的</span></li>
         </ul>
     </footer>
     </div>
@@ -82,36 +81,29 @@
     $(document).ready(function() {
         get_main_content();
 
-        var $menu_box = $('.content_body .con_title>li');
-        $menu_box.click(function() {
-            $(this).addClass('con_curr').siblings().removeClass('con_curr');
-            var index = $menu_box.index(this);
-            $('.con_all .con_warp').eq(index).show().siblings().hide();
-        });
+
     })
 
     function get_main_content() {
 
     }
-    //首页轮播图
-    var swiper = new Swiper('.swiper-container', {
 
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+    //导航栏跳转
+    $('#index_bar').on('click', function() {
+        window.location.href = '../index.html'
     });
-    //我要租赁-查找器材跳转
-    $('.lookup_equipment').on('click', function() {
-        window.location.href = 'common/zhinan.html'
+    $('#buy_car').on('click', function() {
+        window.location.href = '../common/buy_car.html'
     })
-    //地理位置跳转
-    $('.local_location').on('click', function() {
-        window.location.href = 'common/map.html'
-    })
-    //我要购买-去挑选商品跳转
-
+    //分享跳转
+    $('.jifen').on('click', function() { window.location.href = 'share.html' })
     //租赁指南跳转
+    $('.adress').on('click', function() { window.location.href = 'address_manage.html' });
+    $('.xiaoli').on('click', function() { window.location.href = 'class_desc.html' });
+    $('.lease').on('click', function() { window.location.href = '../common/distribution_rule.html' });
+    $('.share').on('click', function() { window.location.href = 'share.html' });
+    //订单跳转
+    $('.order_right').on('click', function() { window.location.href = 'myorder.html' })
     $('.zulin').on('click', function() {
         window.location.href = 'common/zhinan.html'
     });

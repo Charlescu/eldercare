@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ZH-cn">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -107,7 +107,8 @@
             $('.con_warp').eq(i).show().siblings().hide();
         });
 
-
+        //更改器械状态跳转
+        $('.change_status').on('click', function() { window.location.href = 'change_machinestatus.html' })
     })
 
     function get_main_content() {

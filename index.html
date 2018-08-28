@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ZH-cn">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/weui.css">
+    <link rel="stylesheet" href="css/myweui.css">
     <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/weui.js"></script>
+    <script src="js/myweui.js"></script>
     <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/base.js" type="text/javascript" charset="utf-8"></script>
     <style>
@@ -55,13 +59,13 @@
                 <div class="con_warp">
                     <ul class="lease">
                         <li class="lease_list">
-                            <div class="lease_list_box">
+                            <div class="lease_list_box get_good_time">
                                 <span>取货日期  周四</span>
                                 <p>7月20日</p>
                             </div>
                         </li>
                         <li class="lease_list">
-                            <div class="lease_list_box">
+                            <div class="lease_list_box back_good_time">
                                 <span>归还日期</span>
                                 <img src="" alt="">
                                 <p>添加日期</p>
@@ -96,7 +100,7 @@
                             <span>血压计<span>
                             <p class="check">查看</p>
                         </li>
-                       
+
                     </ul>
                     <div class="Select_goods lookup">
                         去挑选商品吧
@@ -109,76 +113,85 @@
                     <li class="paper_box_list "><img src="images/about_us.png" alt=""><a class="about_us" href="javascript:void(0)"> 关于我们</a></li>
                 </ul>
             </div>
-        </div>
-        <footer class="footer">
-            <ul class="bottom_list">
-                <li class="mainpage_botlist index"><img src="images/main372@2x.png" alt=""><span>首页</span></li>
-                        <li class="mainpage_botlist buy_car"><img src="images/cdvcd@2x.png" alt=""><span>购物车</span></li>
-                        <li class="mainpage_botlist personal_center"><img src="images/personal.png" alt=""><span>我的</span></li>
+
+
+
+            <footer class="footer">
+                <ul class="bottom_list">
+                    <li id="index_bar" class="mainpage_botlist index"><img src="images/main372@2x.png" alt=""><span>首页</span></li>
+                        <li id="buy_car" class="mainpage_botlist buy_car"><img src="images/cdvcd@2x.png" alt=""><span>购物车</span></li>
+                        <li id="personal_center" class="mainpage_botlist personal_center"><img src="images/personal.png" alt=""><span>我的</span></li>
                     </ul>
                     </footer>
                 </div>
-                <script>
-                $(document).ready(function() {
-                    get_main_content();
-
-                    var $menu_box = $('.content_body .con_title>li');
-                    $menu_box.click(function() {
-                        $(this).addClass('con_curr').siblings().removeClass('con_curr');
-                        var index = $menu_box.index(this);
-                        $('.con_all .con_warp').eq(index).show().siblings().hide();
-                    });
-                })
-
-                function get_main_content() {
-
-                }
-                //首页轮播图
-                var swiper = new Swiper('.swiper-container', {
-
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                });
-
-                //我要租赁-查找器材跳转
-                $('.lookup_equipment').on('click', function() {
-                    window.location.href = 'common/lease_goods_category.html'
-                })
-                //地理位置跳转
-                $('.local_location').on('click', function() {
-                    window.location.href = 'common/map.html'
-                })
-                //查看商品跳转
-                $('.check').on('click', function() {
-                    window.location.href = 'common/select_goods.html'
-                })
-                //我要购买-去挑选商品跳转
-                $('.Select_goods').on('click', function() {
-                    window.location.href = 'common/select_goods.html'
-                })
-                //租赁指南跳转
-                $('.leasehold_guide').on('click', function() {
-                    window.location.href = 'common/leasehold_guide.html'
-                });
-                //关于我们跳转
-                $('.about_us').on('click', function() {
-                    window.location.href = 'common/about_us.html'
-                })
-                //首页跳转
-                $('.index').on('click', function() {
-                    window.location.href = 'index.html'
-                })
-                //购物车跳转
-                $('.buy_car').on('click', function() {
-                    window.location.href = 'common/buy_car.html'
-                })
-                //个人中心们跳转
-                $('.personal_center').on('click', function() {
-                    window.location.href = 'common/personal_center.html'
-                })
-                </script>
+            </div>
 </body>
+<script>
+$(document).ready(function() {
+    get_main_content();
+
+    var $menu_box = $('.content_body .con_title>li');
+    $menu_box.click(function() {
+        $(this).addClass('con_curr').siblings().removeClass('con_curr');
+        var index = $menu_box.index(this);
+        $('.con_all .con_warp').eq(index).show().siblings().hide();
+    });
+})
+
+function get_main_content() {
+
+}
+//首页轮播图
+var swiper = new Swiper('.swiper-container', {
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+//datepicker,日期选择器
+$('.get_good_time').click(function(event) {
+    var _this = this;
+    weui.datePicker({
+        start: new Date(),
+        end: 2030,
+        defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
+        onConfirm: function(result) {
+            $('.get_good_time p').text(result[1].label + result[2].label);
+        }
+    });
+});
+$('.back_good_time').click(function(event) {
+    var _this = this;
+
+    weui.datePicker({
+        start: new Date(),
+        end: 2030,
+        defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
+        onConfirm: function(result) {
+            $('.back_good_time p').text(result[1].label + result[2].label);
+        }
+    });
+});
+
+
+//我要租赁-查找器材跳转
+$('.lookup_equipment').on('click', function() { window.location.href = 'common/lease_goods_category.html' })
+//地理位置跳转
+$('.local_location').on('click', function() { window.location.href = 'common/map.html' })
+//查看商品跳转
+$('.check').on('click', function() { window.location.href = 'common/select_goods.html' })
+//我要购买-去挑选商品跳转
+$('.Select_goods').on('click', function() { window.location.href = 'common/select_goods.html' })
+//导航栏跳转
+$('#index').on('click', function() { window.location.href = 'index.html' });
+$('#buy_car').on('click', function() { window.location.href = 'common/buy_car.html' })
+$('#personal_center').on('click', function() { window.location.href = 'user/personal_center.html' })
+
+//租赁指南跳转
+$('.leasehold_guide').on('click', function() { window.location.href = 'common/leasehold_guide.html' });
+//关于我们跳转
+$('.about_us').on('click', function() { window.location.href = 'common/about_us.html' })
+</script>
 
 </html>

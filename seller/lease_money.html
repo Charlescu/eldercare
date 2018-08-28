@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ZH-cn">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -94,7 +94,7 @@
 
         var $menu_box = $('.content_head .con_title>li');
         $menu_box.click(function() {
-            $(this).attr('background', "#000");
+
             $(this).addClass('con_curr').siblings().removeClass('con_curr');
             var index = $menu_box.index(this);
             $('.con_all .con_warp').eq(index).show().siblings().hide();

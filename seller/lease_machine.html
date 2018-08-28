@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ZH-cn">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -65,7 +65,7 @@
                         <div class="machine_list">
                             <div class="machine_box">
                                 <img class="machine_pic" src="../images/5653ceba1a219@2x.png" alt="">
-                                <div class="desc_pic">
+                                <div class="desc_pic_box">
                                     <p class="desc_title">HO56C手动轮椅车</p>
                                     <span class="desc_content">体积更小轻松放入汽车后备箱</span>
                                     <div class="money_box">
@@ -122,8 +122,14 @@
             $('.machine_list_box').eq(index).show().siblings().hide();
         });
 
-
+        //
+        $('.desc_pic_box').on('click', function() { window.location.href = 'manage_detail.html' })
     })
+    //报失器械
+    $('.loose_box').on('click', function() { window.location.href = 'loose_machine.html' })
+
+    //增加器械
+    $('.add_box').on('click', function() { window.location.href = 'add_machine.html' })
 
     function get_main_content() {
 

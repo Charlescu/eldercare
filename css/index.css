@@ -1,4 +1,5 @@
  /*<!-- 首页轮播图-->*/
+
  .swiper {
      padding-top: 0.16rem;
  }
@@ -7,17 +8,19 @@
      margin: 0.16rem 0.24rem;
      box-shadow: 2px 2px 5px #ccc;
  }
-.swiper-pagination-bullet{
-     width:0.08rem;
-     height:0.08rem;
+
+ .swiper-pagination-bullet {
+     width: 0.08rem;
+     height: 0.08rem;
      border-radius: 50%;
-}
+ }
+
  .swiper-slide-top {
      text-align: center;
      font-size: 0.24;
      background: #fff;
-     width:6.7rem;
-     height:2.8rem;
+     width: 6.7rem;
+     height: 2.8rem;
      /* Center slide text vertically */
      display: -webkit-box;
      display: -ms-flexbox;
@@ -44,22 +47,24 @@
  .content_head {
      width: 100%;
      text-align: center;
-     background-color:transparent;
+     background-color: transparent;
      border-bottom: 1px solid #999999;
  }
- .index_decoration{
-     margin:0 auto;
-     width:7.28rem;
-     height:0.24rem;
+
+ .index_decoration {
+     margin: 0 auto;
+     width: 7.28rem;
+     height: 0.24rem;
  }
  /*<!-- 首页选项卡 -->*/
+
  .select_card {
      border-radius: 0.1rem 0.1rem 0 0;
      margin: 0 auto;
      text-align: center;
  }
 
- .select_card_list{
+ .select_card_list {
      font-size: 0.3rem;
      vertical-align: center;
      display: inline-block;
@@ -69,9 +74,10 @@
      line-height: 0.51rem;
      padding: 0.36rem 0 0.36rem 0;
  }
-  .select_card_list img{
-     width:0.29rem;
-  }
+
+ .select_card_list img {
+     width: 0.29rem;
+ }
 
  .lease {
      margin-top: 0.4rem;
@@ -106,48 +112,53 @@
      text-align: left;
      margin-top: 0.2rem;
  }
-
  /*<!-- 2-->*/
- .con_title li{
+
+ .con_title li {
      display: inline-block;
-}
- .con_list{
-     white-space:nowrap; 
-     overflow-y: scroll; 
  }
- .con_title li.con_curr{
+
+ .con_list {
+     white-space: nowrap;
+     overflow-y: scroll;
+ }
+
+ .con_title li.con_curr {
      color: #53A6FA;
      border-bottom: 2px solid #53A6FA;
  }
- .con_list li{
-    
+
+ .con_list li {
+
      text-align: center;
      display: inline-block;
      width: 2rem;
      height: 2.69rem;
      box-shadow: 0.04rem 0.2rem 0.3rem #EBEBEB;
      border-radius: 0.2rem;
-     margin:0.2rem 0.2rem;
+     margin: 0.2rem 0.2rem;
      background-color: #fff;
-     white-space:nowrap; 
+     white-space: nowrap;
  }
- .con_list li img{
-    margin-top: 0.2rem;
-     width:0.9rem;
-  
+
+ .con_list li img {
+     margin-top: 0.2rem;
+     width: 0.9rem;
  }
-.con_list li span{
-     margin:0.2rem auto;
+
+ .con_list li span {
+     margin: 0.2rem auto;
      display: block;
      font-size: 0.25rem;
      font-weight: 600;
-}
-.con_list li p{
-     color:#CCCCCC;
-     font-size: 0.23rem;
-}
+ }
 
+ .con_list li p {
+     color: #CCCCCC;
+     font-size: 0.23rem;
+ }
  /*<!-- 地理定位-->\*/
+
  .local_location {
      margin: 0.32rem auto;
      width: 6rem;
@@ -162,7 +173,7 @@
      display: inline-block;
  }
 
- .lookup{
+ .lookup {
      color: #FFFFFF;
      font-size: 0.3rem;
      text-align: center;
@@ -174,8 +185,8 @@
      border-radius: 0.1rem;
      border: 0.01rem solid #EBEBEB;
  }
-
  /*<!-- 文本 -->*/
+
  .paper_box ul {
      margin: 0.6rem auto;
      width: 6rem;
@@ -195,35 +206,3 @@
      box-shadow: 0.05rem 0.05rem 0.1rem #ccc;
      width: 0.3rem;
  }
-
- /*<!-- 底部导航 -->*/
- .footer{
-     position: fixed;
-     bottom: 0;
-     left: 0;
-     width: 100%;
-}
- .bottom_list {
-     border-radius: 5px 5px 0 0;
-     height: 1.2rem;
-     text-align: center;
-     background-color: #E9EFF3;
- }
-
- .mainpage_botlist {
-
-     vertical-align: bottom;
-     display: inline-block;
-     margin: 0.2rem 0.6rem 0 0.6rem;
- }
- .mainpage_botlist img{
-   width:0.5rem;
-   height:0.5rem;
- }
-
- .mainpage_botlist span {
-     display: block;
- }
-
-
-

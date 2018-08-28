@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ZH-cn">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -24,15 +24,15 @@
     </header>
     <div class="container">
         <ul class="manage_ul">
-            <li class="manage_list  manage-box">
+            <li class="manage_list  manage_box order_manage">
                 <img class="manage_pic" src="../images/sdvsvs@2x.png" alt="">
                 <p>租赁订单管理</p>
             </li>
-            <li class="manage_list  manage-box">
+            <li class="manage_list  manage_box machine_manage">
                 <img class="manage_pic" src="../images/dssdv@2x.png" alt="">
                 <p>器械管理</p>
             </li>
-            <li class="manage_list  manage-box">
+            <li class="manage_list  manage_box personal">
                 <img class="manage_pic" src="../images/dvfsgvs@2x.png" alt="">
                 <p>个人中心</p>
             </li>
@@ -55,32 +55,14 @@
     function get_main_content() {
 
     }
-    //首页轮播图
-    var swiper = new Swiper('.swiper-container', {
-
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-    //我要租赁-查找器材跳转
-    $('.lookup_equipment').on('click', function() {
-        window.location.href = 'common/zhinan.html'
+    //订单管理跳转
+    $('.order_manage').on('click', function() {
+        window.location.href = 'scan.html'
     })
-    //地理位置跳转
-    $('.local_location').on('click', function() {
-        window.location.href = 'common/map.html'
-    })
-    //我要购买-去挑选商品跳转
-
-    //租赁指南跳转
-    $('.zulin').on('click', function() {
-        window.location.href = 'common/zhinan.html'
-    });
-    //关于我们跳转
-    $('.us').on('click', function() {
-        window.location.href = 'common/zhinan.html'
-    })
+    //器械管理跳转
+    $('.machine_manage').on('click', function() { window.location.href = 'lease_machine.html' })
+    //个人中心跳转
+    $('.personal').on('click', function() { window.location.href = 'seller_personal_center.html' })
     </script>
 </body>
 

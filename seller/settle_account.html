@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ZH-cn">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
     <header class="mui_bar">
         <img class="backup" src="../images/backup.png" alt="">
         <p>···</p>
-        <h1 class="mui_title">结算</h1>
+        <h1 class="mui_title"></h1>
     </header>
     <div class="container">
         <div class="jifen_card">
@@ -78,11 +78,10 @@
     function get_main_content() {
 
     }
-
-    //关于我们跳转
-    $('.us').on('click', function() {
-        window.location.href = 'common/zhinan.html'
-    })
+    //拿到类型，设置title
+    var get_type = getUrlParam('settle_type');
+    var title_type = document.title = get_type == '1' ? '待结算' : get_type == '2' ? '已结算' : '';
+    $('.mui_title').text(title_type);
     </script>
 </body>
 

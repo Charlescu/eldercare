@@ -39,6 +39,8 @@ body {
 
 
 
+
+
 /* 扫一扫// */
 
 .switch_box {
@@ -53,6 +55,8 @@ body {
     margin-top: 1rem;
     text-align: center;
 }
+
+
 
 
 
@@ -124,9 +128,9 @@ input:-ms-input-placeholder {
     margin: 0 0.8rem;
 }
 
-.con_curr {
-    color: #53A6FA;
-}
+
+
+
 
 
 /* 商品 */

@@ -3,6 +3,7 @@ body {
 }
 
 
+
 /* 商品 */
 
 .con_warp {
@@ -22,26 +23,28 @@ body {
 
 .con_list_li {
     border-top: 0.01rem solid #EBEBEB;
-   
+
     border-bottom: 0.01rem solid #EBEBEB;
 }
 
 .check_radio {
-    border:1px solid rgba(0,0,0,0.4);
+    border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 50%;
     float: left;
     width: 0.38rem;
-    height:0.38rem;
+    height: 0.38rem;
     margin: 0.96rem 0.12rem;
 }
 
 .check_radio img {
     width: 0.38rem;
-    height:0.38rem;
+    height: 0.38rem;
 }
-.check_radio input{
-   float:left;
+
+.check_radio input {
+    float: left;
 }
+
 .con_list_img {
     margin: 0.2rem 0 0.37rem 0.2rem;
     display: inline-block;
@@ -72,6 +75,7 @@ body {
     color: #53A6FA;
     display: inline-block;
 }
+
 .join img {
     margin: 0;
     width: 0.31rem;
@@ -94,98 +98,71 @@ body {
     width: 0.8rem;
     text-align: center;
     display: inline-block;
-    
 }
+
 .add_img {
     float: right;
 }
 
+
 /* 底部支付 */
-.zhifu p{
-    display: inline-block;  
+
+.zhifu p {
+    display: inline-block;
 }
-.zhifu{
-    font-size:0.28rem;
-    position:fixed;
-    bottom:1.2rem;
-    width:100%;
-    height:1rem;
+
+.zhifu {
+    font-size: 0.28rem;
+    position: fixed;
+    bottom: 1.2rem;
+    width: 100%;
+    height: 1rem;
     background-color: #fff;
 }
-.radio_box{
-     display: inline-block;
+
+.radio_box {
+    display: inline-block;
 }
-.all_ckeck{
-    border:1px solid rgba(0,0,0,0.4);
+
+.all_ckeck {
+    border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 50%;
     float: left;
     width: 0.38rem;
-    height:0.38rem;
+    height: 0.38rem;
     margin: 0.32rem 0.12rem;
 }
-.all_ckeck img{
-     width: 0.38rem;
-    height:0.38rem;
+
+.all_ckeck img {
+    width: 0.38rem;
+    height: 0.38rem;
 }
-.radio_box p{
+
+.radio_box p {
     line-height: 1rem;
     font-size: 0.24rem;
     margin-left: 0.1rem;
     display: inline-block;
-    
 }
-.pay{
-    float:right;
-    width:5rem;
+
+.pay {
+    float: right;
+    width: 5rem;
 }
-.pay p{
+
+.pay p {
     line-height: 1rem;
 }
-.all_price span{
-    color:#53A6FA;
-}
-.to_pay{
-    float:right;
-    text-align:center;
-    width:2.5rem;
-    color:#FFF;
-    background-color: #53A6FA;
-    margin:0 auto;
-}
-/* 底部导航 */
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    font-size: 0.29rem;
-    background-color: #fff;
-    width: 7.5rem;
-    height: 1.2rem;
-    border-radius: 0.1rem 0.1rem 0 0;
-}
 
-.buycar_box {
-    float: left;
-    border-radius: 0.1rem 0 0 0;
-}
-
-.buycar_box p {
-    margin-left: 0.61rem;
-    font-size: 0.28rem;
-    display: inline-block;
-}
-
-.buycar_box span {
-    margin-left: 0.24rem;
-    font-size: 0.28rem;
+.all_price span {
     color: #53A6FA;
 }
 
-.footer_buycar {
+.to_pay {
     float: right;
-    width: 2.3rem;
+    text-align: center;
+    width: 2.5rem;
+    color: #FFF;
     background-color: #53A6FA;
-    border-radius: 0 0.1rem 0 0;
+    margin: 0 auto;
 }
-

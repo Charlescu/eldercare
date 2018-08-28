@@ -1,46 +1,176 @@
-/*     搜索框 */
+    /*     搜索框 */
 
-.category_search_box {
-    vertical-align: center;
-    margin: 0.25rem auto;
-    text-align: center;
-    border-radius: 0.1rem;
-    width: 6.7rem;
-    height: 0.6rem;
-    background-color: #F5F5F5;
-}
+    body {
+        background-color: #F5F8FA;
+    }
 
-.category_search_input {
-    line-height: 0.6rem;
-    margin-left: 0.3rem;
-}
+    .search_box {
+        width: 7.5rem;
+        height: 0.8rem;
+        padding-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        background-color: #fff;
+    }
 
-.category_search_icon {
-    position: relative;
-    left: 0.2rem;
-    display: inline-block;
-    width: 0.3rem;
-    height: 0.3rem;
-    float: right;
-    margin: 0.15rem auto;
-    padding-right: 0.25rem;
-}
+    .category_search_box {
+        vertical-align: center;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 0.1rem;
+        width: 6.7rem;
+        background-color: #F5F5F5;
+    }
 
-input::-webkit-input-placeholder {
-    color: #CCCCCC;
-}
+    .category_search_input {
+        line-height: 0.6rem;
+        margin-left: 0.3rem;
+    }
 
-input::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: #CCCCCC;
-}
+    .category_search_icon {
+        position: relative;
+        left: 0.2rem;
+        display: inline-block;
+        width: 0.3rem;
+        height: 0.3rem;
+        float: right;
+        margin: 0.15rem auto;
+        padding-right: 0.25rem;
+    }
 
-input:-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: #CCCCCC;
-}
+    input::-webkit-input-placeholder {
+        color: #CCCCCC;
+    }
 
-input:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #CCCCCC;
-}
+    input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #CCCCCC;
+    }
+
+    input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #CCCCCC;
+    }
+
+    input:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #CCCCCC;
+    }
+
+    .mid_select {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        border-radius: 0 0.1rem 0 0;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .switch_box {
+        height: 100%;
+    }
+
+    .mid_select {
+        height: 100%;
+    }
+
+    .select_card_ul {
+
+        width: 1.9rem;
+        height: 100%;
+        font-size: 0.3rem;
+        padding-bottom: 1.3rem;
+        overflow: hidden;
+        font-weight: 600;
+        background-color: #fff;
+    }
+
+    .choose {
+        color: #53A6FA;
+    }
+
+    .select_card_list {
+        padding-top: 0.43rem;
+
+        text-align: center;
+    }
+
+    .machine_outbox {
+        margin-left: 0.32rem;
+    }
+
+    .machine_box {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+
+    .machine_list_box {
+        width: 5rem;
+
+        background-color: #fff;
+        border-radius: 0.1rem;
+    }
+
+    .machine_pic {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .machine_list {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desc_pic_box {
+
+        margin: 0.22rem 0 0 0.2rem;
+    }
+
+    .money_box {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.5rem;
+    }
+
+    .nums {
+        color: #53A6FA;
+    }
+
+    .manage_box {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        width: 4.8rem;
+        text-align: center;
+        margin: 0 auto;
+        border-top: 0.01rem solid #CCC;
+    }
+
+    .machine_img {
+        width: 0.68rem;
+    }
+
+    .manage_box_list {
+        width: 1.2rem;
+    }
+
+    .manage_box_list {
+        margin: 0.2rem 0.6rem;
+    }

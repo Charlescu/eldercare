@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ZH-cn">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -31,11 +31,11 @@
         </div>
         <div class="list_box">
             <ul>
-                <li class="list_item">
+                <li class="list_item lease_money">
                     <span class="list_left"><img src="../images/ASFAfs@2x.png" alt="">租赁金额</span>
                     <span class="list_right">共2000元<img src="../images/youjiantou1.png" alt=""></span>
                 </li>
-                <li class="list_item">
+                <li class="list_item my_wallet">
                     <span class="list_left"><img src="../images/wallet.png" alt="">我的钱包</span>
                     <span class="list_right"><img src="../images/youjiantou1.png" alt=""></span>
                 </li>
@@ -59,10 +59,10 @@
 
     }
 
-    //关于我们跳转
-    $('.us').on('click', function() {
-        window.location.href = 'common/zhinan.html'
-    })
+    //租赁跳转
+    $('.lease_money').on('click', function() { window.location.href = 'lease_money.html' });
+    //钱包跳转
+    $('.my_wallet').on('click', function() { window.location.href = 'my_wallet.html' });
     </script>
 </body>
 
