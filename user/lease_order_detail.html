@@ -53,31 +53,42 @@
                 <p>21 </p>
                 <img class="add_img" src="../images/asasa@2x.png" alt="">
             </div>
-            <p class="buy_message"> 租赁数量 </p>
+            <p class="buy_message lease_nums"> 租赁数量 </p>
         </div>
         <div class="peisong">
-            <p class="take_it">自提点<span class="take_it_item">A自提点</span></p>
-            <div class="qrcode_box">
+            <div class="take_it_box peisong_item">
+                <p class="take_it border_item">自提点<span class="take_it_item">A自提点</span></p>
+            </div>
+            <div class="qrcode_box peisong_item ">
                 <p class="back_title">归还二维码</p>
-                <div class="img_box">
+                <div class="img_box border_item">
                     <img class="qrcode_img" src="../images/1534578527.png" alt="">
+                    <p class="tips">出示您的二维码给工作人员</p>
                 </div>
-                <p class="tips">出示您的二维码给工作人员</p>
             </div>
-            <div class="peisong_box">
-                <p> 押金
-                    <p class="cash_p"><img src="../images/about_us.png" alt="">申请免押金</p> <span>￥8.00</span></p>
+            <div class="peisong_item ">
+                <div class="peisong_box">
+                    <p> 押金
+                        <p class="cash_p"><img src="../images/about_us.png" alt="">申请免押金</p> <span>￥8.00</span></p>
+                </div>
+                <div class="beizhu_box ">
+                    <p> 备注信息：晚一些的发货</p>
+                </div>
             </div>
-            <div class="beizhu_box">
-                <p> 备注信息：晚一些的发货</p>
+            <div class="xiaoji_box">
+                <p class="xiaoji">共一件商品 小计 : ￥2000.00</p>
             </div>
         </div>
         <div class="zhifu">
-            <div class="wx_pay">
-                <p> 微信支付<span><img class="hand" src="../images/hand.png" alt="">推荐使用</span><img class="sure" src="../images/sure.png" alt=""></p>
-            </div>
-            <div class="ali_pay">
-                <p> 支付宝支付<img class="sure" src="../images/sure.png" alt=""></p>
+            <div class=" pay_method">
+                <div class="method_choose">
+                    <p class="wx_pay pay_item"> 微信支付<span><img class="hand" src="../images/hand.png" alt="">推荐使用</span> </p>
+                    <p class="ali_pay pay_item"> 支付宝支付 </p>
+                </div>
+                <div class="metnod_pic">
+                    <img class="sure sure_item" src="../images/sure.png" alt="">
+                    <img class="cancel sure_item" src="../images/sure_1.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -109,6 +120,7 @@
             </div>
         </div>
     </div>
+    <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
     <script>
     $(document).ready(function() {
         get_main_content();
@@ -119,6 +131,8 @@
             var index = $menu_box.index(this);
             $('.con_all .con_warp').eq(index).show().siblings().hide();
         });
+
+
     })
 
     function get_main_content() {

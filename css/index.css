@@ -26,14 +26,8 @@
      display: -ms-flexbox;
      display: -webkit-flex;
      display: flex;
-     -webkit-box-pack: center;
-     -ms-flex-pack: center;
-     -webkit-justify-content: center;
+
      justify-content: center;
-     -webkit-box-align: center;
-     -ms-flex-align: center;
-     -webkit-align-items: center;
-     align-items: center;
  }
 
  .swiper-pagination {
@@ -68,9 +62,9 @@
      font-size: 0.3rem;
      vertical-align: center;
      display: inline-block;
-     width: 2.5rem;
+     width: 1.71rem;
      height: 0.51rem;
-     margin: 0 auto;
+     margin: 0 0.92rem;
      line-height: 0.51rem;
      padding: 0.36rem 0 0.36rem 0;
  }
@@ -85,14 +79,14 @@
  }
 
  .lease_list {
-
      display: inline-block;
      width: 3rem;
      height: 1.2rem;
      background-color: #FAFAFA;
      border-radius: 0.05rem;
-     border: 0.02rem solid #EBEBEB;
+     border: 0.01rem solid #EBEBEB;
      margin: 0 0.2rem;
+     vertical-align: middle;
  }
 
  .lease_list span {
@@ -100,10 +94,33 @@
  }
 
  .lease_list p {
-     margin: 0.2rem auto;
+     margin: 0.05rem auto;
+ }
+
+ .start_time {
      color: #000;
-     font-size: 0.28rem;
      font-weight: 600;
+     font-size: 0.28rem;
+ }
+
+ .end_time {
+     color: #999999;
+     height: 0.26rem;
+     line-height: 0.26rem;
+     font-size: 0.24rem;
+     vertical-align: middle;
+ }
+
+ .join_pic {
+     width: 0.26rem;
+     height: 0.26rem;
+     margin: 0 auto;
+     margin-right: 0.2rem;
+     vertical-align: middle;
+ }
+
+ .end_time span {
+     vertical-align: middle;
  }
 
  .lease_list_box {
@@ -161,7 +178,7 @@
 
  .local_location {
      margin: 0.32rem auto;
-     width: 6rem;
+     width: 6.6rem;
      height: 0.8rem;
      background-color: #FAFAFA;
      border-radius: 0.05rem;
@@ -170,6 +187,7 @@
 
  .local_location p {
      margin: 0.2rem;
+     margin-left: 0.41rem;
      display: inline-block;
  }
 
@@ -178,7 +196,7 @@
      font-size: 0.3rem;
      text-align: center;
      margin: 0.5rem auto;
-     width: 6rem;
+     width: 6.6rem;
      height: 0.8rem;
      line-height: 0.8rem;
      background-color: #53A6FA;
@@ -187,22 +205,35 @@
  }
  /*<!-- 文本 -->*/
 
- .paper_box ul {
+ .paper_box_ul {
      margin: 0.6rem auto;
      width: 6rem;
      height: 1rem;
+     display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex;
+     display: -o-flex;
+     display: flex;
  }
 
- .paper_box ul li {
+ .paper_box_list {
      text-align: center;
      width: 2.8rem;
 
+     vertical-align: middle;
      line-height: 1rem;
-     display: inline-block;
  }
 
  .paper_box ul li img {
-     border-radius: 50%;
-     box-shadow: 0.05rem 0.05rem 0.1rem #ccc;
+
      width: 0.3rem;
+ }
+ /* 插件因素调整 */
+
+ .mainpage_botlist img {
+     margin-top: 0.01rem;
+ }
+
+ .mainpage_botlist span {
+     margin-top: -0.07rem;
  }

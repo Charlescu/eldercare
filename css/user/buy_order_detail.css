@@ -2,8 +2,6 @@ body {
     background-color: #F7FEFC;
 }
 
-
-
 /* 地址管理 */
 
 .address_box {
@@ -64,10 +62,6 @@ body {
     width: 0.24rem;
 }
 
-
-
-
-
 /* 商品 */
 
 .top_orderstatus_box {
@@ -77,10 +71,14 @@ body {
     display: -o-flex;
     display: flex;
     justify-content: space-between;
+    width: 6.3rem;
     height: 0.8rem;
+
     line-height: 0.8rem;
+    margin: 0 auto;
     font-size: 0.28rem;
     font-weight: 600;
+    border-bottom: 0.01rem solid #EBEBEB;
 }
 
 .top_orderstatus {
@@ -98,12 +96,16 @@ body {
 }
 
 .buy_message {
+
     height: 0.8rem;
     line-height: 0.8rem;
+    margin: 0 auto;
     font-size: 0.28rem;
-    margin-left: 0.3rem;
+    margin-left: 0;
     font-weight: 600;
 }
+
+.buy_message_top {}
 
 .con_title {
     text-align: center;
@@ -111,11 +113,6 @@ body {
     margin-bottom: 0.22rem;
 }
 
-.con_list_li {
-    border-top: 0.01rem solid #EBEBEB;
-
-    border-bottom: 0.01rem solid #EBEBEB;
-}
 
 .con_list_img {
     margin: 0.2rem 0 0.37rem 0.2rem;
@@ -152,7 +149,6 @@ body {
     margin: -0.2rem 0.44rem 0 0;
 }
 
-
 /* 配送方式 */
 
 .peisong {
@@ -184,7 +180,22 @@ body {
     padding-bottom: 0.3rem;
 }
 
+.xiaoji_box {
+    width: 6.9rem;
+    height: 0.93rem;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
+    border-radius: 0.1rem;
+    border-top: 0.01rem solid #EBEBEB;
+}
 
+.xiaoji {
+    margin-right: 0.39rem;
+    float: right;
+    line-height: 0.93rem;
+    color: #53A6FA;
+}
 
 /* 支付方式 */
 
@@ -197,13 +208,14 @@ body {
     border-radius: 0.1rem;
     box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
 }
-.pay_method{
-   display: -webkit-flex;
-   display: -moz-flex;
-   display: -ms-flex;
-   display: -o-flex;
-   display: flex;
-   justify-content: space-between;
+
+.pay_method {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
 }
 
 .hand {
@@ -218,14 +230,17 @@ body {
     border-radius: 0.04rem;
     color: #FFF;
 }
-.wx_pay {
-    margin:0.3rem 0 0 0.3rem;
-}
-.ali_pay{
 
-    margin:0.5rem 0 0 0.3rem;
+.wx_pay {
+    margin: 0.3rem 0 0 0.3rem;
 }
-.metnod_pic{
+
+.ali_pay {
+
+    margin: 0.5rem 0 0 0.3rem;
+}
+
+.metnod_pic {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -233,16 +248,31 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .sure_item {
     width: 0.3rem;
     float: right;
-    margin-top:0.3rem;
+    margin-top: 0.3rem;
     margin-right: 0.4rem;
-    
 }
-.cancel{
-     margin:0.5rem 0.4rem 0 0;
+
+.cancel {
+    margin: 0.5rem 0.4rem 0 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 底部支付 */
 
 .footer {
@@ -255,7 +285,6 @@ body {
     width: 7.5rem;
     height: 1rem;
     line-height: 1rem;
-    
 }
 
 
@@ -274,21 +303,24 @@ body {
 }
 
 .choose_item {
-    width:0.8rem;
+    width: 0.8rem;
     margin: 0 0.26rem;
     font-size: 0.24rem;
     border-radius: 0.38rem;
-    padding:0 0.2rem 0 0.2rem;
+    padding: 0 0.2rem 0 0.2rem;
     border: 1px solid #CCC;
 }
+
 .pay_box p.choose {
     border: none;
-    color:#FFF;
+    color: #FFF;
     background-color: #53A6FA;
 }
-.sigle_again{
-    width:1rem;
+
+.sigle_again {
+    width: 1rem;
 }
-.evaluate{
-    width:0.8rem;
+
+.evaluate {
+    width: 0.8rem;
 }

@@ -61,14 +61,13 @@
                         <li class="lease_list">
                             <div class="lease_list_box get_good_time">
                                 <span>取货日期  周四</span>
-                                <p>7月20日</p>
+                                <p class="start_time">7月20日</p>
                             </div>
                         </li>
                         <li class="lease_list">
                             <div class="lease_list_box back_good_time">
                                 <span>归还日期</span>
-                                <img src="" alt="">
-                                <p>添加日期</p>
+                                <p class="end_time"><img class="join_pic" src="images/join.png" alt=""><span>添加日期</span></p>
                             </div>
                         </li>
                     </ul>
@@ -108,7 +107,7 @@
                 </div>
             </div>
             <div class="paper_box">
-                <ul>
+                <ul class="paper_box_ul">
                     <li class="paper_box_list "><img src="images/zulin.png" alt=""><a class="leasehold_guide" href="javascript:void(0)"> 租赁指南</a></li>
                     <li class="paper_box_list "><img src="images/about_us.png" alt=""><a class="about_us" href="javascript:void(0)"> 关于我们</a></li>
                 </ul>
@@ -126,6 +125,7 @@
                 </div>
             </div>
 </body>
+<script src="js/common.js"></script>
 <script>
 $(document).ready(function() {
     get_main_content();
@@ -149,30 +149,7 @@ var swiper = new Swiper('.swiper-container', {
         clickable: true,
     },
 });
-//datepicker,日期选择器
-$('.get_good_time').click(function(event) {
-    var _this = this;
-    weui.datePicker({
-        start: new Date(),
-        end: 2030,
-        defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
-        onConfirm: function(result) {
-            $('.get_good_time p').text(result[1].label + result[2].label);
-        }
-    });
-});
-$('.back_good_time').click(function(event) {
-    var _this = this;
 
-    weui.datePicker({
-        start: new Date(),
-        end: 2030,
-        defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
-        onConfirm: function(result) {
-            $('.back_good_time p').text(result[1].label + result[2].label);
-        }
-    });
-});
 
 
 //我要租赁-查找器材跳转

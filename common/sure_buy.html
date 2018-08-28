@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="con_warp">
-            <p class="buy_message"> 购买信息</p>
+            <p class="buy_message buy_message_top"> 购买信息</p>
             <ul class="con_list_ul">
                 <li class="con_list_li">
                     <img class="con_list_img" src="../images/5653ceba1a219@2x.png" alt="">
@@ -48,29 +48,34 @@
                     </div>
                 </li>
             </ul>
-
             <div class="join">
-                 <img class="subtract_img" src="../images/asasa@2x.png  " alt="">
-                 <p>21 </p>
-                 <img class="add_img" src="../images/asasa@2x.png" alt="">
+                <img class="subtract_img" src="../images/item_reduce.png  " alt="">
+                <p>1 </p>
+                <img class="add_img" src="../images/item_add.png" alt="">
             </div>
-            <p class="buy_message"> 购买数量 </p>
-
+            <p class="buy_message buy_message_bot"> 购买数量 </p>
         </div>
         <div class="peisong">
-           <div class="peisong_box">
-             <p>  配送方式<span>    快递：￥8.00</span></p>
-           </div>
+            <div class="peisong_box">
+                <p> 配送方式<span>    快递：￥8.00</span></p>
+            </div>
             <div class="beizhu_box">
-             <p>  备注信息：晚一些的发货</p>
-           </div>
+                <p> 备注信息：晚一些的发货</p>
+            </div>
+        </div>
+        <div class="xiaoji_box">
+            <p class="xiaoji">共一件商品 小计 : ￥2000.00</p>
         </div>
         <div class="zhifu">
-            <div class="wx_pay">
-             <p>  微信支付<span><img class="hand" src="../images/hand.png" alt="">推荐使用</span><img class="sure" src="../images/sure.png" alt=""></p>
-           </div>
-            <div class="ali_pay">
-             <p>  支付宝支付<img class="sure" src="../images/sure.png" alt=""></p>
+            <div class=" pay_method">
+                <div class="method_choose">
+                    <p class="wx_pay pay_item"> 微信支付<span><img class="hand" src="../images/hand.png" alt="">推荐使用</span> </p>
+                    <p class="ali_pay pay_item"> 支付宝支付 </p>
+                </div>
+                <div class="metnod_pic">
+                    <img class="sure sure_item" src="../images/sure.png" alt="">
+                    <img class="cancel sure_item" src="../images/sure_1.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -79,10 +84,10 @@
             <p> 微信支付</p>
             <span>$2000.00</span>
         </div>
-
         <p class="footer_buycar">前往支付</p>
     </footer>
     </div>
+    <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
     <script>
     $(document).ready(function() {
         get_main_content();
@@ -99,10 +104,10 @@
 
     }
 
-   //地址管理
-   $('.youjiantou').on('click',function(){
-     window.location.href = "address_manage.html";
-   })
+    //地址管理
+    $('.youjiantou').on('click', function() {
+        window.location.href = "address_manage.html";
+    })
     </script>
 </body>
 
