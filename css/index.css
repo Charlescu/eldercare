@@ -207,6 +207,7 @@
 
  .paper_box_ul {
      margin: 0.6rem auto;
+
      width: 6rem;
      height: 1rem;
      display: -webkit-flex;
@@ -219,14 +220,21 @@
  .paper_box_list {
      text-align: center;
      width: 2.8rem;
+     vertical-align: middle;
+     line-height: 1rem;
+ }
 
+ .paper_box_list a {
      vertical-align: middle;
      line-height: 1rem;
  }
 
  .paper_box ul li img {
-
+     vertical-align: middle;
+     border-radius: 0.15rem;
      width: 0.3rem;
+     margin-right: 0.2rem;
+     box-shadow: 0.02rem 0.02rem 0.05rem #ccc;
  }
  /* 插件因素调整 */
 

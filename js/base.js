@@ -11,21 +11,7 @@ window.onload = function() {
 
 
     //公共导航跳转
-    //首页跳转
-    var index_find = document.getElementsByClassName('index');
-    index_find.onclick = function() {
-        window.location.href = 'index.html'
-    }
-    //购物车跳转
-    var buy_car = document.getElementsByClassName('buy_car')[0];
-    index_find.onclick = function() {
-        window.location.href = 'common/buy_car.html'
-    }
-    //个人中心跳转
-    var personal_center = document.getElementsByClassName('personal_center')[0];
-    index_find.onclick = function() {
-        window.location.href = 'common/personal_center.html'
-    }
+
 
 }
 //监听高度

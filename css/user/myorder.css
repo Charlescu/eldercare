@@ -3,6 +3,10 @@ body {
 }
 
 
+
+
+
+
 /* 选项卡 */
 
 .select_card {
@@ -21,18 +25,13 @@ body {
     margin: 0 auto;
     margin-top: 0.36rem;
     padding-bottom: 0.36rem;
+    vertical-align: middle;
     display: inline-block;
 }
 
 .con_title {
     width: 100%;
     margin: 0 auto;
-}
-
-.select_card_list img {
-    margin-right: 0.2rem;
-    width: 0.22rem;
-    height: 0.26rem;
 }
 
 .con_title li.con_curr {
@@ -42,9 +41,44 @@ body {
 }
 
 .con_title li p {
+    vertical-align: middle;
     font-size: 0.28rem;
     display: inline-block;
 }
+
+.select_card_list em {
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-right: 0.1rem;
+}
+
+.select_card_list em.select_icon1 {
+    vertical-align: middle;
+    background: url('../../images/myorder2.png') no-repeat;
+    background-size: 0.26rem 0.3rem;
+}
+
+.select_card_list em.select_icon2 {
+    vertical-align: middle;
+    background: url('../../images/myorder4.png') no-repeat;
+    background-size: 0.26rem 0.3rem;
+}
+
+.con_curr em.select_icon1 {
+    vertical-align: middle;
+    background: url('../../images/myorder1.png') no-repeat;
+    background-size: 0.26rem 0.3rem;
+}
+
+.con_curr em.select_icon2 {
+    vertical-align: middle;
+    background: url('../../images/myorder3.png') no-repeat;
+    background-size: 0.26rem 0.3rem;
+}
+
+
+
 
 
 /*     搜索框 */
@@ -98,6 +132,17 @@ input:-ms-input-placeholder {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* 第二层选项卡 */
 
 .status_box {
@@ -118,6 +163,17 @@ input:-ms-input-placeholder {
 li.select_item {
     color: #53A6FA;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 商品 */
@@ -169,10 +225,13 @@ li.select_item {
 }
 
 .pay_box p {
+    text-align: center;
+
+    width: 1.2rem;
     margin: 0 0.2rem;
     font-size: 0.24rem;
     border-radius: 0.38rem;
-    padding: 0 0.2rem 0 0.2rem;
+    padding: 0 0.1rem 0 0.1rem;
 }
 
 .choose_item {
@@ -180,6 +239,7 @@ li.select_item {
 }
 
 .pay_box p.choose {
+    color: #fff;
     border: none;
     background-color: #53A6FA;
 }
@@ -263,6 +323,17 @@ li.select_item {
 .add_img {
     float: right;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 积分使用记录 */

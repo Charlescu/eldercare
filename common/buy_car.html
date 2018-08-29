@@ -59,8 +59,8 @@
         </div>
         <footer class="footer">
             <ul class="bottom_list">
-                <li id="index_bar" class="mainpage_botlist index"><img src="../images/main372@2x.png" alt=""><span>首页</span></li>
-                <li id="buy_car" class="mainpage_botlist buy_car"><img src="../images/cdvcd@2x.png" alt=""><span>购物车</span></li>
+                <li id="index_bar" class="mainpage_botlist index_bar"><img src="../images/index.png" alt=""><span>首页</span></li>
+                <li id="buy_car" class="mainpage_botlist buy_car"><img src="../images/cdvcd@1x_checked.png" alt=""><span>购物车</span></li>
                 <li id="personal_center" class="mainpage_botlist personal_center"><img src="../images/personal.png" alt=""><span>我的</span></li>
             </ul>
         </footer>
@@ -93,6 +93,7 @@
     $('.check_radio').on('click', function() {
         if ($('.check_radio img').is(':hidden')) { //如果当前隐藏
             $('.check_radio img').show(); //那么就显示div
+            $('.check_radio').attr('border', 'none');
         } else { //否则
             $('.check_radio img').hide(); //就隐藏div
         }
@@ -100,20 +101,19 @@
     //全部勾选
     $('.all_ckeck').on('click', function() {
         if ($('.all_ckeck img').is(':hidden')) { //如果当前隐藏
-            $('.all_ckeck img').show(); //那么就显示div
-        } else { //否则
-            $('.all_ckeck img').hide(); //就隐藏div
+            $('.all_ckeck img').show(); //那么就显示tupain 
+            $('.all_ckeck').attr('border', 'none');
+            $('.check_radio img').show(); //那么就显示div
+            $('.check_radio').attr('border', 'none');
+        } else {
+            $('.all_ckeck img').hide(); //那么就显示div
+            $('.check_radio img').hide();
         }
-    })
-    //
-    //导航栏跳转
-    $('#index_bar').on('click', function() {
-        window.location.href = '../index.html'
-    });
 
-    $('#personal_center').on('click', function() {
-        window.location.href = '../user/personal_center.html'
     })
+    //导航栏跳转 
+    $('#index_bar').on('click', function() { window.location.href = '../index.html' });
+    $('#personal_center').on('click', function() { window.location.href = '../user/personal_center.html' })
     </script>
 </body>
 

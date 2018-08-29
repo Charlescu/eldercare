@@ -16,7 +16,36 @@
     <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/base.js" type="text/javascript" charset="utf-8"></script>
     <style>
+    .select_card_list em {
+        display: inline-block;
+        width: 0.32rem;
+        height: 0.32rem;
+        margin-right: 0.1rem;
+    }
 
+    .select_card_list em.select_icon1 {
+        vertical-align: middle;
+        background: url('images/buy_car.png') no-repeat;
+        background-size: 0.32rem 0.29rem;
+    }
+
+    .select_card_list em.select_icon2 {
+        vertical-align: middle;
+        background: url('images/33@2x.png') no-repeat;
+        background-size: 0.31rem 0.23rem;
+    }
+
+    .con_curr em.select_icon1 {
+        vertical-align: middle;
+        background: url('images/buy_car_checked.png') no-repeat;
+        background-size: 0.32rem 0.29rem;
+    }
+
+    .con_curr em.select_icon2 {
+        vertical-align: middle;
+        background: url('images/33@2x_checked.png') no-repeat;
+        background-size: 0.31rem 0.23rem;
+    }
     </style>
 </head>
 
@@ -46,11 +75,12 @@
                 <img class="index_decoration" src="images/juchi.png" alt="">
                 <ul class="select_card con_title">
                     <li class="select_card_list con_curr">
-                        <img src="images/buy_car.png" alt="">
+                        <!-- <img src="images/buy_car.png" alt=""> -->
+                        <em class="select_icon1"></em>
                         <span>我要租赁</span>
                     </li>
                     <li class="select_card_list ">
-                        <img src="images/youhui_card.png" alt="">
+                        <em class="select_icon2"></em>
                         <span>我要购买</span>
                     </li>
                 </ul>
@@ -117,8 +147,8 @@
 
             <footer class="footer">
                 <ul class="bottom_list">
-                    <li id="index_bar" class="mainpage_botlist index"><img src="images/main372@2x.png" alt=""><span>首页</span></li>
-                        <li id="buy_car" class="mainpage_botlist buy_car"><img src="images/cdvcd@2x.png" alt=""><span>购物车</span></li>
+                    <li id="index_bar" class="mainpage_botlist index"><img src="images/index_checked.png" alt=""><span>首页</span></li>
+                        <li id="buy_car" class="mainpage_botlist buy_car"><img src="images/cdvcd@1x.png" alt=""><span>购物车</span></li>
                         <li id="personal_center" class="mainpage_botlist personal_center"><img src="images/personal.png" alt=""><span>我的</span></li>
                     </ul>
                     </footer>
@@ -133,6 +163,7 @@ $(document).ready(function() {
     var $menu_box = $('.content_body .con_title>li');
     $menu_box.click(function() {
         $(this).addClass('con_curr').siblings().removeClass('con_curr');
+        $('.select_card_list img_buy').src('images/')
         var index = $menu_box.index(this);
         $('.con_all .con_warp').eq(index).show().siblings().hide();
     });
@@ -143,7 +174,6 @@ function get_main_content() {
 }
 //首页轮播图
 var swiper = new Swiper('.swiper-container', {
-
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -160,7 +190,7 @@ $('.local_location').on('click', function() { window.location.href = 'common/map
 $('.check').on('click', function() { window.location.href = 'common/select_goods.html' })
 //我要购买-去挑选商品跳转
 $('.Select_goods').on('click', function() { window.location.href = 'common/select_goods.html' })
-//导航栏跳转
+//导航栏跳转 
 $('#index').on('click', function() { window.location.href = 'index.html' });
 $('#buy_car').on('click', function() { window.location.href = 'common/buy_car.html' })
 $('#personal_center').on('click', function() { window.location.href = 'user/personal_center.html' })
