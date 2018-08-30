@@ -1,5 +1,9 @@
  /*<!-- 首页轮播图-->*/
 
+ img {
+     width: 100%;
+ }
+
  .container {
      padding-bottom: 1rem;
  }

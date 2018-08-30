@@ -56,13 +56,23 @@
         });
     })
 
+    //商品跳转，类型1租赁，类型2为购买
+    var cate_type = getUrlParam('cate_type');
+    console.log(cate_type);
+    if (cate_type == 1) {
+        $('.goods_pic').on('click', function() {
+            window.location.href = "lease_goods_category.html"
+        })
+    } else {
+        $('.goods_pic').on('click', function() {
+            window.location.href = "buy_goods_category.html"
+        })
+    }
+
     function get_main_content() {
 
     }
     //商品跳转
-    $('.goods_pic').on('click',function(){
-        window.location.href = "buy_goods_category.html"
-    })
     </script>
 </body>
 

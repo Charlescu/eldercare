@@ -154,13 +154,14 @@ var swiper = new Swiper('.swiper-container', {
 
 
 //我要租赁-查找器材跳转
-$('.lookup_equipment').on('click', function() { window.location.href = 'common/lease_goods_category.html' })
+$('.lookup_equipment').on('click', function() { window.location.href = 'common/select_goods.html?cate_type=1' })
+//我要购买-去挑选商品跳转
+$('.Select_goods').on('click', function() { window.location.href = 'common/select_goods.html?cate_type=2' })
 //地理位置跳转
 $('.local_location').on('click', function() { window.location.href = 'common/map.html' })
 //查看商品跳转
 $('.con_list li').on('click', function() { window.location.href = 'common/select_goods.html' })
-//我要购买-去挑选商品跳转
-$('.Select_goods').on('click', function() { window.location.href = 'common/select_goods.html' })
+
 //导航栏跳转 
 $('#index').on('click', function() { window.location.href = 'index.html' });
 $('#buy_car').on('click', function() { window.location.href = 'common/buy_car.html' })
