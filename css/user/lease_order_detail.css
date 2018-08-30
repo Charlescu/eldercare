@@ -1,6 +1,8 @@
-body {
-    background-color: #F7FEFC;
+.container {
+    padding-bottom: 1.25rem;
 }
+
+
 
 
 /* 租赁日期 */
@@ -64,6 +66,8 @@ body {
     margin-top: 0.02rem;
     font-size: 0.24rem;
 }
+
+
 
 
 /* 商品 */
@@ -164,6 +168,8 @@ body {
 }
 
 
+
+
 /* 配送方式 */
 
 .peisong {
@@ -200,7 +206,6 @@ body {
 
 
 
-
 /* 布局居中 */
 
 .take_it span {
@@ -214,8 +219,6 @@ body {
 
     width: 0.14rem;
 }
-
-
 
 .img_box {
     text-align: center;
@@ -370,39 +373,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 底部支付 */
 
 .footer {
@@ -426,9 +396,11 @@ body {
     line-height: 0.48rem;
     margin-top: 0.2rem;
     font-weight: 400;
-    margin-top: 0.48rem;
+
     margin-right: 0.2rem;
 }
+
+.pay_box {}
 
 .choose_item {
     width: 0.8rem;

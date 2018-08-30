@@ -181,7 +181,6 @@
  .pingjia_image {
      margin: 0.32rem 0.24rem 0.31rem 0;
      width: 1.21rem;
-
  }
  /*<!-- 地理定位-->\*/
 
@@ -231,6 +230,10 @@
      border-radius: 50%;
      box-shadow: 0.05rem 0.05rem 0.1rem #ccc;
      width: 0.3rem;
+ }
+
+ .con_warp {
+     padding-bottom: 0.97rem;
  }
  /*<!-- 底部导航 -->*/
 

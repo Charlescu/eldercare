@@ -9,10 +9,6 @@ window.onload = function() {
         window.history.go(-1);
     }
 
-
-    //公共导航跳转
-
-
 }
 //监听高度
 document.addEventListener('follow', function() {
@@ -23,7 +19,7 @@ document.addEventListener('follow', function() {
     // }
 })
 
-//地址单独获取参数
+/*//地址单独获取参数
 function getUrlParam(name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
     var r = window.location.search.substr(1).match(reg); //匹配目标参数
@@ -68,9 +64,9 @@ $(document).on('ready', function() {
         if (rheight >= height) {
             $(".footer").css("position", "static");
         }
-        /* document.getElementById('show').innerHTML = '此时浏览器可见区域高度为：' + height + '<br />此时文档内容实际高度为：' + rheight + '<br />此时滚动条距离顶部的高度为：' + theight + '<br />此时滚动条距离底部的高度为：' + bheight;*/
+        document.getElementById('show').innerHTML = '此时浏览器可见区域高度为：' + height + '<br />此时文档内容实际高度为：' + rheight + '<br />此时滚动条距离顶部的高度为：' + theight + '<br />此时滚动条距离底部的高度为：' + bheight;
     }
-})
+})*/
 
 
 //弹窗

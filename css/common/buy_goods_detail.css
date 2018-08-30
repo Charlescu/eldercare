@@ -181,7 +181,6 @@
  .pingjia_image {
      margin: 0.32rem 0.24rem 0.31rem 0;
      width: 1.21rem;
-
  }
  /*<!-- 地理定位-->\*/
 
@@ -232,6 +231,10 @@
      box-shadow: 0.05rem 0.05rem 0.1rem #ccc;
      width: 0.3rem;
  }
+
+ .con_warp {
+     padding-bottom: 0.97rem;
+ }
  /*<!-- 底部导航 -->*/
 
  .footer {
@@ -247,37 +250,39 @@
      border-radius: 0.1rem 0.1rem 0 0;
      background-color: #FFF;
  }
- .buycar_box{
-     color:#000;
+
+ .buycar_box {
+     color: #000;
      display: inline-block;
-    
-   
  }
-  .buycar_box span{
-     color:#FFF;
-      font-size: 0.13rem;
-    margin: -0.1rem 0 0 0.54rem;
-    position:absolute;
- 
-  }
- .footer_buycar_img{
+
+ .buycar_box span {
+     color: #FFF;
+     font-size: 0.13rem;
+     margin: -0.1rem 0 0 0.54rem;
+     position: absolute;
+ }
+
+ .footer_buycar_img {
      display: inline-block;
-     width:0.5rem;
-     margin:0.22rem;
+     width: 0.5rem;
+     margin: 0.22rem;
  }
- .footer_buycar{
-     color:#000;
-     width:3rem;
+
+ .footer_buycar {
+     color: #000;
+     width: 3rem;
      display: inline-block;
-    
-    float:right;
-    border-radius:0.1rem 0 0 0 ;
-    background-color: #EBEBEB;
+
+     float: right;
+     border-radius: 0.1rem 0 0 0;
+     background-color: #EBEBEB;
  }
- .footer_pay{
-     width:3rem;
+
+ .footer_pay {
+     width: 3rem;
      display: inline-block;
      background-color: #53A6FA;
-     float:right;
-      border-radius:0 0.1rem  0 0 ;
+     float: right;
+     border-radius: 0 0.1rem 0 0;
  }

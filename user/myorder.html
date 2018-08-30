@@ -127,7 +127,7 @@
                                     <p class="buy_message">实付：2000.00</p>
                                     <div class="pay_box">
                                         <p class="choose_item">取消订单</p>
-                                        <p class="choose_item choose">付款</p>
+                                        <p class="choose_item choose fukuan">付款</p>
                                     </div>
                                 </div>
                             </div>
@@ -176,6 +176,10 @@
         $('.order_number').on('click', function() { window.location.href = 'buy_order_detail.html' })
         //查看租赁订单
         $('.leaseorder_number').on('click', function() { window.location.href = 'lease_order_detail.html' })
+    })
+    //支付跳转
+    $('.fukuan').on('click', function() {
+        window.location.href = 'lease_order_detail.html'
     })
 
     function get_main_content() {

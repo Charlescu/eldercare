@@ -1,9 +1,8 @@
-body {
-    background-color: #F6FDFC;
-}
-
-
 /* 租赁日期 */
+
+.container {
+    padding-bottom: 1.89rem;
+}
 
 .address_box {
     margin: 0 auto;
@@ -66,6 +65,8 @@ body {
 
 
 
+
+
 /* 底部支付 */
 
 .footer {
@@ -81,28 +82,30 @@ body {
     border-radius: 0.1rem 0.1rem 0 0;
 }
 
-.choose_box{
-   font-size: 0.23rem;
-   color:#9E9E9E;
+.choose_box {
+    font-size: 0.23rem;
+    color: #9E9E9E;
 }
 
-.choose_box img{
-   position: relative;
-   top:0.1rem;
-    width:0.3rem;
+.choose_box img {
+    position: relative;
+    top: 0.1rem;
+    width: 0.3rem;
 }
-.choose_peisong{
-    color:#53A6FA;
+
+.choose_peisong {
+    color: #53A6FA;
 }
-.find_map{
-    width:6.59rem;
-    height:0.8rem;
+
+.find_map {
+    width: 6.59rem;
+    height: 0.8rem;
     border-radius: 0.1rem;
-    color:#FFF;
-    background-color: #53A6FA ;
-    margin:0 auto;
+    color: #FFF;
+    background-color: #53A6FA;
+    margin: 0 auto;
     margin-bottom: 0.1rem;
     line-height: 0.8rem;
     position: relative;
-    bottom:0.2rem;
+    bottom: 0.2rem;
 }

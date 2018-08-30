@@ -1,5 +1,9 @@
  /*<!-- 首页轮播图-->*/
 
+ .container {
+     padding-bottom: 1rem;
+ }
+
  .swiper {
      padding-top: 0.16rem;
  }
@@ -62,7 +66,7 @@
      font-size: 0.3rem;
      vertical-align: center;
      display: inline-block;
-     width: 1.71rem;
+     width: 1.8rem;
      height: 0.51rem;
      margin: 0 0.92rem;
      line-height: 0.51rem;
@@ -244,4 +248,35 @@
 
  .mainpage_botlist span {
      margin-top: -0.07rem;
+ }
+ /* 切换 */
+
+ .select_card_list em {
+     display: inline-block;
+     width: 0.32rem;
+     height: 0.32rem;
+ }
+
+ .select_card_list em.select_icon1 {
+     vertical-align: middle;
+     background: url('../images/buy_car.png') no-repeat;
+     background-size: 0.32rem 0.29rem;
+ }
+
+ .select_card_list em.select_icon2 {
+     vertical-align: middle;
+     background: url('../images/33@2x.png') no-repeat;
+     background-size: 0.31rem 0.23rem;
+ }
+
+ .con_curr em.select_icon1 {
+     vertical-align: middle;
+     background: url('../images/buy_car_checked.png') no-repeat;
+     background-size: 0.32rem 0.29rem;
+ }
+
+ .con_curr em.select_icon2 {
+     vertical-align: middle;
+     background: url('../images/33@2x_checked.png') no-repeat;
+     background-size: 0.31rem 0.23rem;
  }

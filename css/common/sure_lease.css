@@ -1,10 +1,3 @@
-body {
-    background-color: #F7FEFC;
-}
-
-
-
-
 /* 租赁日期 */
 
 .address_box {
@@ -69,6 +62,8 @@ body {
     margin-top: 0.02rem;
     font-size: 0.24rem;
 }
+
+
 
 
 
@@ -140,32 +135,37 @@ body {
 
 .join img {
     margin: 0;
-    width: 0.31rem;
+    width: 0.3rem;
 }
 
 .join {
-    background-color: #fff;
+
+    background-color: #DFEEFC;
+    border-radius: 0.05rem;
     float: right;
     margin: 0;
-    background-color: #DFEEFC;
     display: inline-block;
     width: 1.55rem;
-    height: 0.31rem;
-    margin: 0.27rem 0.7rem 0 0;
+    height: 0.3rem;
+    margin: 0.37rem 0.5rem 0 0;
 }
 
 .join p {
+    margin: 0;
+    padding: 0;
     color: #53A6FA;
+    display: inline-block;
     font-size: 0.24rem;
     width: 0.8rem;
+    vertical-align: top;
     text-align: center;
-    display: inline-block;
-    ;
 }
 
 .add_img {
     float: right;
 }
+
+
 
 
 
@@ -187,6 +187,8 @@ body {
     padding-top: 0.31rem;
     margin-left: 0.32rem;
 }
+
+
 
 
 
@@ -250,6 +252,8 @@ body {
 
 
 
+
+
 /* 支付方式 */
 
 .zhifu {
@@ -294,6 +298,8 @@ body {
     padding-top: 0.31rem;
     margin-left: 0.32rem;
 }
+
+
 
 
 

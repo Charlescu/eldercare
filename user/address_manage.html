@@ -32,13 +32,13 @@
                 <div class="address_box">
                     <p class="user_address">天津市西青区天津理工大学
                         <span class="edit_box">
-                            <img src="../images/edit.png" alt="">
+                            <img class="add_pic" src="../images/edit.png" alt="">
                             <img class="del_icon" src="../images/delete.png" alt="">
                         </span>
                     </p>
                 </div>
             </div>
-             <div class="address_in_box">
+            <div class="address_in_box">
                 <div class="user_box">
                     <p class="user_name">赵先生</p>
                     <span class="phone"> 12345678911</span>
@@ -46,13 +46,13 @@
                 <div class="address_box">
                     <p class="user_address">天津市西青区天津理工大学
                         <span class="edit_box">
-                            <img src="../images/edit.png" alt="">
+                            <img class="add_pic" src="../images/edit.png" alt="">
                             <img class="del_icon" src="../images/delete.png" alt="">
                         </span>
                     </p>
                 </div>
             </div>
-             <div class="address_in_box">
+            <div class="address_in_box">
                 <div class="user_box">
                     <p class="user_name">赵先生</p>
                     <span class="phone"> 12345678911</span>
@@ -60,7 +60,7 @@
                 <div class="address_box">
                     <p class="user_address">天津市西青区天津理工大学
                         <span class="edit_box">
-                            <img src="../images/edit.png" alt="">
+                            <img class="add_pic" src="../images/edit.png" alt="">
                             <img class="del_icon" src="../images/delete.png" alt="">
                         </span>
                     </p>
@@ -76,34 +76,20 @@
     $(document).ready(function() {
         get_main_content();
 
-        var $menu_box = $('.content_body .con_title>li');
-        $menu_box.click(function() {
-            $(this).addClass('con_curr').siblings().removeClass('con_curr');
-            var index = $menu_box.index(this);
-            $('.con_all .con_warp').eq(index).show().siblings().hide();
-        });
+
     })
 
     function get_main_content() {
 
     }
-    //购买商品轮播图
-    var swiper = new Swiper('.swiper-container', {
 
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-    //点击添加购物车
-    var goods_num = 0;
-    $('.footer_buycar').on('click', function() {
-        goods_num++;
-        $('.footer_buycar_img').attr('src', "../images/cdvcd@2x.png")
-        $('.goods_num').text(goods_num);
+    //编辑地址跳转
+    $('.add_pic').on('click', function() {
+        window.location.href = "add_address.html"
     })
+
     //添加地址跳转
-    $('.add_address').on('click',function(){
+    $('.add_address').on('click', function() {
         window.location.href = "add_address.html"
     })
     </script>

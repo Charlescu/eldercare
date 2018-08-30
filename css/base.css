@@ -59,6 +59,13 @@ input:focus {
     outline: none;
 }
 
+img {
+    width: 100%;
+}
+
+
+
+
 
 
 
@@ -94,6 +101,10 @@ input:focus {
 
 
 
+
+
+
+
 /* 公共底栏 */
 
 .footer {
@@ -125,6 +136,10 @@ input:focus {
 .mainpage_botlist span {
     display: block;
 }
+
+
+
+
 
 
 
@@ -173,6 +188,10 @@ input:focus {
 
 
 
+
+
+
+
 /* 提现记录 */
 
 .withdraw_listhead_ul {
@@ -208,6 +227,10 @@ input:focus {
 .list_liem {
     margin: 0 auto;
 }
+
+
+
+
 
 
 
