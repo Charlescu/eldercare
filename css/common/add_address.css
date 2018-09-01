@@ -1,55 +1,70 @@
-body {
-    background-color: #F6FDFC;
+.select_city {
+    width: 5rem;
 }
 
+
+
+
 /* 租赁日期 */
-.link_man{
-    height:0.8rem;
+
+.link_man {
+    height: 0.8rem;
     line-height: 0.8rem;
     font-size: 0.25rem;
-    color:#999999;
+    color: #999999;
 }
-.user_pic{
-    
-    width:0.21rem;
-    margin:0 0.11rem 0 0.34rem;
+
+.user_pic {
+
+    width: 0.21rem;
+    margin: 0 0.11rem 0 0.34rem;
 }
-.user_box{
+
+.user_box {
     background-color: #fff;
-     padding-left: 0.31rem;
-     padding-right:0.31rem;
+    padding-left: 0.31rem;
+    padding-right: 0.31rem;
 }
-.user_name{
-    width:6.7rem;
-    height: 0.8rem;
-    line-height: 0.8rem; 
-    border-bottom: 1px solid #cccccc;
-    margin:0 auto;
-}
-.user_tel{
-    width:6.7rem;
+
+.user_name {
+    width: 6.7rem;
     height: 0.8rem;
     line-height: 0.8rem;
-    margin:0 auto;
-}
-.address_box{
-    background-color: #fff;
-     padding-left: 0.31rem;
-     padding-right:0.31rem;
-}
-.user_diqu{
-    width:6.7rem;
-    height: 0.8rem;
-    line-height: 0.8rem; 
     border-bottom: 1px solid #cccccc;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.user_dizhi{
-    width:6.7rem;
+
+.user_tel {
+    width: 6.7rem;
     height: 0.8rem;
     line-height: 0.8rem;
-    margin:0 auto;
+    margin: 0 auto;
 }
+
+.address_box {
+    background-color: #fff;
+    padding-left: 0.31rem;
+    padding-right: 0.31rem;
+}
+
+.user_diqu {
+    width: 6.7rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    border-bottom: 1px solid #cccccc;
+    margin: 0 auto;
+}
+
+.user_dizhi {
+    width: 6.7rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0 auto;
+}
+
+
+
+
 /* 底部支付 */
 
 .footer {

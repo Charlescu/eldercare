@@ -2,9 +2,10 @@ var Length = document.documentElement.clientWidth;
 var baseWidth = Length <= 1024 ? Length : 1024 < Length ? 750 : '';
 document.documentElement.style.fontSize = baseWidth / 750 * 100 + 'px';
 
+var baseUrl = '';
 //返回跳转按钮
 window.onload = function() {
-    var back_page = document.getElementsByClassName('backup')[0];
+    back_page = document.getElementsByClassName('backup')[0];
     back_page.onclick = function() {
         window.history.go(-1);
     }
@@ -26,6 +27,19 @@ function getUrlParam(name) {
     if (r != null) return unescape(r[2]);
     return null; //返回参数值
 }
+//字体
+WebFontConfig = {
+    google: { families: ['Pathway+Gothic+One::latin,latin-ext'] }
+};
+(function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.font.im/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+})();
 /*//地址单独获取参数
 //获取可视范围高度
 function getClientHeight() {

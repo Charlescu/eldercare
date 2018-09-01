@@ -7,10 +7,14 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/weui.css">
+    <link rel="stylesheet" href="../css/myweui.css">
     <link rel="stylesheet" href="../css/common/add_address.css">
     <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/weui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/myweui.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/citypicker.js" type="text/javascript" charset="utf-8"></script>
     <style>
 
     </style>
@@ -25,13 +29,21 @@
     <div class="container">
         <p class="link_man"><img class="user_pic" src="../images/user.png" alt="">联系人</p>
         <div class="user_box">
-            <p class="user_name">姓名：<input type="text" placeholder="请输入名字"></p>
-            <p class="user_tel">姓名：<input type="text" placeholder="请输入手机或固定电话"></p>
+            <p class="user_name">姓名：
+                <input type="text" placeholder="请输入名字">
+            </p>
+            <p class="user_tel">姓名：
+                <input type="text" placeholder="请输入手机或固定电话">
+            </p>
         </div>
-         <p class="link_man"><img class="user_pic" src="../images/dizhi.png" alt="">收货地址</p>
+        <p class="link_man"><img class="user_pic" src="../images/dizhi.png" alt="">收货地址</p>
         <div class="address_box">
-             <p class="user_diqu">选择地区：<input type="text" placeholder="请输入省份/城市/地区"></p>
-            <p class="user_dizhi">详细地址：<input type="text" placeholder="请输入街道/楼层/门牌号"></p>
+            <p class="user_diqu">选择地区：
+                <input class="select_city" type="text" placeholder="请输入省份/城市/地区" readonly>
+            </p>
+            <p class="user_dizhi">详细地址：
+                <input type="text" placeholder="请输入街道/楼层/门牌号">
+            </p>
         </div>
     </div>
     </div>
@@ -43,25 +55,21 @@
     $(document).ready(function() {
         get_main_content();
 
-        var $menu_box = $('.content_body .con_title>li');
-        $menu_box.click(function() {
-            $(this).addClass('con_curr').siblings().removeClass('con_curr');
-            var index = $menu_box.index(this);
-            $('.con_all .con_warp').eq(index).show().siblings().hide();
-        });
+
     })
 
     function get_main_content() {
 
     }
-    //购买商品轮播图
-    var swiper = new Swiper('.swiper-container', {
+    $('.select_city').on('click', function() {
+        weui.picker(rawCitiesData, {
+            defaultValue: ["110000", "110000", "110101"],
+            onConfirm: function(result) {
+                $('.select_city').val(result[0].label + '-' + result[1].label + '-' + result[2].label);
+            }
+        });
+    })
 
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
     //点击添加购物车
     var goods_num = 0;
     $('.footer_buycar').on('click', function() {

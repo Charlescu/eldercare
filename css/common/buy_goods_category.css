@@ -17,6 +17,8 @@
 }
 
 .category_search_input {
+    text-align: center;
+    width:80%;
     line-height: 0.6rem;
     margin-left: 0.3rem;
 }
@@ -76,7 +78,7 @@ input:-ms-input-placeholder {
  	margin-left: 0.43rem;
  	display: inline-block;
  	width:1.82rem;
- } 
+ }
 
  .goods_icon{
  	width:0.51rem;

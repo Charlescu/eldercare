@@ -17,7 +17,7 @@
 </head>
 
 <body>
-     <header class="mui_bar">
+    <header class="mui_bar">
         <img class="backup" src="../images/backup.png" alt="">
         <p>···</p>
         <h1 class="mui_title">商品详情</h1>
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="goods_detail_desc">
-            <p class="goods_detail_desc_money">$200.00/天 <span>联系客服<img src="../images/kefu_icon.png" alt=""></span></p>
+            <p class="goods_detail_desc_money">￥200.00/天 <span>联系客服<img src="../images/kefu_icon.png" alt=""></span></p>
             <p class="goods_detail_desc_title">HO56C手动轮椅车 </p>
             <p class="goods_detail_desc_content">体积更小轻松放入汽车后备箱</p>
         </div>
@@ -107,6 +107,13 @@
                 function get_main_content() {
 
                 }
+                //购买商品轮播图
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                });
                 //租赁跳转
                 $('.footer').on('click',function(){
                     window.location.href = "sure_lease.html"

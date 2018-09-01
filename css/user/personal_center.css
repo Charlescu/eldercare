@@ -147,9 +147,19 @@ body {
     line-height: 0.78rem;
 }
 
+.list_left {
+    font-size: 0.3rem;
+    vertical-align: middle;
+}
+
+.taiozheng {
+    margin-bottom: -0.04rem;
+}
+
 .list_left img {
+
     margin-right: 0.22rem;
-    width: 0.31rem;
+    width: 0.27rem;
 }
 
 .list_right {

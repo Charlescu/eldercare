@@ -50,7 +50,7 @@
      width: 100%;
      text-align: center;
      background-color: transparent;
-     border-bottom: 1px solid #999999;
+     border-bottom: 1px solid #EBEBEB;
  }
 
  .index_decoration {
@@ -77,6 +77,10 @@
      padding: 0.36rem 0 0.36rem 0;
  }
 
+ .select_card_list span {
+     vertical-align: middle;
+ }
+
  .select_card_list img {
      width: 0.29rem;
  }
@@ -88,7 +92,7 @@
 
  .lease_list {
      display: inline-block;
-     width: 3rem;
+     width: 3.05rem;
      height: 1.2rem;
      background-color: #FAFAFA;
      border-radius: 0.05rem;
@@ -99,6 +103,11 @@
 
  .lease_list span {
      color: #999999;
+ }
+
+ .conwrap {
+     overflow-x: hidden;
+     overflow-y: hidden;
  }
 
  .lease_list p {
@@ -144,8 +153,13 @@
  }
 
  .con_list {
+     padding-left: 0.2rem;
      white-space: nowrap;
-     overflow-y: scroll;
+     overflow-x: scroll;
+ }
+
+ .con_list::-webkit-scrollbar {
+     display: none
  }
 
  .con_title li.con_curr {
@@ -157,11 +171,11 @@
 
      text-align: center;
      display: inline-block;
-     width: 2rem;
+     width: 1.8rem;
      height: 2.69rem;
      box-shadow: 0.04rem 0.2rem 0.3rem #EBEBEB;
      border-radius: 0.2rem;
-     margin: 0.2rem 0.2rem;
+     margin: 0.2rem 0.15rem;
      background-color: #fff;
      white-space: nowrap;
  }
@@ -268,6 +282,7 @@
  }
 
  .select_card_list em.select_icon2 {
+     margin-bottom: -0.07rem;
      vertical-align: middle;
      background: url('../images/33@2x.png') no-repeat;
      background-size: 0.31rem 0.23rem;
@@ -280,7 +295,12 @@
  }
 
  .con_curr em.select_icon2 {
+     margin-bottom: -0.07rem;
      vertical-align: middle;
      background: url('../images/33@2x_checked.png') no-repeat;
      background-size: 0.31rem 0.23rem;
+ }
+
+ .right {
+     margin-left: 0.3rem;
  }

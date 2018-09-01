@@ -32,16 +32,16 @@
         </div>
         <div class="content_body">
             <ul class="select_card con_title">
-                <li class="select_card_list con_curr">
+                <li class="select_card_list con_curr" data-type="1">
                     <span>家用轮椅</span>
                 </li>
-                <li class="select_card_list ">
+                <li class="select_card_list " data-type="2">
                     <span>专业医疗</span>
                 </li>
-                <li class="select_card_list ">
+                <li class="select_card_list " data-type="3">
                     <span>电动轮椅</span>
                 </li>
-                <li class="select_card_list ">
+                <li class="select_card_list " data-type="4">
                     <span>手动轮椅</span>
                 </li>
             </ul>
@@ -160,16 +160,12 @@
                 </div>
             </div>
         </div>
+        <script src="../js/common.js"></script>
         <script>
         $(document).ready(function() {
             get_main_content();
 
-            var $menu_box = $('.content_body .con_title>li');
-            $menu_box.click(function() {
-                $(this).addClass('con_curr').siblings().removeClass('con_curr');
-                var index = $menu_box.index(this);
-                $('.con_all .con_warp').eq(index).show().siblings().hide();
-            });
+
         })
         $('.con_list_li').on('click', function() {
             window.location.href = "buy_goods_detail.html"
@@ -180,6 +176,40 @@
 
         function get_main_content() {
 
+        }
+
+
+        var $menu_box = $('.content_body .con_title>li');
+        $menu_box.click(function() {
+            $(this).addClass('con_curr').siblings().removeClass('con_curr');
+            type = $('.con_curr').data('type');
+            console.log(type);
+            var index = $menu_box.index(this);
+            $('.con_all .con_warp').eq(index).show().siblings().hide();
+        });
+        var page = '',
+            type = $('.con_curr').data('type');
+        console.log(type);
+
+        function pull_load() {
+
+            page++
+            console.log(page);
+            $.ajax({
+                type: '',
+                url: baseUrl + '',
+                data: {
+                    token: localStorage.getItem('token'),
+                    type: type,
+                    page: page,
+                },
+                success: function(res) {
+                    $('.con_list_ul').append(page);
+                },
+                error: function(res) {
+
+                }
+            })
         }
         </script>
 </body>

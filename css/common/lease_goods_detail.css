@@ -1,5 +1,5 @@
  .container {
-     background-color: #53A6FA;
+     background-color: #F5F8FA;
  }
 
  .swiper-pagination-bullet {
@@ -109,7 +109,7 @@
      font-size: 0.28rem;
      vertical-align: center;
      display: inline-block;
-     width: 2.5rem;
+     width: 1.5rem;
      height: 0.105rem;
      margin: 0 0.6rem;
      line-height: 0.105rem;

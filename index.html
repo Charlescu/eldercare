@@ -29,16 +29,10 @@
         <div class="swiper">
             <div class="swiper-container swiper-container-horizontal swiper-container-ios">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide swiper-slide-top swiper-slide-prev"><img src="images/lunbo.png"></div>
-                    <div class="swiper-slide swiper-slide-top swiper-slide-active"><img src="images/lunbo.png"></div>
-                    <div class="swiper-slide swiper-slide-top swiper-slide-next"><img src="images/lunbo.png"></div>
                 </div>
                 <!-- Add Pagination -->
             </div>
             <div class="swiper-pagination swiper-pagination-bullets">
-                <span class="swiper-pagination-bullet"></span>
-                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-                <span class="swiper-pagination-bullet"></span>
             </div>
         </div>
         <div class="content_body">
@@ -62,7 +56,7 @@
                         <li class="lease_list">
                             <div class="lease_list_box get_good_time">
                                 <span>取货日期  周四</span>
-                                <p class="start_time">7月20日</p>
+                                <p class="start_time"></p>
                             </div>
                         </li>
                         <li class="lease_list">
@@ -109,8 +103,8 @@
             </div>
             <div class="paper_box">
                 <ul class="paper_box_ul">
-                    <li class="paper_box_list "><img src="images/zulin.png" alt=""><a class="leasehold_guide" href="javascript:void(0)"> 租赁指南</a></li>
-                    <li class="paper_box_list "><img src="images/about_us.png" alt=""><a class="about_us" href="javascript:void(0)"> 关于我们</a></li>
+                    <li class="paper_box_list left"><img src="images/zulin.png" alt=""><a class="leasehold_guide" href="javascript:void(0)"> 租赁指南</a></li>
+                    <li class="paper_box_list right"><img src="images/about_us.png" alt=""><a class="about_us" href="javascript:void(0)"> 关于我们</a></li>
                 </ul>
             </div>
 
@@ -130,8 +124,10 @@
 <script>
 $(document).ready(function() {
     get_main_content();
-
+    var local_month = new Date().getMonth() + 1,
+        local_day = new Date().getDate();
     var $menu_box = $('.content_body .con_title>li');
+    $('.start_time').text(local_month + '月' + local_day + '日');
     $menu_box.click(function() {
         $(this).addClass('con_curr').siblings().removeClass('con_curr');
 
@@ -143,8 +139,21 @@ $(document).ready(function() {
 function get_main_content() {
 
 }
+//轮播图控制数量
+var arr = [0, 1, 2, 3],
+    as = '',
+    bs = '';
+for (var i in arr) {
+    as += `<div class="swiper-slide swiper-slide-top swiper-slide-prev"><img src="images/lunbo.png"></div>`;
+    bs += ` <span class="swiper-pagination-bullet"></span>`;
+}
+$('.swiper-wrapper').append(as);
+$('.swiper-pagination').append(bs);
 //首页轮播图
 var swiper = new Swiper('.swiper-container', {
+    loop: true,
+    speed: 2000,
+    autoplay: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
