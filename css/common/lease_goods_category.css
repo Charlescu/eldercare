@@ -4,6 +4,7 @@
 }
 
 
+
 /*     搜索框 */
 
 .category_search_box {
@@ -17,7 +18,7 @@
 
 .category_search_input {
     text-align: center;
-    width:80%;
+    width: 80%;
     line-height: 0.6rem;
     margin-left: 0.3rem;
 }
@@ -49,6 +50,7 @@ input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #CCCCCC;
 }
+
 
 
 
@@ -107,5 +109,6 @@ input:-ms-input-placeholder {
 
 .goods_money {
     font-size: 0.28rem;
+    font-weight: 600;
     color: #53A6FA;
 }

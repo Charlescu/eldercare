@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4196e359-6b85-4158-a979-e36cccb43e06" name="Default Changelist" comment="" />
+    <list default="true" id="4196e359-6b85-4158-a979-e36cccb43e06" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/common/buy_car.html" beforeDir="false" afterPath="$PROJECT_DIR$/common/buy_car.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/buy_goods_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/common/buy_goods_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/sure_buy.html" beforeDir="false" afterPath="$PROJECT_DIR$/common/sure_buy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/sure_lease.html" beforeDir="false" afterPath="$PROJECT_DIR$/common/sure_lease.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common/address_manage.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/address_manage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common/buy_car.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/buy_car.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common/buy_goods_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/buy_goods_detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common/lease_goods_category.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/lease_goods_category.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common/sure_buy.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/sure_buy.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common/sure_lease.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/sure_lease.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/user/buy_order_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/user/buy_order_detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/user/personal_center.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/user/personal_center.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/55462601012673056.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/acsasaca@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/buy_car.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/buy_car.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/buy_car_checked.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/buy_car_checked.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sca@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sf@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/personal_center.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/personal_center.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,10 +38,11 @@
     <session id="1062802960">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -91,6 +115,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -102,12 +127,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../house_prize" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -143,15 +167,15 @@
       <updated>1534489422739</updated>
       <workItem from="1534489424099" duration="255000" />
       <workItem from="1534579409469" duration="20000" />
+      <workItem from="1535945312704" duration="1841000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275000" />
+    <option name="totallyTimeSpent" value="2116000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13277134" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

@@ -92,7 +92,7 @@
 
  .lease_list {
      display: inline-block;
-     width: 3.05rem;
+     width: 3.08rem;
      height: 1.2rem;
      background-color: #FAFAFA;
      border-radius: 0.05rem;
@@ -265,7 +265,7 @@
  }
 
  .mainpage_botlist span {
-     margin-top: -0.07rem;
+     margin-top: -0.02rem;
  }
  /* 切换 */
 
@@ -278,7 +278,7 @@
  .select_card_list em.select_icon1 {
      vertical-align: middle;
      background: url('../images/buy_car.png') no-repeat;
-     background-size: 0.32rem 0.29rem;
+     background-size: 0.3rem 0.3rem;
  }
 
  .select_card_list em.select_icon2 {
@@ -291,7 +291,7 @@
  .con_curr em.select_icon1 {
      vertical-align: middle;
      background: url('../images/buy_car_checked.png') no-repeat;
-     background-size: 0.32rem 0.29rem;
+     background-size: 0.3rem 0.3rem;
  }
 
  .con_curr em.select_icon2 {

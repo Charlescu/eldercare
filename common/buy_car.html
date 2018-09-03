@@ -18,8 +18,10 @@
 
 <body>
     <header class="mui_bar">
-        <img class="backup" src="../images/backup.png" alt="">
-        <p>···</p>
+        <div class="delete_box">
+            <img class="del_img" src="../images/sdfadgas@2x.png" alt="">
+            <p class="del_p">删除</p>
+        </div>
         <h1 class="mui_title">购物车</h1>
     </header>
     <div class="container">
@@ -28,13 +30,13 @@
                 <li class="con_list_li">
                     <div class="check_radio">
                         <!-- <input type="radio"> -->
-                        <img style="display: none;" src="../images/sure.png" alt="">
+                        <img class="sel_img" style="display: none;" src="../images/sure.png" alt="">
                     </div>
                     <img class="con_list_img" src="../images/5653ceba1a219@2x.png" alt="">
                     <div class="goods_box">
                         <p class="goods_title">HO56C手动轮椅车</p>
                         <span class="goods_content">体积更小轻松放入汽车后备箱</span>
-                        <p class="goods_money">$2000.00</p>
+                        <p class="goods_money">￥2000.00</p>
                         <div class="join">
                             <img class="subtract_img" src="../images/item_reduce.png  " alt="">
                             <p>1 </p>
@@ -53,8 +55,8 @@
                 <p>全选</p>
             </div>
             <div class="pay">
-                <p class="all_price"> 合计：<span>$4000.00</span></p>
                 <p class="to_pay">前往支付</p>
+                <p class="all_price"> 合计：<span>￥4000.00</span></p>
             </div>
         </div>
         <footer class="footer">
@@ -81,13 +83,14 @@
     function get_main_content() {
 
     }
-    //首页轮播图
-    var swiper = new Swiper('.swiper-container', {
+    //删除
+    $('.delete_box').on('click', function() {
+        if ($('.con_list_li .sel_img').is(':hidden')) {
 
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+        } else {
+            $('.con_list_li').hide();
+        }
+
     });
     //勾选
     $('.check_radio').on('click', function() {

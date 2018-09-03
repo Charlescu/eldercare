@@ -1,5 +1,45 @@
 /* 商品 */
 
+body {
+    background-color: #F5F8FA;
+}
+
+.mui_bar {
+    height: 0.77rem;
+    line-height: 0.77rem;
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+.mui_title {
+    font-size: 0.35rem;
+    color: #1A1A1A;
+    text-align: center;
+    margin: 0 0 0 0.45rem;
+}
+
+.delete_box {
+
+    position: absolute;
+    right: 0.45rem;
+    font-size: 0.28rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.del_p {
+    color: #53A6FA;
+    display: inline-block;
+}
+
+.del_img {
+    width: 0.25rem;
+    height: 0.27rem;
+    vertical-align: middle;
+    margin-top: -0.06rem;
+}
+
+
 .con_warp {
     background-color: #fff;
     margin: 0 auto;
@@ -40,7 +80,7 @@
 }
 
 .con_list_img {
-    margin: 0.2rem 0 0.37rem 0.2rem;
+    margin: 0.2rem 0 0.37rem 0rem;
     display: inline-block;
     width: 1.8rem;
 }
@@ -66,6 +106,7 @@
 .goods_money {
     font-size: 0.28rem;
     margin-top: 0.32rem;
+    font-weight: 600;
     color: #53A6FA;
     display: inline-block;
 }
@@ -90,6 +131,7 @@
 .join p {
     margin: 0;
     padding: 0;
+    margin-top: -0.03rem;
     color: #53A6FA;
     display: inline-block;
     font-size: 0.24rem;
@@ -113,35 +155,15 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 底部支付 */
 
 .zhifu p {
+    font-size: 0.3rem;
     display: inline-block;
 }
 
 .zhifu {
-    font-size: 0.28rem;
+
     position: fixed;
     bottom: 1.2rem;
     width: 100%;
@@ -159,7 +181,7 @@
     float: left;
     width: 0.38rem;
     height: 0.38rem;
-    margin: 0.32rem 0.12rem;
+    margin: 0.26rem 0.12rem;
 }
 
 .all_ckeck img {
@@ -168,23 +190,34 @@
 }
 
 .radio_box p {
+    vertical-align: middle;
     line-height: 1rem;
-    font-size: 0.24rem;
+    font-size: 0.28rem;
     margin-left: 0.1rem;
     display: inline-block;
 }
 
 .pay {
     float: right;
-    width: 5rem;
+    width: 6rem;
 }
 
 .pay p {
     line-height: 1rem;
 }
 
+.all_price p {
+    font-size: 0.28rem;
+}
+
 .all_price span {
+    font-size: 0.28rem;
     color: #53A6FA;
+}
+
+.all_price {
+    float: right;
+    margin-right: 0.6rem;
 }
 
 .to_pay {

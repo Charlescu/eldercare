@@ -20,16 +20,12 @@
 </head>
 
 <body>
-    <header class="mui_bar">
-        <img class="backup" src="../images/backup.png" alt="">
-        <p>···</p>
-        <h1 class="mui_title">确认租赁</h1>
-    </header>
+
     <div class="container">
         <div class="address_box">
             <div class="local_box">
                 <img class="location_img" src="../images/time.png" alt="">
-                <span class="date_content start_date">7月16日~</span><span class="date_content end_date">7月18日</span>
+                <span class="date_content start_date">7月16日</span><span class="date_content end_date">~7月18日</span>
                 <span class="time_end">共三天</span>
             </div>
             <div class="user_box">
@@ -59,21 +55,30 @@
             <p class="buy_message"> 租赁数量 </p>
         </div>
         <div class="peisong">
-            <p class="take_it"> 选择自提点 <span>A自提(有货)<img src="../images/c07@2x.png" alt=""></span></p>
+            <p class="take_it"> 选择自提点 <span>A自提(有货)<img src="../images/youjiantou1.png" alt=""></span></p>
             <div class="peisong_box">
                 <p> 押金
-                    <p class="cash_p"><img src="../images/about_us.png" alt="">申请免押金</p> <span>￥8.00</span></p>
+                    <p class="cash_p"><img src="../images/about_us.png" alt=""><span class="yajin">申请免押金</span></p> <span class="moneys">￥8.00</span></p>
             </div>
             <div class="beizhu_box">
-                <p> 备注信息：晚一些的发货</p>
+                <p> 备注信息：
+                    <textarea name="" id="" cols="30" rows="1">晚一些的发货发的撒佛挡杀佛的萨芬</textarea>
+                </p>
             </div>
         </div>
+        <div class="xiaoji_box">
+            <p class="xiaoji">共一件商品 小计 : ￥2000.00</p>
+        </div>
         <div class="zhifu">
-            <div class="wx_pay">
-                <p> 微信支付<span><img class="hand" src="../images/hand.png" alt="">推荐使用</span><img class="sure" src="../images/sure.png" alt=""></p>
-            </div>
-            <div class="ali_pay">
-                <p> 支付宝支付<img class="sure" src="../images/sure.png" alt=""></p>
+            <div class=" pay_method">
+                <div class="method_choose">
+                    <p class="wx_pay pay_item"> 微信支付<span><img class="hand" src="../images/hand.png" alt="">推荐使用</span> </p>
+                    <p class="ali_pay pay_item"> 支付宝支付 </p>
+                </div>
+                <div class="methood_pic">
+                    <img class="sure sure_item" src="../images/sure.png" alt="">
+                    <img class="cancel sure_item" src="../images/sure_1.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -85,8 +90,8 @@
         <p class="footer_buycar">前往支付</p>
     </footer>
     </div>
-    <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
     <script>
     $(document).ready(function() {
         get_main_content();
@@ -110,24 +115,30 @@
             end: 2030,
             defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
             onConfirm: function(result) {
-                $('.start_date').text(result[1].label + result[2].label + '~');
+                $('.start_date').text(result[1].label + result[2].label);
+                setTimeout(function() {
+                    ends_time();
+                }, 500);
+
             }
         });
     });
     var end_time;
-    $('.end_date').click(function(event) {
+
+    function ends_time() {
         var _this = this;
         weui.datePicker({
-            start: new Date(),
+            start: new Date() + 1,
             end: 2030,
-            defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
+            defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate() + 1],
             onConfirm: function(result) {
-                $('.end_date').text(result[1].label + result[2].label);
+                $('.end_date').text('~' + result[1].label + result[2].label);
                 end_time = result[0].label + result[1].label + result[2].label;
                 console.log(end_time);
             }
         });
-    });
+    }
+
 
     //前往支付
     $('.footer_buycar').on('click', function() {

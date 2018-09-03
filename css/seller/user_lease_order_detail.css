@@ -1,5 +1,5 @@
 body {
-    background-color: #F7FEFC;
+    background-color: #F5F8FA;
 }
 
 
@@ -157,12 +157,15 @@ body {
 }
 
 .join p {
+    margin: 0;
+    padding: 0;
+    margin-top: -0.03rem;
     color: #53A6FA;
+    display: inline-block;
     font-size: 0.24rem;
     width: 0.8rem;
+    vertical-align: top;
     text-align: center;
-    display: inline-block;
-    ;
 }
 
 .add_img {

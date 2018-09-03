@@ -65,47 +65,9 @@ input:focus {
     outline: none;
 }
 
-
-
-
-
-
-
-
-/* 公共头部 */
-
-.mui_bar {
-    height: 0.77rem;
-    line-height: 0.77rem;
-    background-color: #FAFAFA;
-    overflow: hidden;
+.container {
+    padding-bottom: 1.2rem;
 }
-
-.mui_title {
-    font-size: 0.3rem;
-    color: #1A1A1A;
-    text-align: center;
-    margin: 0 0 0 0.5rem;
-}
-
-.mui_bar img {
-    position: absolute;
-    width: 0.45rem;
-    top: 0.155rem;
-    left: 0.35rem;
-}
-
-.mui_bar p {
-    float: right;
-    margin-right: 0.3rem;
-    font-size: 0.6rem;
-}
-
-
-
-
-
-
 
 
 /* 公共底栏 */
@@ -140,6 +102,12 @@ input:focus {
 .mainpage_botlist span {
     display: block;
 }
+
+
+
+
+
+
 
 
 /* 文本型页面 */
@@ -190,6 +158,12 @@ input:focus {
 
 
 
+
+
+
+
+
+
 /* 提现记录 */
 
 .withdraw_listhead_ul {
@@ -225,6 +199,12 @@ input:focus {
 .list_liem {
     margin: 0 auto;
 }
+
+
+
+
+
+
 
 
 

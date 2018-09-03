@@ -81,14 +81,16 @@
  .goods_detail_desc_content {
      margin-left: 0.37rem;
      margin-right: 0.3rem;
-     font-size: 0.27rem;
+
      margin-top: 0.26rem;
+     font-size: 0.25rem;
+     width: 2.5rem;
      color: #999999;
      text-overflow: -o-ellipsis-lastline;
      overflow: hidden;
      text-overflow: ellipsis;
      display: -webkit-box;
-     -webkit-line-clamp: 2;
+     -webkit-line-clamp: 1;
      -webkit-box-orient: vertical;
  }
 
@@ -101,7 +103,7 @@
      width: 100%;
      text-align: center;
      background-color: transparent;
-     border-bottom: 1px solid #999999;
+     border-bottom: 1px solid #EBEBEB;
  }
 
  .index_decoration {
@@ -120,15 +122,16 @@
      vertical-align: center;
      display: inline-block;
      width: 1.5rem;
-     height: 0.105rem;
+     height: 1.04rem;
      margin: 0 0.8rem;
-     line-height: 0.105rem;
-     padding: 0.49rem 0 0.55rem 0;
+     line-height: 1.04rem;
  }
 
  .select_card_list img {
      width: 0.21rem;
      height: 0.25rem;
+     vertical-align: middle;
+     margin-top: -0.05rem;
  }
 
  .detail_img {
@@ -165,7 +168,7 @@
      font-size: 0.25rem;
      color: #999999;
      float: right;
-     margin: 0.53rem 0.3rem 0 0;
+     margin: 0.39rem 0.3rem 0 0;
  }
 
  .user_name {
@@ -295,4 +298,38 @@
      background-color: #53A6FA;
      float: right;
      border-radius: 0 0.1rem 0 0;
+ }
+
+ em {
+     display: inline-block;
+     width: 0.25rem;
+     height: 0.3rem;
+ }
+
+ .select_card_list em.select_icon1 {
+     vertical-align: middle;
+     margin-top: -0.06rem;
+     background: url('../../images/bianji.png') no-repeat;
+     background-size: 0.25rem 0.3rem;
+ }
+
+ .select_card_list em.select_icon2 {
+     vertical-align: middle;
+     margin-top: -0.06rem;
+     background: url('../../images/bianji2.png') no-repeat;
+     background-size: 0.25rem 0.3rem;
+ }
+
+ .con_title li.con_curr em.select_icon1 {
+     vertical-align: middle;
+     margin-top: -0.06rem;
+     background: url('../../images/bianji_checked.png') no-repeat;
+     background-size: 0.25rem 0.3rem;
+ }
+
+ .con_title li.con_curr em.select_icon2 {
+     vertical-align: middle;
+     margin-top: -0.06rem;
+     background: url('../../images/bianji2_checked.png') no-repeat;
+     background-size: 0.25rem 0.3rem;
  }

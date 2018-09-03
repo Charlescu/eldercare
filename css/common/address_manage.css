@@ -1,6 +1,9 @@
 body {
-    background-color: #F6FDFC;
+    background-color: #F5F8FA;
 }
+
+
+
 
 /* 租赁日期 */
 
@@ -13,12 +16,27 @@ body {
 .address_in_box {
     background-color: #fff;
     height: 1.55rem;
+    width: 6.9rem;
+    margin: 0 auto;
     border-bottom: 0.01rem solid #EBEBEB;
+}
+
+.address_out_box {
+    width: 7.5rem;
+    background-color: #fff;
 }
 
 .user_name {
     display: inline-block;
     padding: 0.34rem 0 0 0.3rem;
+}
+
+.user_box {
+    width: 6.9rem;
+}
+
+.user_address {
+    width: 6.9rem;
 }
 
 .phone {
@@ -41,6 +59,9 @@ body {
 .del_icon {
     padding-right: 0.36rem;
 }
+
+
+
 
 
 /* 底部支付 */

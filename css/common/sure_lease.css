@@ -1,5 +1,11 @@
 /* 租赁日期 */
 
+textarea {
+    outline: none;
+
+    margin-top: -0.07rem;
+}
+
 .address_box {
     background-color: #fff;
     margin: 0 auto;
@@ -63,12 +69,6 @@
     font-size: 0.24rem;
 }
 
-
-
-
-
-/* 商品 */
-
 .con_warp {
     background-color: #fff;
     margin: 0 auto;
@@ -124,13 +124,14 @@
 
 .goods_money {
     font-size: 0.28rem;
+    font-weight: 600;
     margin-top: 0.32rem;
     color: #53A6FA;
 }
 
 .goods_nums {
     float: right;
-    margin: -0.2rem 0.44rem 0 0;
+    margin: -0.3rem 0.44rem 0 0;
 }
 
 .join img {
@@ -153,6 +154,7 @@
 .join p {
     margin: 0;
     padding: 0;
+    margin-top: -0.03rem;
     color: #53A6FA;
     display: inline-block;
     font-size: 0.24rem;
@@ -164,14 +166,6 @@
 .add_img {
     float: right;
 }
-
-
-
-
-
-
-
-/* 配送方式 */
 
 .peisong {
     background-color: #fff;
@@ -188,22 +182,20 @@
     margin-left: 0.32rem;
 }
 
-
-
-
-
-/* 布局居中 */
-
 .take_it span {
-
     font-size: 0.25rem;
     color: #999999;
     float: right;
     margin-right: 0.4rem;
 }
 
+
+
 .take_it img {
+    vertical-align: middle;
     width: 0.18rem;
+    height: 0.26rem;
+    margin-left: 0.2rem;
 }
 
 .peisong_box {
@@ -219,23 +211,30 @@
 .cash_p {
     height: 0.44rem;
     line-height: 0.44rem;
-    color: #53A6FA;
-    font-size: 0.23rem;
-    border: 0.01rem solid #53A6FA;
+    font-size: 0.24rem;
+    border: 0.02rem solid #53A6FA;
     border-radius: 0.1rem;
     margin-left: 0.52rem;
     display: inline-block;
-    width: 1.8rem;
+    width: 2rem;
+}
+
+.csah_p span.yajin {
+    margin-top: -0.02rem;
+    margin-left: 0.3rem;
+    height: 0.44rem;
+    line-height: 0.44rem;
 }
 
 .cash_p img {
-    margin-left: 0.05rem;
-    margin-right: 0.2rem;
     vertical-align: middle;
+    margin-top: -0.04rem;
+    margin-right: 0.2rem;
+    margin-left: 0.1rem;
     width: 0.3rem;
 }
 
-.peisong_box span {
+.peisong_box span.moneys {
     font-size: 0.25rem;
     margin-right: 0.41rem;
     float: right;
@@ -249,13 +248,6 @@
     padding-bottom: 0.3rem;
 }
 
-
-
-
-
-
-/* 支付方式 */
-
 .zhifu {
     background-color: #fff;
     margin: 0 auto;
@@ -266,52 +258,64 @@
     box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
 }
 
-.sure {
-    width: 0.3rem;
-    float: right;
-    margin-right: 0.4rem;
+.pay_method {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
 }
-
-.wx_pay {
-    font-size: 0.28rem;
-    padding-top: 0.31rem;
-    margin-left: 0.32rem;
-}
-
-
 
 .hand {
     width: 0.22rem;
     margin: 0 0.07rem;
 }
 
-.wx_pay span {
+.method_choose span {
     margin-left: 0.3rem;
     background-color: #53A6FA;
     font-size: 0.22rem;
+    width: 1.5rem;
+    display: inline-block;
     border-radius: 0.04rem;
     color: #FFF;
 }
 
-.ali_pay {
-    font-size: 0.28rem;
-    padding-top: 0.31rem;
-    margin-left: 0.32rem;
+.wx_pay {
+    margin: 0.3rem 0 0 0.3rem;
 }
 
+.ali_pay {
 
+    margin: 0.5rem 0 0 0.3rem;
+}
 
+.methood_pic {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
 
+.sure_item {
+    width: 0.3rem;
+    float: right;
+    margin-top: 0.3rem;
+    margin-right: 0.4rem;
+}
 
-
-/* 底部支付 */
+.cancel {
+    margin: 0.5rem 0.4rem 0 0;
+}
 
 .footer {
     position: fixed;
     bottom: 0;
     left: 0;
     text-align: center;
-    font-size: 0.29rem;
     background-color: #fff;
     width: 7.5rem;
     height: 1rem;
@@ -326,19 +330,38 @@
 
 .buycar_box p {
     margin-left: 0.61rem;
-    font-size: 0.28rem;
+    font-size: 0.3rem;
     display: inline-block;
 }
 
 .buycar_box span {
     margin-left: 0.24rem;
-    font-size: 0.28rem;
+    font-size: 0.3rem;
     color: #53A6FA;
 }
 
 .footer_buycar {
     float: right;
     width: 2.3rem;
+    color: #FFF;
+    font-size: 0.3rem;
     background-color: #53A6FA;
     border-radius: 0 0.1rem 0 0;
+}
+
+.xiaoji_box {
+    width: 6.9rem;
+    height: 0.93rem;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
+    border-radius: 0.1rem;
+    border-top: 0.01rem solid #EBEBEB;
+}
+
+.xiaoji {
+    margin-right: 0.39rem;
+    float: right;
+    line-height: 0.93rem;
+    color: #53A6FA;
 }

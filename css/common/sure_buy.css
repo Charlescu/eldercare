@@ -68,6 +68,10 @@
 
 
 
+
+
+
+
 /* 商品 */
 
 .con_warp {
@@ -128,6 +132,7 @@
 }
 
 .goods_money {
+    font-weight: 600;
     font-size: 0.28rem;
     margin-top: 0.32rem;
     color: #53A6FA;
@@ -158,6 +163,7 @@
 .join p {
     margin: 0;
     padding: 0;
+    margin-top: -0.03rem;
     color: #53A6FA;
     display: inline-block;
     font-size: 0.24rem;
@@ -169,6 +175,10 @@
 .add_img {
     float: right;
 }
+
+
+
+
 
 
 
@@ -230,10 +240,6 @@
 
 
 
-
-
-
-
 /* 支付方式 */
 
 .zhifu {
@@ -264,6 +270,8 @@
     margin-left: 0.3rem;
     background-color: #53A6FA;
     font-size: 0.22rem;
+    width: 1.5rem;
+    display: inline-block;
     border-radius: 0.04rem;
     color: #FFF;
 }
@@ -277,7 +285,7 @@
     margin: 0.5rem 0 0 0.3rem;
 }
 
-.metnod_pic {
+.methood_pic {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -300,12 +308,6 @@
 
 
 
-
-
-
-
-
-
 /* 底部支付 */
 
 .footer {
@@ -313,7 +315,7 @@
     bottom: 0;
     left: 0;
     text-align: center;
-    font-size: 0.29rem;
+
     background-color: #fff;
     width: 7.5rem;
     height: 1rem;
@@ -328,19 +330,21 @@
 
 .buycar_box p {
     margin-left: 0.61rem;
-    font-size: 0.28rem;
+    font-size: 0.3rem;
     display: inline-block;
 }
 
 .buycar_box span {
     margin-left: 0.24rem;
-    font-size: 0.28rem;
+    font-size: 0.3rem;
     color: #53A6FA;
 }
 
 .footer_buycar {
     float: right;
     width: 2.3rem;
+    color: #fff;
+    font-size: 0.3rem;
     background-color: #53A6FA;
     border-radius: 0 0.1rem 0 0;
 }

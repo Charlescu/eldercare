@@ -12,7 +12,7 @@ body {
 .head_box {
     text-align: center;
     margin: 0 auto;
-    margin-top: 0.61rem;
+    padding-top: 0.61rem;
 }
 
 .pic_box {
@@ -136,11 +136,14 @@ body {
 }
 
 .list_item {
-
     height: 0.8rem;
     width: 6.5rem;
     margin: 0 auto;
     border-bottom: 1px solid #EBEBEB;
+}
+
+.share {
+    border-bottom: none;
 }
 
 .list_item span {
