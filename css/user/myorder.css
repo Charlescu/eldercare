@@ -7,6 +7,27 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 选项卡 */
 
 .select_card {
@@ -81,6 +102,28 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*     搜索框 */
 
 .mid_box {
@@ -99,6 +142,7 @@ body {
 }
 
 .category_search_input {
+    text-align: center;
     line-height: 0.6rem;
     margin-left: 0.3rem;
 }
@@ -130,6 +174,20 @@ input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #CCCCCC;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -176,6 +234,20 @@ li.select_item {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 商品 */
 
 .order_product_box {
@@ -198,7 +270,6 @@ li.select_item {
     height: 0.8rem;
     line-height: 0.8rem;
     font-size: 0.28rem;
-    font-weight: 600;
 }
 
 .top_orderstatus {
@@ -207,7 +278,12 @@ li.select_item {
 }
 
 .buy_message {
+    font-size: 0.28rem;
     margin-left: 0.3rem;
+}
+
+.real_pay {
+    font-size: 0.24rem;
 }
 
 .pay_box {
@@ -256,28 +332,31 @@ li.select_item {
 }
 
 .goods_box {
+    position: absolute;
+    width: 5rem;
     vertical-align: top;
-    margin-left: 0.15rem;
+    margin-left: 0.37rem;
     display: inline-block;
 }
 
 .goods_nums {
 
-    position: relative;
-    right: -0.7rem;
-    top: 0.4rem;
+    position: absolute;
+    right: 1rem;
+    top: 0.28rem;
     float: right;
     color: #999999;
 }
 
 .goods_title {
-    font-size: 0.34rem;
-    margin-top: 0.35rem;
+    font-size: 0.3rem;
+    margin-top: 0.22rem;
 }
 
 .goods_content {
-    font-size: 0.28rem;
-    margin-top: 0.18rem;
+    display: inline-block;
+    font-size: 0.24rem;
+    padding-top: 0.2rem;
     color: #999999;
 }
 
@@ -288,10 +367,9 @@ li.select_item {
 }
 
 .goods_time {
-    position: relative;
-    right: -0.7rem;
-    top: -0.18rem;
-    float: right;
+    position: absolute;
+    left: 1.5rem;
+    font-size: 0.19rem;
     color: #999999;
 }
 
@@ -326,6 +404,60 @@ li.select_item {
 .add_img {
     float: right;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

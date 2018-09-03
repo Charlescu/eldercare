@@ -1,18 +1,29 @@
+body {
+    background-color: #F5F8FA;
+}
 
-.content_text_box p{
-	width:5.54rem;
-	margin:0 auto;
+.content_text_box p {
+    width: 5.54rem;
+    margin: 0 auto;
 }
-.content{
-	font-size: 0.26rem;
-	line-height:0.48rem;
+
+.content {
+    font-size: 0.26rem;
+    line-height: 0.48rem;
 }
-.tel{
-	display: inline-block;
-	float:right;
-	margin:0.66rem 0.56rem 0 0;
-   font-size: 0.25rem;
+
+.tel {
+    display: inline-block;
+    float: right;
+    margin: 0.66rem 0.56rem 0 0;
+    font-size: 0.25rem;
 }
-.phone{
-	color:#53A6FA;
+
+.phone {
+    color: #53A6FA;
+}
+
+.juchi {
+    width: 6.9rem;
+    height: 100%;
 }

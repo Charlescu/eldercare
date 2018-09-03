@@ -58,20 +58,6 @@
     width: 0.24rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 商品 */
 
 .con_warp {
@@ -175,20 +161,6 @@
 .add_img {
     float: right;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 配送方式 */
 
 .peisong {
@@ -236,9 +208,6 @@
     line-height: 0.93rem;
     color: #53A6FA;
 }
-
-
-
 
 /* 支付方式 */
 
@@ -304,7 +273,6 @@
 .cancel {
     margin: 0.5rem 0.4rem 0 0;
 }
-
 
 
 

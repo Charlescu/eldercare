@@ -2,7 +2,9 @@
     width: 5rem;
 }
 
-
+body {
+    background-color: #f5f8fa !import；
+}
 
 
 /* 租赁日期 */

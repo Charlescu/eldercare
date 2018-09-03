@@ -2,13 +2,13 @@ body {
     background: url('../../images/axcvsav@2x.png');
     background-size: 7.5rem 4rem;
     background-repeat: no-repeat;
-    background-color: #F9FDFD;
+    background-color: #F5F8FA;
 }
 
 .head_box {
     text-align: center;
     margin: 0 auto;
-    margin-top: 0.8rem;
+    padding-top: 0.8rem;
 }
 
 .all_jifen {
@@ -34,11 +34,13 @@ body {
 
 
 
+
+
 /* 选项卡 */
 
 .select_card {
     width: 6.9rem;
-    
+
     margin: 0 auto;
     background-color: #fff;
     border-radius: 0.1rem 0.1rem 0 0;
@@ -47,55 +49,74 @@ body {
 .select_card_list {
     font-size: 0.28rem;
     color: #999999;
-     
+
     display: inline-block;
     width: 3.4rem;
     height: 1.5rem;
- 
-   
 }
 
 .select_card_list img {
-    margin-top:0.25rem;
+    margin-top: 0.25rem;
     width: 0.49rem;
     height: 0.5rem;
 }
+
 .con_title li.con_curr {
-     border-radius: 0.1rem 0.1rem 0 0;
-     color: #53A6FA;
-     background-color: #F8FAFA;
- }
+    border-radius: 0.1rem 0.1rem 0 0;
+    color: #53A6FA;
+    background-color: #F8FAFA;
+}
+
+
+
+
+
 /* 积分使用记录 */
+
 .list_box {
     margin: 0 auto;
     border-radius: 0.1rem;
-    background-color: #fff;
-    box-shadow: 0px 8px 8px 2px rgba(6, 4, 41, 0.03);
     width: 6.9rem;
-
     margin-top: 0.2rem;
 }
-.list_box img{
-    width:6.9rem;
-    height:4rem;
+
+.list_box ul {
+    background: #FFF;
+    width: 6.9rem;
+    box-shadow: 0px 8px 8px 2px rgba(6, 4, 41, 0.03);
+    border-radius: 0.1rem 0.1rem 0 0;
 }
+
+.list_item_first {
+    border-radius: 0.1rem 0.1rem 0 0;
+}
+
+.juchi {
+    width: 6.9rem;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: -0.2rem;
+}
+
 .list_item {
-    height: 1.25rem;
+    height: 1.31rem;
     width: 6.7rem;
+    margin: 0 auto;
+
     border-bottom: 1px solid #EBEBEB;
 }
 
 .list_left {
 
     font-size: 0.28rem;
-    margin-top: 0.34rem;
-    margin-left: 0.46rem;
-    line-height: 0.7rem;
+    padding-top: 0.3rem;
+    padding-left: 0.46rem;
 }
 
 .use_date {
     color: #CCCCCC;
-    font-size: 0.28rem;
+    font-size: 0.24rem;
+    padding-top: 0.2rem;
 
     margin-left: 0.46rem;
 }

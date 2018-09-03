@@ -20,7 +20,9 @@ body {
     margin: 0 auto;
     border-bottom: 0.01rem solid #EBEBEB;
 }
-
+.out_bot{
+    border-bottom: none;
+}
 .address_out_box {
     width: 7.5rem;
     background-color: #fff;
@@ -28,7 +30,7 @@ body {
 
 .user_name {
     display: inline-block;
-    padding: 0.34rem 0 0 0.3rem;
+    padding: 0.34rem 0 0 0;
 }
 
 .user_box {
@@ -44,7 +46,7 @@ body {
 }
 
 .address_box {
-    padding: 0.34rem 0 0.5rem 0.3rem;
+    padding: 0.34rem 0 0.5rem 0;
 }
 
 .edit_box {
