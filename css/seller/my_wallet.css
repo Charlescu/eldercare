@@ -1,14 +1,16 @@
+html,
 body {
+    height: 100%;
     background: url('../../images/axcvsav@2x.png');
     background-size: 7.5rem 4.6rem;
     background-repeat: no-repeat;
-    background-color: #F9FDFD;
+    background-color: #F5F8FA;
 }
 
 .head_box {
 
     margin: 0 auto;
-    margin: 0.8rem 0 0 0.76rem;
+    padding: 0.8rem 0 0 0.76rem;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -51,6 +53,8 @@ body {
 
 
 
+
+
 /* 选项卡 */
 
 .select_card {
@@ -86,6 +90,8 @@ body {
     font-size: 0.28rem;
     width: 1.5rem !important;
 }
+
+
 
 
 
@@ -134,6 +140,8 @@ body {
     width: 0.3rem;
     height: 0.4rem;
 }
+
+
 
 
 

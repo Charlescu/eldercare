@@ -1,4 +1,6 @@
+html,
 body {
+    height: 100%;
     background: url('../../images/axcvsav@2x.png');
     background-size: 7.5rem 4rem;
     background-repeat: no-repeat;
@@ -8,7 +10,7 @@ body {
 .head_box {
     text-align: center;
     margin: 0 auto;
-    margin-top: 0.8rem;
+    padding-top: 0.8rem;
 }
 
 .all_jifen {
@@ -31,6 +33,12 @@ body {
     text-align: center;
     border-radius: 0.1rem;
 }
+
+
+
+
+
+
 
 
 
@@ -94,12 +102,19 @@ body {
 
 
 
+
+
+
+
+
+
 /* lease_box */
 
 .lease_box {
     width: 6.9rem;
     margin: 0 auto;
     margin-top: 0.2rem;
+    padding-bottom: 0.2rem;
     background-color: #fff;
 }
 
@@ -137,5 +152,15 @@ body {
 }
 
 .list_liem {
+    margin: 0 auto;
+}
+
+.con_all {
+    text-align: center;
+}
+
+.juchi {
+    width: 6.9rem;
+    height: 100%;
     margin: 0 auto;
 }

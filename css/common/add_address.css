@@ -2,9 +2,23 @@
     width: 5rem;
 }
 
+html,
 body {
-    background-color: #f5f8fa !import；
+    height: 100%;
+    background: #F5F8FA;
 }
+
+.select_city {
+    width: 4.5rem;
+}
+
+.local_icon {
+    width: 0.24rem;
+    height: 0.28rem;
+    margin-bottom: -0.07rem;
+    display: inline-block;
+}
+
 
 
 /* 租赁日期 */
@@ -12,7 +26,7 @@ body {
 .link_man {
     height: 0.8rem;
     line-height: 0.8rem;
-    font-size: 0.25rem;
+    font-size: 0.26rem;
     color: #999999;
 }
 
@@ -23,7 +37,7 @@ body {
 }
 
 .user_box {
-    background-color: #fff;
+    background-color: #FFF;
     padding-left: 0.31rem;
     padding-right: 0.31rem;
 }
@@ -31,7 +45,8 @@ body {
 .user_name {
     width: 6.7rem;
     height: 0.8rem;
-    line-height: 0.8rem;
+    line-height: 0.9rem;
+    font-size: 0.28rem;
     border-bottom: 1px solid #cccccc;
     margin: 0 auto;
 }
@@ -39,7 +54,8 @@ body {
 .user_tel {
     width: 6.7rem;
     height: 0.8rem;
-    line-height: 0.8rem;
+    line-height: 0.9rem;
+    font-size: 0.28rem;
     margin: 0 auto;
 }
 
@@ -52,17 +68,38 @@ body {
 .user_diqu {
     width: 6.7rem;
     height: 0.8rem;
-    line-height: 0.8rem;
+    line-height: 0.9rem;
+    font-size: 0.28rem;
     border-bottom: 1px solid #cccccc;
     margin: 0 auto;
 }
 
 .user_dizhi {
     width: 6.7rem;
-    height: 0.8rem;
+    height: 0.9rem;
+    font-size: 0.28rem;
     line-height: 0.8rem;
     margin: 0 auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

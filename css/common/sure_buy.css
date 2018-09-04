@@ -1,9 +1,17 @@
 /* 地址管理 */
 
+body {
+    background-color: #F5F8FA;
+}
+
+.container {
+    padding-top: 0.2rem;
+}
+
 .address_box {
     background-color: #fff;
     margin: 0 auto;
-    margin-top: 0.2rem;
+
     width: 6.9rem;
     border-radius: 0.1rem;
     box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
@@ -57,6 +65,8 @@
     margin-right: 0.31rem;
     width: 0.24rem;
 }
+
+
 
 /* 商品 */
 
@@ -161,6 +171,9 @@
 .add_img {
     float: right;
 }
+
+
+
 /* 配送方式 */
 
 .peisong {
@@ -208,6 +221,8 @@
     line-height: 0.93rem;
     color: #53A6FA;
 }
+
+
 
 /* 支付方式 */
 
@@ -273,6 +288,8 @@
 .cancel {
     margin: 0.5rem 0.4rem 0 0;
 }
+
+
 
 
 

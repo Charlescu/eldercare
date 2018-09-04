@@ -1,12 +1,17 @@
 /* 租赁日期 */
 
+body {
+    background-color: #F5F8FA;
+}
+
 .container {
+    padding-top: 0.2rem;
     padding-bottom: 1.89rem;
 }
 
 .address_box {
     margin: 0 auto;
-    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
     width: 6.9rem;
     border-radius: 0.1rem;
     box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
@@ -62,6 +67,10 @@
 .user_address {
     background-color: #fff;
 }
+
+
+
+
 
 
 

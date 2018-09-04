@@ -1,20 +1,22 @@
+html,
 body {
+    height: 100%;
     background: url('../../images/personal_center.png');
     background-size: 7.5rem 4rem;
     background-repeat: no-repeat;
-    background-color: #F9FDFD;
+    background-color: #F5F8FA;
 }
 
 .head_box {
     text-align: center;
     margin: 0 auto;
-    margin-top: 0.61rem;
+    padding-top: 0.55rem;
 }
 
 .pic_box {
     width: 1.16rem;
     height: 1.16rem;
-    border: 0.05rem solid #FFF;
+    border: 0.09rem solid #5BBDFC;
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: 0.21rem;
@@ -31,6 +33,24 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 列表项 */
 
 .list_box {
@@ -39,7 +59,7 @@ body {
     background-color: #fff;
     box-shadow: 0px 8px 8px 2px rgba(6, 4, 41, 0.03);
     width: 6.9rem;
-    margin-top: 1.6rem;
+    margin-top: 1.59rem;
 }
 
 .list_item {
@@ -71,4 +91,19 @@ body {
 .list_right img {
     width: 0.15rem;
     margin: 0 0.1rem;
+}
+
+.bot_box {
+    width: 7.5rem;
+    position: fixed;
+    bottom: 0.4rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dayang {
+    width: 4.88rem;
+    height: 0.98rem;
+    margin: 0 auto;
+    text-align: center;
 }

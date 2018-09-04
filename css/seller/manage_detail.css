@@ -1,5 +1,7 @@
+html,
 body {
-    background-color: #F3FCFB;
+    height: 100%;
+    background-color: #F5F8FA;
 }
 
 .select_card {
@@ -25,6 +27,18 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* 商品 */
 
 
@@ -40,7 +54,6 @@ body {
     height: 0.8rem;
     line-height: 0.8rem;
     font-size: 0.28rem;
-    font-weight: 600;
 }
 
 .top_orderstatus {
@@ -62,7 +75,6 @@ body {
     line-height: 0.8rem;
     font-size: 0.28rem;
     margin-left: 0.3rem;
-    font-weight: 600;
 }
 
 .con_title {
@@ -91,12 +103,12 @@ body {
 }
 
 .goods_title {
-    font-size: 0.34rem;
-    margin-top: 0.35rem;
+    font-size: 0.3rem;
+    margin-top: 0.28rem;
 }
 
 .goods_content {
-    font-size: 0.28rem;
+    font-size: 0.24rem;
     margin-top: 0.18rem;
     color: #999999;
 }
@@ -104,16 +116,30 @@ body {
 .goods_money {
     font-size: 0.28rem;
     margin-top: 0.32rem;
+    font-weight: 600;
     color: #53A6FA;
 }
 
 .goods_nums {
     float: right;
-    margin: -0.6rem 0.24rem 0 0;
+    margin: -0.3rem 0.24rem 0 1.9rem;
     text-align: center;
     color: #666666;
 }
 
 .import_pic {
     width: 0.56rem;
+}
+
+.pos_box {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-top: 0.2rem;
+}
+
+.change_status {
+    width: 1rem;
 }

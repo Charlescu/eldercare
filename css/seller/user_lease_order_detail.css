@@ -1,14 +1,28 @@
+html,
 body {
+    height: 100%;
     background-color: #F5F8FA;
 }
 
 
+
+
+
+
+
+
+
+
+
 /* 租赁日期 */
+
+.container {
+    padding-top: 0.2rem;
+}
 
 .address_box {
     background-color: #fff;
     margin: 0 auto;
-    margin-top: 0.2rem;
     width: 6.9rem;
     border-radius: 0.1rem;
     box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
@@ -64,6 +78,15 @@ body {
     margin-top: 0.02rem;
     font-size: 0.24rem;
 }
+
+
+
+
+
+
+
+
+
 
 
 /* 商品 */
@@ -175,15 +198,16 @@ body {
 
 /* 配送方式 */
 
+textarea {
+    outline: none;
+    margin-top: -0.07rem;
+}
+
 .peisong {
+    background-color: #fff;
     margin: 0 auto;
     margin-top: 0.2rem;
     width: 6.9rem;
-    border-radius: 0.1rem 0.1rem 0 0;
-}
-
-.peisong_in_box {
-    background-color: #fff;
     border-radius: 0.1rem;
     box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
 }
@@ -194,19 +218,20 @@ body {
     margin-left: 0.32rem;
 }
 
-
-/* 布局居中 */
-
 .take_it span {
-
     font-size: 0.25rem;
     color: #999999;
     float: right;
     margin-right: 0.4rem;
 }
 
+
+
 .take_it img {
+    vertical-align: middle;
     width: 0.18rem;
+    height: 0.26rem;
+    margin-left: 0.2rem;
 }
 
 .peisong_box {
@@ -222,23 +247,30 @@ body {
 .cash_p {
     height: 0.44rem;
     line-height: 0.44rem;
-    color: #53A6FA;
-    font-size: 0.23rem;
-    border: 0.01rem solid #53A6FA;
+    font-size: 0.24rem;
+    border: 0.02rem solid #53A6FA;
     border-radius: 0.1rem;
     margin-left: 0.52rem;
     display: inline-block;
-    width: 1.8rem;
+    width: 2rem;
+}
+
+.csah_p span.yajin {
+    margin-top: -0.02rem;
+    margin-left: 0.3rem;
+    height: 0.44rem;
+    line-height: 0.44rem;
 }
 
 .cash_p img {
-    margin-left: 0.05rem;
-    margin-right: 0.2rem;
     vertical-align: middle;
+    margin-top: -0.04rem;
+    margin-right: 0.2rem;
+    margin-left: 0.1rem;
     width: 0.3rem;
 }
 
-.peisong_box span {
+.peisong_box span.moneys {
     font-size: 0.25rem;
     margin-right: 0.41rem;
     float: right;
@@ -250,8 +282,35 @@ body {
     padding-top: 0.6rem;
     margin-left: 0.32rem;
     padding-bottom: 0.3rem;
-    border-radius: 0.1rem;
 }
+
+
+.xiaoji_box {
+    width: 6.9rem;
+    height: 0.93rem;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
+    border-radius: 0.1rem;
+    border-top: 0.01rem solid #EBEBEB;
+}
+
+.xiaoji {
+    margin-right: 0.39rem;
+    float: right;
+    line-height: 0.93rem;
+    color: #53A6FA;
+}
+
+
+
+
+
+
+
+
+
+/* 布局居中 */
 
 .xiaoji_box {
     width: 6.9rem;

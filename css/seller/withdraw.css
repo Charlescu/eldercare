@@ -1,0 +1,52 @@
+body {
+    background-color: #F5F8FA;
+    height: ;
+}
+
+.list_box {
+    width: 6.4rem;
+    margin: 0 auto;
+
+    background-color: #fff;
+}
+
+.list_box_item {
+    padding-top: 0.42rem;
+    min-height: 5rem;
+}
+
+.container {
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+}
+
+
+.withdraw_listhead_ul {
+
+    background-color: #fff;
+}
+
+.withdraw_list_ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.24rem;
+    width: 6.4rem;
+    background-color: #fff;
+    margin: 0 auto;
+    color: #999999;
+}
+
+.list_liem {
+    margin: 0 auto;
+}
+
+.juchi {
+    width: 6.4rem;
+    height: 0.53rem;
+    margin: 0 auto;
+    margin-left: 0.3rem;
+}

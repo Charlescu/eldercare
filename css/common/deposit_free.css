@@ -1,9 +1,73 @@
-
-.content_text_box p{
-	width:5.54rem;
-	margin:0 auto;
+body {
+    background-color: #F5F8FA;
+    height: ;
 }
-p.content{
-	font-size: 0.26rem;
-	line-height:0.48rem;
+
+.content_text_box {}
+
+.container {
+    padding-bottom: 1rem;
+}
+
+.content_text_box p {
+    width: 5.54rem;
+    margin: 0 auto;
+}
+
+.content {
+    font-size: 0.26rem;
+    line-height: 0.48rem;
+}
+
+.tel {
+    display: inline-block;
+    float: right;
+    margin: 0.66rem 0.56rem 0 0;
+    font-size: 0.25rem;
+}
+
+.phone {
+    color: #53A6FA;
+}
+
+.tel_num span {
+    padding: 0.1rem;
+    border-radius: 0.1rem;
+    color: #53A6FA;
+    border: 1px solid #53A6FA;
+}
+
+.tel_num {
+    padding-left: 0.2rem;
+    width: 4.8rem;
+    height: 1rem;
+    line-height: 1rem;
+    margin: 0 auto;
+    font-size: 0.28rem;
+    color: #53A6FA;
+    margin-top: 0.2rem;
+    border-radius: 0.1rem;
+    background-color: #FAFAFA;
+}
+
+.tel_box {
+    width: 6.4rem;
+    height: 0.5rem;
+    margin: 0 auto;
+
+    margin-right: 0.4rem;
+    padding: 0.2rem 0 0 0;
+}
+
+.tel_in_box {
+    margin-right: 0.4rem;
+    background-color: #rgba(255, 255, 255, 0);
+    float: right;
+}
+
+.juchi {
+
+    width: 6.4rem;
+    height: 0.53rem;
+    margin: 0 auto;
 }

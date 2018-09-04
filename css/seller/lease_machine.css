@@ -1,6 +1,8 @@
     /*     搜索框 */
 
-    body {
+    body,
+    html {
+        height: 100%;
         background-color: #F5F8FA;
     }
 
@@ -10,10 +12,11 @@
         padding-top: 0.25rem;
         margin-bottom: 0.25rem;
         background-color: #fff;
+        text-align: center;
     }
 
     .category_search_box {
-        vertical-align: center;
+        text-align: center;
         margin: 0 auto;
         text-align: center;
         border-radius: 0.1rem;
@@ -27,13 +30,14 @@
     }
 
     .category_search_icon {
-        position: relative;
+
         left: 0.2rem;
         display: inline-block;
         width: 0.3rem;
         height: 0.3rem;
-        float: right;
+        float: left;
         margin: 0.15rem auto;
+        margin-left: 0.19rem;
         padding-right: 0.25rem;
     }
 
@@ -81,21 +85,33 @@
 
         width: 1.9rem;
         height: 100%;
-        font-size: 0.3rem;
+        font-size: 0.32rem;
         padding-bottom: 1.3rem;
         overflow: hidden;
-        font-weight: 600;
+        font-weight: 500;
         background-color: #fff;
     }
 
-    .choose {
-        color: #53A6FA;
+    .desc_title {
+        font-size: 0.3rem;
+    }
+
+    .desc_content {
+        display: inline-block;
+        font-size: 0.12rem;
+        color: #999999;
+        width: 3rem;
+        margin-top: 0.05rem;
     }
 
     .select_card_list {
         padding-top: 0.43rem;
-
+        color: #999999;
         text-align: center;
+    }
+
+    .choose {
+        color: #53A6FA;
     }
 
     .machine_outbox {
@@ -118,6 +134,7 @@
     }
 
     .machine_pic {
+        margin: 0.05rem 0 0 0.05rem;
         width: 1.6rem;
         height: 1.6rem;
     }
@@ -144,10 +161,20 @@
         display: flex;
         justify-content: space-between;
         margin-top: 0.5rem;
+        padding-bottom: 0.2rem;
+    }
+
+    .money {
+        font-weight: 600;
+        color: #53A6FA;
     }
 
     .nums {
-        color: #53A6FA;
+        margin-top: -0.08rem;
+    }
+
+    .span_nums {
+        font-size: 0.3rem;
     }
 
     .manage_box {
@@ -173,4 +200,9 @@
 
     .manage_box_list {
         margin: 0.2rem 0.6rem;
+    }
+
+    .manage_box_list p {
+        font-size: 0.24rem;
+        color: #666666;
     }

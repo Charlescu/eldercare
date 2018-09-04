@@ -1,5 +1,7 @@
+html,
 body {
-    background-color: #F3FCFB;
+    height: 100%;
+    background-color: #F5F8FA;
 }
 
 .scan_ul {
@@ -10,16 +12,16 @@ body {
     display: flex;
     justify-content: center;
     background-color: #fff;
-    border-bottom: 0.01rem solid #CCCCCC;
+    border-bottom: 0.01rem solid #EBEBEB;
 }
 
 .scan_list {
     height: ;
     line-height: ;
-    width: 1.8rem;
+    width: 1.5rem;
     padding: 0.3rem 0;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 }
 
 .scan_pic {
@@ -41,6 +43,29 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 扫一扫// */
 
 .switch_box {
@@ -55,6 +80,29 @@ body {
     margin-top: 1rem;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -82,6 +130,7 @@ body {
 }
 
 .category_search_input {
+    text-align: center;
     line-height: 0.6rem;
     margin-left: 0.3rem;
 }
@@ -128,6 +177,65 @@ input:-ms-input-placeholder {
     margin: 0 0.8rem;
 }
 
+em {
+    display: inline-block;
+    width: 0.23rem;
+    height: 0.28rem;
+    margin-right: 0.1rem;
+}
+
+.scan_list em.select_icon1 {
+    vertical-align: middle;
+    margin-top: -0.06rem;
+    background: url('../../images/sacavcava@2x.png') no-repeat;
+    background-size: 0.23rem 0.26rem;
+}
+
+.scan_list em.select_icon2 {
+    vertical-align: middle;
+    margin-top: -0.06rem;
+    background: url('../../images/bianji2.png') no-repeat;
+    background-size: 0.23rem 0.27rem;
+}
+
+.scan_ul li.scan-box em.select_icon1 {
+    vertical-align: middle;
+    margin-top: -0.06rem;
+    background: url('../../images/asasa@2x.png') no-repeat;
+    background-size: 0.23rem 0.26rem;
+}
+
+.scan_ul li.scan-box em.select_icon2 {
+    vertical-align: middle;
+    margin-top: -0.06rem;
+    background: url('../../images/bianji2_checked.png') no-repeat;
+    background-size: 0.23rem 0.27rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -167,7 +275,6 @@ input:-ms-input-placeholder {
     line-height: 0.8rem;
     font-size: 0.28rem;
     margin-left: 0.3rem;
-    font-weight: 600;
 }
 
 .con_title {
@@ -210,6 +317,7 @@ input:-ms-input-placeholder {
     font-size: 0.28rem;
     margin-top: 0.32rem;
     color: #53A6FA;
+    font-weight: 600;
 }
 
 .goods_nums {

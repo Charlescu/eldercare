@@ -1,10 +1,14 @@
 body {
-    background-color: #EDFCFA;
+    background-color: #F5F8FA;
+}
+
+html,
+body {
+    height: 100%;
 }
 
 .manage_ul {
-    padding-top: 0.43rem;
-    margin-top: 0.43rem;
+    padding-top: 0.86rem;
     text-align: center;
 }
 
