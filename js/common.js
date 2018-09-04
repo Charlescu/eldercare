@@ -48,7 +48,7 @@ window.onload = function() {
             onConfirm: function(result) {
                 start_mon = parseInt(result[1].lable);
                 start_day = parseInt(result[2].lable);
-
+                $('.start_time').text(result[1].lable + result[2].lable);
 
             }
         });

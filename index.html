@@ -120,10 +120,14 @@
 <script>
 $(document).ready(function() {
     get_main_content();
+
+    //默认调用
     var local_month = new Date().getMonth() + 1,
         local_day = new Date().getDate();
     var $menu_box = $('.content_body .con_title>li');
     $('.start_time').text(local_month + '月' + local_day + '日');
+
+    //选项卡
     $menu_box.click(function() {
         $(this).addClass('con_curr').siblings().removeClass('con_curr');
 

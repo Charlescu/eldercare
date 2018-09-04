@@ -1,114 +1,123 @@
-    #wrap {
-        width: 7.5rem;
-        height: 100%;
-        margin: auto;
-        overflow: hidden;
-    }
+   html,
+   body {
+       height: 100%;
+   }
 
-    #wrap div ._left {
-        width: 281px;
-        float: left;
-        height: 339px;
-        border-right: 1px solid #CCCCCC;
-    }
+   .container {
+       height: 100%;
+   }
+
+   #wrap {
+       width: 7.5rem;
+       height: 100%;
+       margin: auto;
+       overflow: hidden;
+   }
+
+   #wrap div ._left {
+       width: 281px;
+       float: left;
+       height: 339px;
+       border-right: 1px solid #CCCCCC;
+   }
 
 
 
-    #dituContent {
-        width: 7.5rem;
-        height: 7.5rem;
-        float: left;
-    }
+   #dituContent {
+       width: 7.5rem;
+       height: 7.5rem;
+       float: left;
+   }
 
-    .ziti_box {
-        margin: 0 auto;
-        width: 6.9rem;
-    }
+   .ziti_box {
+       margin: 0 auto;
+       width: 6.9rem;
+   }
 
-    .ziti_ul {
-        margin-top: 0.2rem;
-        width: 6.9rem;
-        border-radius: 0.1rem;
-        background-color: #fff;
-        position: absolute;
-        z-index: 9999;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        flex-direction: column;
-    }
+   .ziti_ul {
+       margin-top: 0.2rem;
+       width: 6.9rem;
+       border-radius: 0.1rem;
+       background-color: #fff;
+       position: absolute;
+       z-index: 9999;
+       display: -webkit-flex;
+       display: -moz-flex;
+       display: -ms-flex;
+       display: -o-flex;
+       display: flex;
+       flex-direction: column;
+   }
 
-    .ziti_list {
-        padding: 0 0.2rem 0 0.2rem;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        justify-content: space-between;
-    }
+   .ziti_list {
+       padding: 0 0.2rem 0 0.2rem;
+       display: -webkit-flex;
+       display: -moz-flex;
+       display: -ms-flex;
+       display: -o-flex;
+       display: flex;
+       justify-content: space-between;
+   }
 
-    .list_box {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        height: 0.36rem;
-        line-height: 0.36rem;
-    }
+   .list_box {
+       display: -webkit-flex;
+       display: -moz-flex;
+       display: -ms-flex;
+       display: -o-flex;
+       display: flex;
+       height: 0.36rem;
+       line-height: 0.36rem;
+   }
 
-    .ziti_list_local {
-        margin-top: 0.2rem;
-    }
+   .ziti_list_local {
+       margin-top: 0.2rem;
+   }
 
-    .list_box_img {
-        width: 0.34rem;
-        height: 0.36rem;
-        margin-right: 0.2rem;
-    }
+   .list_box_img {
+       width: 0.34rem;
+       height: 0.36rem;
+       margin-right: 0.2rem;
+   }
 
-    .list_box_content {
-        font-size: 0.3rem;
-        line-height: 0.36rem;
-    }
+   .list_box_content {
+       font-size: 0.3rem;
+       line-height: 0.36rem;
+   }
 
-    .local_content {
-        font-weight: 600;
-    }
+   .local_content {
+       font-weight: 600;
+   }
 
-    .address_box {
-        font-size: 0.25rem;
-        padding: 0.27rem 0.25rem 0 0.3rem;
-    }
+   .address_box {
+       font-size: 0.25rem;
+       padding: 0.27rem 0.25rem 0 0.3rem;
+   }
 
-    .address {
-        width: 1rem;
-    }
+   .address {
+       width: 1rem;
+   }
 
-    .list_btn_box {
-        margin: 0 auto;
-        margin-top: 0.58rem;
-        margin-bottom: 0.3rem;
-    }
+   .list_btn_box {
+       margin: 0 auto;
+       margin-top: 0.58rem;
+       margin-bottom: 0.3rem;
+   }
 
-    .list_btn {
-        text-align: center;
-        height: 0.6rem;
-        width: 2rem;
-        font-size: 0.28rem;
-        line-height: 0.6rem;
-        border-radius: 0.3rem;
-        background-color: #EBEBEB;
-    }
+   .list_btn {
+       text-align: center;
+       height: 0.6rem;
+       width: 2rem;
+       font-size: 0.28rem;
+       line-height: 0.6rem;
+       border-radius: 0.3rem;
+       background-color: #EBEBEB;
+   }
 
-    .list_btn_select {
-        color: #FFF;
-        background-color: #53A6FA;
-    }
+   .list_btn_select {
+       color: #FFF;
+       background-color: #53A6FA;
+   }
 
-    .ziti_list_btn {
-        margin-bottom: 0.2rem;
-    }
+   .ziti_list_btn {
+       margin-bottom: 0.2rem;
+   }
