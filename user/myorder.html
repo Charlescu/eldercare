@@ -54,7 +54,7 @@
                                 <p class="buy_message buyorder_number">订单号:123456</p>
                                 <p class="top_orderstatus">待付款</p>
                             </div>
-                            <ul class="con_list_ul">
+                            <ul class="con_list_ul buy_ul_item">
                                 <li class="con_list_li">
                                     <img class="con_list_img" src="../images/5653ceba1a219@2x.png" alt="">
                                     <div class="goods_box">
@@ -129,7 +129,7 @@
                                 <p class="buy_message buyorder_number">订单号:123456</p>
                                 <p class="top_orderstatus">待付款</p>
                             </div>
-                            <ul class="con_list_ul">
+                            <ul class="con_list_ul ">
                                 <li class="con_list_li">
                                     <img class="con_list_img" src="../images/5653ceba1a219@2x.png" alt="">
                                     <div class="goods_box">
@@ -256,7 +256,7 @@
                                     <p class="buy_message leaseorder_number">订单号:123456</p>
                                     <p class="top_orderstatus">待付款</p>
                                 </div>
-                                <ul class="con_list_ul">
+                                <ul class="con_list_ul lease_ul_item">
                                     <li class="con_list_li">
                                         <img class="con_list_img" src="../images/5653ceba1a219@2x.png" alt="">
                                         <div class="goods_box">
@@ -319,9 +319,9 @@
 
         });
         //查看购买订单
-        $('.order_number').on('click', function() { window.location.href = 'buy_order_detail.html' })
+        $('.buy_ul_item').on('click', function() { window.location.href = 'buy_order_detail.html' })
         //查看租赁订单
-        $('.leaseorder_number').on('click', function() { window.location.href = 'lease_order_detail.html' })
+        $('.lease_ul_item').on('click', function() { window.location.href = 'lease_order_detail.html' })
         pull_load()
     })
     var page = '',

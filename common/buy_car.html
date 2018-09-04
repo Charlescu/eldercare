@@ -89,16 +89,23 @@
 
         } else {
             $('.con_list_li').hide();
+            $('.all_ckeck img').hide();
         }
 
     });
     //勾选
     $('.check_radio').on('click', function() {
+
         if ($('.check_radio img').is(':hidden')) { //如果当前隐藏
             $('.check_radio img').show(); //那么就显示div
             $('.check_radio').attr('border', 'none');
         } else { //否则
             $('.check_radio img').hide(); //就隐藏div
+        }
+        if ($('.con_list_li').length == 1 && $('.check_radio img').is(':hidden') == false) {
+            $('.all_ckeck img').show();
+        } else {
+            $('.all_ckeck img').hide();
         }
     })
     //全部勾选

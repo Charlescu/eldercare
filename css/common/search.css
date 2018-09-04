@@ -5,20 +5,22 @@
     margin-left: 0.4rem;
     display: inline-block;
     text-align: center;
-   
+
     width: 6.55rem;
     height: 0.6rem;
-    
 }
- .search_input_box{
-    width:5.96rem;
+
+.search_input_box {
+    text-align: center;
+    width: 5.96rem;
     border-radius: 0.1rem;
     display: inline-block;
     background-color: #F5F5F5;
-} 
+}
+
 .search_search_input {
+    text-align: center;
     line-height: 0.6rem;
-    
 }
 
 .search_search_icon {
@@ -29,8 +31,8 @@
     float: right;
     margin: 0.15rem auto;
     margin-left: 0.29rem;
- 
 }
+
 input::-webkit-input-placeholder {
     color: #CCCCCC;
 }
@@ -49,54 +51,65 @@ input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #CCCCCC;
 }
-.search_hitory{
-    margin-left:0.43rem;
+
+.search_hitory {
+    margin-left: 0.43rem;
 }
-.search_history_list{
+
+.search_history_list {
     display: inline-block;
     line-height: 0.24rem;
     font-size: 0.24rem;
-    margin:0.2rem auto;
-    padding:0.1rem 0.2rem;
+    margin: 0.2rem auto;
+    padding: 0.1rem 0.2rem;
     border-radius: 0.22rem;
-    border:1px solid #cccccc;
-    color:#cccccc;
+    border: 1px solid #cccccc;
+    color: #cccccc;
 }
+
+
 
 /* 搜索结果 */
-.con_title{
+
+.con_title {
     text-align: center;
-    height:0.6rem;
-    margin-bottom:0.22rem;
+    height: 0.6rem;
+    margin-bottom: 0.22rem;
 }
- .con_list_li{
+
+.con_list_li {
     border-top: 0.01rem solid #EBEBEB;
     line-height: 0.6rem;
- }
- .con_list_img {
+}
+
+.con_list_img {
     margin-left: 0.43rem;
     display: inline-block;
-    width:1.82rem;
- } 
+    width: 1.82rem;
+}
 
- .goods_icon{
-    width:0.51rem;
-    float:right;
- }
- .goods_box{
-    margin:0.28rem auto;
+.goods_icon {
+    width: 0.51rem;
+    float: right;
+}
+
+.goods_box {
+    margin: 0.28rem auto;
     margin-left: 0.5rem;
-    width:4.38rem;
+    width: 4.38rem;
     display: inline-block;
- }
- .goods_title{
+}
+
+.goods_title {
     font-size: 0.34rem;
- }
- .goods_content{
+}
+
+.goods_content {
     font-size: 0.28rem;
-    color:#999999;
- }
- .goods_money{
+    color: #999999;
+}
+
+.goods_money {
     font-size: 0.28rem;
-    color:#53A6FA;
- }
+    color: #53A6FA;
+}

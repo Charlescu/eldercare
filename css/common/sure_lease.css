@@ -229,10 +229,15 @@ textarea {
 }
 
 .csah_p span.yajin {
+    color: #53A6FA;
     margin-top: -0.02rem;
     margin-left: 0.3rem;
     height: 0.44rem;
     line-height: 0.44rem;
+}
+
+.yajin {
+    color: #53A6FA;
 }
 
 .cash_p img {

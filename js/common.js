@@ -23,10 +23,13 @@ window.onload = function() {
 
     $subtract_img.on('click', function() {
         if (count_switch) {
-            --$goods_num;
-            if ($goods_num == 0) {
+            if ($goods_num > 1) {
+                --$goods_num;
+            }
+            if ($goods_num < 2) {
                 count_switch = false;
             }
+
             console.log($goods_num);
             $('.join p').text($goods_num);
             $('.xiaoji').text('共' + $goods_num + '件商品  小计：￥' + parseFloat(($('.goods_money').text().replace(/[^0-9]/ig, ""))) * $goods_num);
@@ -46,10 +49,23 @@ window.onload = function() {
             end: 2030,
             defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
             onConfirm: function(result) {
-                start_mon = parseInt(result[1].lable);
-                start_day = parseInt(result[2].lable);
+                /*start_mon = parseInt(result[1].lable);
+start_day = parseInt(result[2].lable);*/
                 $('.start_time').text(result[1].lable + result[2].lable);
 
+            }
+        });
+    });
+    $('.back_good_time').click(function(event) {
+        var _this = this;
+        weui.datePicker({
+            start: new Date(),
+            end: 2030,
+            defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
+            onConfirm: function(result) {
+                /* start_mon = parseInt(result[1].lable);
+ start_day = parseInt(result[2].lable);*/
+                $('.end_time').text(result[1].lable + result[2].lable);
             }
         });
     });
