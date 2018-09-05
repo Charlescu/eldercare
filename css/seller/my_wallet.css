@@ -18,6 +18,22 @@ body {
     display: flex;
 }
 
+.tel_num {
+    width: 5rem;
+    height: 1rem;
+    margin: 0 auto;
+    line-height: 1rem;
+    margin-top: 0.26rem;
+    font-size: 0.28rem;
+    color: #000;
+    background-color: #EAEAEA;
+    text-indent: 0.28rem;
+}
+
+.tel_num span {
+    color: #53A6FA;
+}
+
 .money_pic {
 
     width: 2.64rem;
@@ -47,6 +63,10 @@ body {
     text-align: center;
     border-radius: 0.1rem;
 }
+
+
+
+
 
 
 
@@ -97,6 +117,10 @@ body {
 
 
 
+
+
+
+
 /* 积分使用记录 */
 
 .list_box {
@@ -140,6 +164,10 @@ body {
     width: 0.3rem;
     height: 0.4rem;
 }
+
+
+
+
 
 
 

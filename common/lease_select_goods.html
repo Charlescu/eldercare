@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1-3导购页-购买</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common/select_goods.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="goods_box">
+            <img class="goods_pic" src="../images/listbanner2.png" alt="">
+            <p class="goodS_name">HO56C手动轮椅车</p>
+            <span class="goods_desc">出行收纳更方便,体积更小轻松放入汽车后备箱</span>
+        </div>
+        <div class="goods_box">
+            <img src="../images/listbanner3.png" alt="">
+            <p class="goodS_name">HO56C手动轮椅车</p>
+            <span class="goods_desc">出行收纳更方便,体积更小轻松放入汽车后备箱</span>
+        </div>
+        <div class="goods_box">
+            <img src="../images/listbanner5.png" alt="">
+            <p class="goodS_name">HO56C手动轮椅车</p>
+            <span class="goods_desc">出行收纳更方便,体积更小轻松放入汽车后备箱</span>
+        </div>
+        <div class="goods_box">
+            <img src="../images/listbanner6.png" alt="">
+            <p class="goodS_name">HO56C手动轮椅车</p>
+            <span class="goods_desc">出行收纳更方便,体积更小轻松放入汽车后备箱</span>
+        </div>
+    </div>
+</body>
+<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+<script>
+$(document).ready(function() {
+    get_main_content();
+
+    var $menu_box = $('.content_body .con_title>li');
+    $menu_box.click(function() {
+        $(this).addClass('con_curr').siblings().removeClass('con_curr');
+        var index = $menu_box.index(this);
+        $('.con_all .con_warp').eq(index).show().siblings().hide();
+    });
+})
+
+//商品跳转，类型1租赁，类型2为购买
+var cate_type = getUrlParam('cate_type');
+$('.goods_pic').on('click', function() {
+    window.location.href = "lease_goods_category.html"
+})
+
+
+function get_main_content() {
+
+}
+//商品跳转
+</script>
+
+</html>

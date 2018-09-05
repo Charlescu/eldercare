@@ -10,11 +10,6 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/weui.css">
     <link rel="stylesheet" href="css/myweui.css">
-    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/weui.js"></script>
-    <script src="js/myweui.js"></script>
-    <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/base.js" type="text/javascript" charset="utf-8"></script>
     <style>
 
     </style>
@@ -116,6 +111,11 @@
                 </div>
             </div>
 </body>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/weui.js"></script>
+<script src="js/myweui.js"></script>
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/common.js"></script>
 <script>
 $(document).ready(function() {
@@ -135,6 +135,19 @@ $(document).ready(function() {
         $('.con_all .con_warp').eq(index).show().siblings().hide();
     });
 })
+$('.get_good_time').click(function(event) {
+    var _this = this;
+    weui.datePicker({
+        start: new Date(),
+        end: 2030,
+        defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
+        onConfirm: function(result) {
+            console.log(result[0].lable + result[1].lable + result[2].lable);
+            $('.start_time').text(result[1].lable + result[2].lable);
+
+        }
+    });
+});
 
 function get_main_content() {
 
@@ -163,9 +176,9 @@ var swiper = new Swiper('.swiper-container', {
 
 
 //我要租赁-查找器材跳转
-$('.lookup_equipment').on('click', function() { window.location.href = 'common/select_goods.html?cate_type=1' })
+$('.lookup_equipment').on('click', function() { window.location.href = 'common/lease_select_goods.html' })
 //我要购买-去挑选商品跳转
-$('.Select_goods').on('click', function() { window.location.href = 'common/select_goods.html?cate_type=2' })
+$('.Select_goods').on('click', function() { window.location.href = 'common/buy_select_goods.html' })
 //地理位置跳转
 $('.local_location').on('click', function() { window.location.href = 'common/map.html' })
 //查看商品跳转

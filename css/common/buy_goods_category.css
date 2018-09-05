@@ -5,6 +5,12 @@
 
 
 
+
+
+
+
+
+
 /*     搜索框 */
 
 .category_search_box {
@@ -18,7 +24,7 @@
 
 .category_search_input {
     text-align: center;
-    width:80%;
+    width: 80%;
     line-height: 0.6rem;
     margin-left: 0.3rem;
 }
@@ -52,52 +58,69 @@ input:-ms-input-placeholder {
 }
 
 
+
+
+
+
+
+
 /* 选择列表 */
 
 .select_card_list {
     float: left;
     font-size: 0.28rem;
     width: 1.18rem;
-    color:#999999;
+    color: #999999;
     margin: 0 0.3rem;
+    font-size: 600;
     line-height: 0.6rem;
 }
-.con_title{
-	text-align: center;
-	height:0.6rem;
-	margin-bottom:0.22rem;
-}
-.con_title li.con_curr{
-     color: #53A6FA;
- }
- .con_list_li{
- 	border-top: 0.01rem solid #EBEBEB;
- 	line-height: 0.6rem;
- }
- .con_list_img {
- 	margin-left: 0.43rem;
- 	display: inline-block;
- 	width:1.82rem;
- }
 
- .goods_icon{
- 	width:0.51rem;
- 	float:right;
- }
- .goods_box{
-    margin:0.28rem auto;
- 	margin-left: 0.5rem;
- 	width:4.38rem;
- 	display: inline-block;
- }
- .goods_title{
- 	font-size: 0.34rem;
- }
- .goods_content{
- 	font-size: 0.28rem;
- 	color:#999999;
- }
- .goods_money{
- 	font-size: 0.28rem;
- 	color:#53A6FA;
- }
+.con_title {
+    text-align: center;
+    height: 0.6rem;
+    margin-bottom: 0.22rem;
+    margin-left: 0.18rem;
+}
+
+.con_title li.con_curr {
+    color: #53A6FA;
+}
+
+.con_list_li {
+    border-top: 0.01rem solid #EBEBEB;
+    line-height: 0.6rem;
+}
+
+.con_list_img {
+    margin-left: 0.43rem;
+    display: inline-block;
+    width: 1.82rem;
+}
+
+.goods_icon {
+    width: 0.51rem;
+    float: right;
+}
+
+.goods_box {
+    margin: 0.28rem auto;
+    margin-left: 0.5rem;
+    width: 4.38rem;
+    display: inline-block;
+}
+
+.goods_title {
+    font-size: 0.34rem;
+}
+
+.goods_content {
+    font-size: 0.28rem;
+    color: #999999;
+}
+
+.goods_money {
+    font-size: 600;
+    font-size: 0.28rem;
+    color: #53A6FA;
+}

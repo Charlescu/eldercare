@@ -49,8 +49,7 @@ window.onload = function() {
             end: 2030,
             defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
             onConfirm: function(result) {
-                /*start_mon = parseInt(result[1].lable);
-start_day = parseInt(result[2].lable);*/
+                console.log(result[0].lable + result[1].lable + result[2].lable);
                 $('.start_time').text(result[1].lable + result[2].lable);
 
             }
