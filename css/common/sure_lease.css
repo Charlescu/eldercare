@@ -25,11 +25,14 @@ textarea {
 }
 
 .local_box {
+    vertical-align: middle;
     padding-top: 0.39rem;
     margin-left: 0.32rem;
 }
 
 .location_img {
+    vertical-align: middle;
+    margin-top: -0.01rem;
     width: 0.30rem;
     display: inline-block;
 }
@@ -45,8 +48,8 @@ textarea {
 }
 
 .time_end {
+    vertical-align: middle;
     float: right;
-    margin-top: -0.05rem;
     margin-left: 0.21rem;
     font-size: 0.26rem;
     color: #53A6FA;
@@ -284,6 +287,7 @@ textarea {
 .hand {
     width: 0.22rem;
     margin: 0 0.07rem;
+    margin-bottom: -0.02rem;
 }
 
 .method_choose span {

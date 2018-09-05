@@ -8,6 +8,7 @@ body {
 
 
 
+
 /* 租赁日期 */
 
 .address_out_box {
@@ -47,7 +48,7 @@ body {
 }
 
 .address_box {
-    padding: 0.34rem 0 0.5rem 0.3rem;
+    padding: 0.34rem 0 0.5rem 0;
 }
 
 .edit_box {
@@ -62,6 +63,7 @@ body {
 .del_icon {
     padding-right: 0.36rem;
 }
+
 
 
 

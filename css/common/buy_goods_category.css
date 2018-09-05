@@ -11,6 +11,7 @@
 
 
 
+
 /*     搜索框 */
 
 .category_search_box {
@@ -64,6 +65,7 @@ input:-ms-input-placeholder {
 
 
 
+
 /* 选择列表 */
 
 .select_card_list {
@@ -72,7 +74,7 @@ input:-ms-input-placeholder {
     width: 1.18rem;
     color: #999999;
     margin: 0 0.3rem;
-    font-size: 600;
+    font-weight: 600;
     line-height: 0.6rem;
 }
 

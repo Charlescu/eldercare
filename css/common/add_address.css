@@ -21,6 +21,8 @@ body {
 
 
 
+
+
 /* 租赁日期 */
 
 .link_man {
@@ -42,13 +44,23 @@ body {
     padding-right: 0.31rem;
 }
 
+span {
+    margin-bottom: -0.03rem;
+}
+
+input {
+    vertical-align: middle;
+    padding-bottom: 0.05rem;
+}
+
 .user_name {
     width: 6.7rem;
     height: 0.8rem;
     line-height: 0.9rem;
     font-size: 0.28rem;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #EBEBEB;
     margin: 0 auto;
+    vertical-align: middle;
 }
 
 .user_tel {
@@ -70,7 +82,7 @@ body {
     height: 0.8rem;
     line-height: 0.9rem;
     font-size: 0.28rem;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #EBEBEB;
     margin: 0 auto;
 }
 
@@ -81,6 +93,14 @@ body {
     line-height: 0.8rem;
     margin: 0 auto;
 }
+
+
+
+
+
+
+
+
 
 
 

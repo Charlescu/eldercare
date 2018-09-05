@@ -21,6 +21,7 @@ html {
 
 
 
+
 /* 地址管理 */
 
 .address_box {
@@ -80,6 +81,7 @@ html {
     margin-right: 0.31rem;
     width: 0.24rem;
 }
+
 
 
 
@@ -187,6 +189,7 @@ html {
 
 
 
+
 /* 配送方式 */
 
 .peisong {
@@ -247,6 +250,7 @@ html {
 
 
 
+
 /* 支付方式 */
 
 .zhifu {
@@ -271,6 +275,7 @@ html {
 .hand {
     width: 0.22rem;
     margin: 0 0.07rem;
+    margin-bottom: -0.02rem;
 }
 
 .method_choose span {
@@ -311,6 +316,7 @@ html {
 .cancel {
     margin: 0.5rem 0.4rem 0 0;
 }
+
 
 
 
