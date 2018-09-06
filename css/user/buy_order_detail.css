@@ -9,7 +9,14 @@ html {
 
 .container {
     padding-top: 0.2rem;
+    padding-bottom: 1.3rem;
 }
+
+
+
+
+
+
 
 
 
@@ -95,6 +102,12 @@ html {
 
 
 
+
+
+
+
+
+
 /* 商品 */
 
 .top_orderstatus_box {
@@ -158,6 +171,7 @@ html {
 .goods_title {
     font-size: 0.34rem;
     margin-top: 0.35rem;
+    margin-bottom: 0.1rem;
 }
 
 .goods_content {
@@ -169,6 +183,7 @@ html {
 .goods_money {
     font-size: 0.28rem;
     margin-top: 0.32rem;
+    font-weight: 600;
     color: #53A6FA;
 }
 
@@ -176,6 +191,12 @@ html {
     float: right;
     margin: -0.2rem 0.44rem 0 0;
 }
+
+
+
+
+
+
 
 
 
@@ -237,6 +258,12 @@ html {
     line-height: 0.93rem;
     color: #53A6FA;
 }
+
+
+
+
+
+
 
 
 
@@ -316,6 +343,12 @@ html {
 .cancel {
     margin: 0.5rem 0.4rem 0 0;
 }
+
+
+
+
+
+
 
 
 

@@ -10,6 +10,7 @@ body {
 
 
 
+
 /* 租赁日期 */
 
 .address_box {
@@ -71,6 +72,7 @@ body {
     margin-top: 0.02rem;
     font-size: 0.24rem;
 }
+
 
 
 
@@ -180,6 +182,7 @@ body {
 
 
 
+
 /* 配送方式 */
 
 .peisong {
@@ -212,6 +215,7 @@ body {
     padding: 0.28rem 0;
     margin: 0 auto;
 }
+
 
 
 
@@ -318,6 +322,7 @@ body {
 
 
 
+
 /* 支付方式 */
 
 .zhifu {
@@ -386,6 +391,7 @@ body {
 
 
 
+
 /* 底部支付 */
 
 .footer {
@@ -416,7 +422,6 @@ body {
 .pay_box {}
 
 .choose_item {
-    width: 0.8rem;
     margin: 0 0.26rem;
     font-size: 0.24rem;
     border-radius: 0.38rem;

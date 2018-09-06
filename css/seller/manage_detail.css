@@ -39,6 +39,8 @@ body {
 
 
 
+
+
 /* 商品 */
 
 
@@ -51,13 +53,16 @@ body {
     display: -o-flex;
     display: flex;
     justify-content: space-between;
+    width: 6.5rem;
     height: 0.8rem;
+    margin: 0 auto;
     line-height: 0.8rem;
     font-size: 0.28rem;
+    border-bottom: 0.01rem solid #EBEBEB;
 }
 
 .top_orderstatus {
-    margin-right: 0.2rem;
+
     color: #53A6FA;
 }
 
@@ -74,19 +79,12 @@ body {
     height: 0.8rem;
     line-height: 0.8rem;
     font-size: 0.28rem;
-    margin-left: 0.3rem;
 }
 
 .con_title {
     text-align: center;
     height: 0.6rem;
     margin-bottom: 0.22rem;
-}
-
-.con_list_li {
-    border-top: 0.01rem solid #EBEBEB;
-
-    border-bottom: 0.01rem solid #EBEBEB;
 }
 
 .con_list_img {

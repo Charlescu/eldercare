@@ -2,7 +2,10 @@ body {
     background: url('../../images/axcvsav@2x.png');
     background-size: 7.5rem 4rem;
     background-repeat: no-repeat;
-    background-color: #F9FDFD;
+}
+
+.container {
+    padding-bottom: 0.4rem;
 }
 
 .pwd_ul {
@@ -39,6 +42,7 @@ body {
 
 
 .pwd_list p {
+    width: 1.3rem;
     margin-left: 0.2rem;
     display: inline-block;
 }
@@ -46,7 +50,7 @@ body {
 .pwd_box {
     vertical-align: middle;
     border-radius: 0.05rem;
-    background-color: #EBEBEB;
+    background-color: #FAFAFA;
 }
 
 .pwd_box img {
@@ -60,7 +64,6 @@ body {
 .pwd_box input {
     font-size: 0.28rem;
     height: 1rem;
-    line-height: 1rem;
 }
 
 .pwd_box_tel {
@@ -79,14 +82,16 @@ body {
 }
 
 .recode_input {
-    width: 1.8rem;
+    width: 2rem;
 }
 
 .get_recode {
     line-height: 0.5rem;
     font-size: 0.20rem;
+
     color: #53A6FA;
     padding: 0 0.1rem 0 0.1rem;
+
     border: 0.01rem solid #53A6FA;
     border-radius: 0.1rem;
 }

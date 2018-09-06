@@ -1,12 +1,11 @@
 body {
-    background-color: #F9FDFD;
+    background-color: #F5F8FA;
 }
 
 
-
-
-
-
+.container {
+    padding-bottom: 0.5rem;
+}
 
 
 
@@ -38,6 +37,7 @@ body {
     margin: 0 auto;
     background-color: #fff;
     border-radius: 0.1rem 0.1rem 0 0;
+    border-bottom: 0.01rem solid #EBEBEB;
 }
 
 .select_card_list {
@@ -97,10 +97,6 @@ body {
     background: url('../../images/myorder3.png') no-repeat;
     background-size: 0.26rem 0.3rem;
 }
-
-
-
-
 
 
 
@@ -197,10 +193,6 @@ input:-ms-input-placeholder {
 
 
 
-
-
-
-
 /* 第二层选项卡 */
 
 .status_box {
@@ -212,19 +204,17 @@ input:-ms-input-placeholder {
 }
 
 .orderstatus_list_item {
-    width: 1rem;
+
     margin: 0 auto;
-    margin-bottom: 0.25rem;
+    padding-bottom: 0.25rem;
     display: inline-block;
 }
 
 li.select_item {
     color: #53A6FA;
+    border-radius: 0.02rem;
+    border-bottom: 0.04rem solid #53A6FA;
 }
-
-
-
-
 
 
 
@@ -255,9 +245,7 @@ li.select_item {
     margin: 0 auto;
     margin-top: 0.2rem;
     width: 6.9rem;
-
     border-radius: 0.1rem;
-    box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
 }
 
 .top_orderstatus_box {
@@ -295,22 +283,25 @@ li.select_item {
     justify-content: center;
     height: 0.6rem;
     line-height: 0.6rem;
-    margin-top: 0.1rem;
+    margin-top: 0.15rem;
+    margin-right: 0.1rem;
     font-weight: 400;
-    margin-right: 0.2rem;
 }
 
 .pay_box p {
     text-align: center;
 
     width: 1.2rem;
-    margin: 0 0.2rem;
+    margin: 0 0.15rem;
     font-size: 0.24rem;
     border-radius: 0.38rem;
     padding: 0 0.1rem 0 0.1rem;
 }
 
 .choose_item {
+    margin-bottom: -0.15rem;
+    line-height: 0.48rem;
+    height: 0.48rem;
     border: 1px solid #CCC;
 }
 
@@ -321,7 +312,8 @@ li.select_item {
 }
 
 .con_list_li {
-    margin: 0 0.1rem;
+    width: 6.5rem;
+    margin: 0 auto;
     background-color: #F9F7F7;
 }
 
@@ -368,7 +360,7 @@ li.select_item {
 
 .goods_time {
     position: absolute;
-    left: 1.5rem;
+    left: 1.65rem;
     font-size: 0.19rem;
     color: #999999;
 }
@@ -404,50 +396,6 @@ li.select_item {
 .add_img {
     float: right;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

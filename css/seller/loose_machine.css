@@ -40,6 +40,8 @@ p {
     line-height: 0.67rem;
 }
 
+
+
 .num_box {
     display: -webkit-flex;
     display: -moz-flex;
@@ -61,12 +63,13 @@ p {
     font-size: 0.28rem;
 }
 
-textarea {
+.textarea_item {
     border: 0.01rem solid #EBEBEB;
     background: #FAFAFA;
     border-radius: 0.1rem;
     margin-bottom: 0.2rem;
     outline: none;
+    width: 6.5rem;
 }
 
 .footer {

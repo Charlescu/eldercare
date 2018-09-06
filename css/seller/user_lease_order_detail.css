@@ -14,6 +14,10 @@ body {
 
 
 
+
+
+
+
 /* 租赁日期 */
 
 .container {
@@ -34,6 +38,8 @@ body {
 }
 
 .location_img {
+    vertical-align: middle;
+    margin-top: -0.07rem;
     width: 0.30rem;
     display: inline-block;
 }
@@ -78,6 +84,10 @@ body {
     margin-top: 0.02rem;
     font-size: 0.24rem;
 }
+
+
+
+
 
 
 
@@ -154,6 +164,7 @@ body {
     font-size: 0.28rem;
     margin-top: 0.32rem;
     color: #53A6FA;
+    font-weight: 600;
 }
 
 .goods_nums {
@@ -182,7 +193,7 @@ body {
 .join p {
     margin: 0;
     padding: 0;
-    margin-top: -0.03rem;
+    margin-top: -0.02rem;
     color: #53A6FA;
     display: inline-block;
     font-size: 0.24rem;
@@ -194,6 +205,10 @@ body {
 .add_img {
     float: right;
 }
+
+
+
+
 
 
 /* 配送方式 */
@@ -228,6 +243,7 @@ textarea {
 
 
 .take_it img {
+    margin-top: -0.05rem;
     vertical-align: middle;
     width: 0.18rem;
     height: 0.26rem;
@@ -301,6 +317,10 @@ textarea {
     line-height: 0.93rem;
     color: #53A6FA;
 }
+
+
+
+
 
 
 

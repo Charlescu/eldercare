@@ -33,24 +33,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 列表项 */
 
 .list_box {
@@ -63,28 +45,40 @@ body {
 }
 
 .list_item {
+    vertical-align: middle;
     height: 0.95rem;
-    width: 6.7rem;
+    width: 6.5rem;
+    margin: 0 auto;
     border-bottom: 1px solid #EBEBEB;
 }
 
+.my_wallet {
+    border-bottom: 0px solid #EBEBEB;
+}
+
 .list_item span {
-    margin-left: 0.22rem;
+
     line-height: 0.95rem;
 }
 
-.list_left {
-    margin-left: 0.23rem;
-}
+.list_left {}
 
 .list_left img {
+    margin-bottom: -0.04rem;
     margin-right: 0.22rem;
-    width: 0.31rem;
+}
+
+.gold {
+    width: 0.33rem;
+}
+
+.wallet {
+    width: 0.27rem;
 }
 
 .list_right {
     float: right;
-    margin-right: 0.3rem;
+    margin-right: 0.15rem;
     color: #999999;
 }
 

@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/swiper.min.css">
     <link rel="stylesheet" href="../css/common/buy_goods_category.css">
-    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
     <style>
 
@@ -67,6 +65,11 @@
                                 <p class="goods_money">￥2000.00<img class="goods_icon" src="../images/goods_icon.png" alt=""></p>
                             </div>
                         </li>
+                        <div id="wrapper" style="height: 10rem; overflow-y: auto;">
+                            <div id="scroller" class="mescroll">
+                                <div class="pull-loading"></div>
+                            </div>
+                        </div>
                     </ul>
                 </div>
                 <div class="con_warp" style="display: none">
@@ -155,6 +158,9 @@
                 </div>
             </div>
         </div>
+        <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/iscroll.js"></script>
         <script src="../js/common.js"></script>
         <script>
         $(document).ready(function() {
@@ -189,7 +195,7 @@
         document.addEventListener('scroll', function() {
             if ($(window).scrollTop() >= $(document).height() - $(window).height()) {
                 $('.load_more').show()
-                pullOnLoad(page);
+                pull_load()
             }
             // if (window.innerHeight + document.body.scrollTop === document.body.clientHeight) {
             //     // 当页面高度 + 滚动高度 === 文档整体高度时为滚动至底部 执行异步加载方法等等
@@ -202,7 +208,6 @@
         var html = '';
 
         function pull_load() {
-
             page++
             html += ` <li class="con_list_li">
                             <img class="con_list_img" src="../images/5653ceba1a219@2x.png" alt="">
@@ -232,6 +237,8 @@
                 }
             })
         }
+        /*var myscroll = new iScroll("wrapper", { scrollbarClass: 'myScrollbar', useTransition: false, onScrollMove: function() { //拉动时 if (this.y
+< this.maxScrollY) { $( ".pull-loading").html( "释放加载"); $( ".pull-loading").addClass( "loading"); } else { $( ".pull-loading").html( "上拉加载..."); $( ".pull-loading").removeClass( "loading"); } }, onScrollEnd: function() { //拉动结束时 //上拉加载 if (page> all_page) { $(".pull-loading").hide(); } else { if ($(".pull-loading").hasClass('loading')) { $(".pull-loading").html("加载完毕"); setInterval(function() { $(".pull-loading").html("上拉加载..."); }, 1000) pull_load(); } } } }); //初始化绑定iScroll控件 document.addEventListener('touchmove', function(e) { myscroll.refresh(); }, false);*/
         </script>
 </body>
 
