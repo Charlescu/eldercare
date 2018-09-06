@@ -5,9 +5,20 @@
 
 
 
+/* .top_box {
+    position: fixed;
+    top: 0;
+}
 
 
 
+
+.content_body {
+    position: fixed;
+    top: 5rem;
+    height: 100%;
+}
+ */
 
 
 /*     搜索框 */
@@ -64,23 +75,61 @@ input:-ms-input-placeholder {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 选择列表 */
 
+.select_card {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
 .select_card_list {
-    float: left;
     font-size: 0.28rem;
     width: 1.18rem;
     color: #999999;
-    margin: 0 0.3rem;
+    margin-right: 0.6rem;
     font-weight: 600;
     line-height: 0.6rem;
 }
 
 .con_title {
     text-align: center;
+    width: 6.5rem;
     height: 0.6rem;
     margin-bottom: 0.22rem;
-    margin-left: 0.18rem;
+    padding-bottom: 0.2rem;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.con_title::-webkit-scrollbar {
+    display: none
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .con_title li.con_curr {
@@ -120,7 +169,7 @@ input:-ms-input-placeholder {
 }
 
 .goods_money {
-    font-size: 0.28rem;
     font-weight: 600;
+    font-size: 0.28rem;
     color: #53A6FA;
 }

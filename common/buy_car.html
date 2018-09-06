@@ -98,26 +98,35 @@
 
         if ($('.check_radio img').is(':hidden')) { //如果当前隐藏
             $('.check_radio img').show(); //那么就显示div
-            $('.check_radio').attr('border', 'none');
+            $('.check_radio').css('border', '0.01rem solid #FFF');
+
         } else { //否则
             $('.check_radio img').hide(); //就隐藏div
+            $('.check_radio').css('border', '0.01rem solid rgba(0,0,0,0.4)');
         }
         if ($('.con_list_li').length == 1 && $('.check_radio img').is(':hidden') == false) {
             $('.all_ckeck img').show();
+            $('.all_ckeck').css('border', '0.01rem solid #FFF');
         } else {
             $('.all_ckeck img').hide();
+            $('.all_ckeck').css('border', '0.01rem solid rgba(0,0,0,0.4)');
+
         }
     })
     //全部勾选
     $('.all_ckeck').on('click', function() {
         if ($('.all_ckeck img').is(':hidden')) { //如果当前隐藏
             $('.all_ckeck img').show(); //那么就显示tupain 
-            $('.all_ckeck').attr('border', 'none');
+            $('.all_ckeck').css('border', '0.01rem solid #FFF');
             $('.check_radio img').show(); //那么就显示div
-            $('.check_radio').attr('border', 'none');
+            $('.check_radio').css('border', '0.01rem solid #FFF');
         } else {
-            $('.all_ckeck img').hide(); //那么就显示div
             $('.check_radio img').hide();
+            $('.check_radio').css('border', 'none')
+            $('.check_radio').css('border', '0.01em solid rgba(0,0,0,0.4)');
+            $('.all_ckeck img').hide(); //那么就显示div
+            $('.all_ckeck ').css('border', '0.01rem solid rgba(0,0,0,0.4)');
+
         }
 
     })

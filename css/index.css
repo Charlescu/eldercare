@@ -4,7 +4,9 @@
      width: 100%;
  }
 
-
+ .container {
+     padding-bottom: 1rem;
+ }
 
  .swiper {
      padding-top: 0.16rem;
@@ -32,7 +34,6 @@
      display: -ms-flexbox;
      display: -webkit-flex;
      display: flex;
-
      justify-content: center;
  }
 
@@ -227,7 +228,6 @@
 
  .paper_box_ul {
      margin: 0.6rem auto;
-
      width: 6rem;
      height: 1rem;
      display: -webkit-flex;

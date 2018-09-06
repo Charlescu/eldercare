@@ -16,14 +16,14 @@
 
 <body>
     <div class="container">
-        <div class="goods_box_top">
-            <img src="../images/lunbo.png" alt="">
-        </div>
-        <div class="category_search_box">
-            <input class="category_search_input" type="text" placeholder="专业电动医疗轮椅">
-            <img class="category_search_icon" src="../images/search.png" alt="">
-        </div>
-        <div class="content_body">
+        <div class="top_box">
+            <div class="goods_box_top">
+                <img src="../images/lunbo.png" alt="">
+            </div>
+            <div class="category_search_box">
+                <input class="category_search_input" type="text" placeholder="专业电动医疗轮椅">
+                <img class="category_search_icon" src="../images/search.png" alt="">
+            </div>
             <ul class="select_card con_title">
                 <li class="select_card_list con_curr" data-type="1">
                     <span>家用轮椅</span>
@@ -37,10 +37,18 @@
                 <li class="select_card_list " data-type="4">
                     <span>手动轮椅</span>
                 </li>
+                <li class="select_card_list " data-type="4">
+                    <span>手动轮椅</span>
+                </li>
+                <li class="select_card_list " data-type="4">
+                    <span>手动轮椅</span>
+                </li>
             </ul>
+        </div>
+        <div class="content_body">
             <div class="con_all">
                 <div class="con_warp">
-                    <ul class="con_list_ul">
+                    <ul class="con_list_ul first_ul">
                         <li class="con_list_li">
                             <img class="con_list_img" src="../images/5653ceba1a219@2x.png" alt="">
                             <div class="goods_box">
@@ -65,16 +73,24 @@
                                 <p class="goods_money">￥2000.00<img class="goods_icon" src="../images/goods_icon.png" alt=""></p>
                             </div>
                         </li>
-                        <div id="wrapper" style="height: 10rem; overflow-y: auto;">
+                        <li class="con_list_li">
+                            <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
+                            <div class="goods_box">
+                                <p class="goods_title">HO56C手动轮椅车3</p>
+                                <span class="goods_content">体积更小轻松放入汽车后备箱</span>
+                                <p class="goods_money">￥2000.00<img class="goods_icon" src="../images/goods_icon.png" alt=""></p>
+                            </div>
+                        </li>
+                        <!-- <div id="wrapper" style="height: 10rem; overflow-y: auto;">
                             <div id="scroller" class="mescroll">
                                 <div class="pull-loading"></div>
                             </div>
-                        </div>
+                        </div> -->
                     </ul>
                 </div>
-                <div class="con_warp" style="display: none">
+                <div class="con_warp conwrap_box" style="display: none">
                     <ul class="con_list">
-                        <li class="con_list_li">
+                        <li class="con_list_li ">
                             <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
                             <div class="goods_box">
                                 <p class="goods_title">HO56C手动轮椅车4</p>
@@ -86,6 +102,14 @@
                             <img class="con_list_img" src="../images/5653ceba1a219@2x.png" alt="">
                             <div class="goods_box">
                                 <p class="goods_title">HO56C手动轮椅车5</p>
+                                <span class="goods_content">体积更小轻松放入汽车后备箱</span>
+                                <p class="goods_money">￥2000.00<img class="goods_icon" src="../images/goods_icon.png" alt=""></p>
+                            </div>
+                        </li>
+                        <li class="con_list_li">
+                            <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
+                            <div class="goods_box">
+                                <p class="goods_title">HO56C手动轮椅车6</p>
                                 <span class="goods_content">体积更小轻松放入汽车后备箱</span>
                                 <p class="goods_money">￥2000.00<img class="goods_icon" src="../images/goods_icon.png" alt=""></p>
                             </div>
@@ -160,7 +184,7 @@
         </div>
         <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../js/iscroll.js"></script>
+        <!-- <script src="../js/iscroll.js"></script> -->
         <script src="../js/common.js"></script>
         <script>
         $(document).ready(function() {
@@ -179,29 +203,28 @@
 
         }
 
-
-        var $menu_box = $('.content_body .con_title>li');
+        //选项卡
+        var $menu_box = $('.select_card_list');
         $menu_box.click(function() {
             $(this).addClass('con_curr').siblings().removeClass('con_curr');
-            type = $('.con_curr').data('type');
-            console.log(type);
             var index = $menu_box.index(this);
             $('.con_all .con_warp').eq(index).show().siblings().hide();
+
+
         });
-
-
 
         //分页加载
         document.addEventListener('scroll', function() {
             if ($(window).scrollTop() >= $(document).height() - $(window).height()) {
-                $('.load_more').show()
-                pull_load()
+                pull_load();
             }
             // if (window.innerHeight + document.body.scrollTop === document.body.clientHeight) {
             //     // 当页面高度 + 滚动高度 === 文档整体高度时为滚动至底部 执行异步加载方法等等
             // console.log(1)
             // }
         });
+
+
         var page = '',
             type = $('.con_curr').data('type');
         console.log(type);
@@ -217,10 +240,7 @@
                                 <p class="goods_money">￥2000.00<img class="goods_icon" src="../images/goods_icon.png" alt=""></p>
                             </div>
                         </li>`
-            console.log(page);
-            $('.con_list_ul').append(html);
-            console.log(page);
-            console.log(page);
+            $('.first_ul').append(html);
             $.ajax({
                 type: '',
                 url: baseUrl + '',
@@ -230,13 +250,13 @@
                     page: page,
                 },
                 success: function(res) {
-                    $('.con_list_ul').append(page);
+                    /* $('.con_list_ul').append(page);*/
                 },
-                error: function(res) {
-
-                }
+                error: function(res) {}
             })
         }
+
+
         /*var myscroll = new iScroll("wrapper", { scrollbarClass: 'myScrollbar', useTransition: false, onScrollMove: function() { //拉动时 if (this.y
 < this.maxScrollY) { $( ".pull-loading").html( "释放加载"); $( ".pull-loading").addClass( "loading"); } else { $( ".pull-loading").html( "上拉加载..."); $( ".pull-loading").removeClass( "loading"); } }, onScrollEnd: function() { //拉动结束时 //上拉加载 if (page> all_page) { $(".pull-loading").hide(); } else { if ($(".pull-loading").hasClass('loading')) { $(".pull-loading").html("加载完毕"); setInterval(function() { $(".pull-loading").html("上拉加载..."); }, 1000) pull_load(); } } } }); //初始化绑定iScroll控件 document.addEventListener('touchmove', function(e) { myscroll.refresh(); }, false);*/
         </script>

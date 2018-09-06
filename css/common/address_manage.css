@@ -9,6 +9,7 @@ body {
 
 
 
+
 /* 租赁日期 */
 
 .address_out_box {
@@ -25,6 +26,10 @@ body {
     border-bottom: 0.01rem solid #EBEBEB;
 }
 
+.del_border {
+    border: none;
+}
+
 .address_out_box {
     width: 7.5rem;
     background-color: #fff;
@@ -37,7 +42,54 @@ body {
 
 .user_box {
     width: 6.9rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
 }
+
+.moren {
+    position: absolute;
+}
+
+.right_item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding-top: 0.34rem;
+    font-size: 0.28rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.moren_box {
+    width: 0.25rem;
+    height: 0.25rem;
+    position: relative;
+    bottom: -0.05rem;
+    margin-bottom: -0.1rem;
+    margin-right: 0.08rem;
+    vertical-align: middle;
+    border-radius: 0.04rem;
+
+    border: 0.02rem solid #53A6FA;
+}
+
+.choose_box {
+    background-color: #53A6FA;
+}
+
+.moren_box img {
+    width: 0.18rem;
+    height: 0.12rem;
+    margin-top: -0.2rem;
+    padding-left: 0.04rem;
+    vertical-align: middle;
+}
+
 
 .user_address {
     width: 6.9rem;
@@ -57,17 +109,11 @@ body {
 
 .edit_box img {
     width: 0.34rem;
-    margin: 0 0.15rem;
 }
 
-.del_icon {
-    padding-right: 0.36rem;
+.add_pic {
+    padding-right: 0.32rem;
 }
-
-
-
-
-
 
 
 
