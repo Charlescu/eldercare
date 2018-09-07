@@ -4,6 +4,8 @@
 }
 
 
+
+
 /* .top_box {
     position: fixed;
     top: 0;
@@ -92,6 +94,8 @@ input:-ms-input-placeholder {
 
 
 
+
+
 /* 选择列表 */
 
 .select_card {
@@ -124,6 +128,10 @@ input:-ms-input-placeholder {
 
 .con_title::-webkit-scrollbar {
     display: none
+}
+
+body {
+    overflow-y: auto;
 }
 
 body::-webkit-scrollbar {
