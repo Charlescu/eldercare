@@ -41,7 +41,7 @@ body {
 }
 
 .login_box img {
-    margin-left: 0.62rem;
+    margin-left: 0.31rem;
     margin-bottom: -0.05rem;
     display: inline-block;
     width: 0.4rem;
@@ -52,7 +52,6 @@ body {
 .login_box input {
     font-size: 0.28rem;
     height: 1rem;
-    line-height: 1rem;
 }
 
 .login_box_tel {

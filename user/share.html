@@ -20,7 +20,7 @@
     <div class="container">
         <div class="share">点我转发~</div>
         <img src="../images/acsa@2x.png" alt="">
-        <div class="popup-box" style="display: none">
+        <div class="popup_box" style="display: none">
             <img src="../images/share.png" alt="">
         </div>
     </div>
@@ -39,8 +39,18 @@
     function get_main_content() {
 
     }
-    $('.share').on('click', function() {
-        $('.popup-box').show();
+    $('.share').on('click', function(event) {
+        console.log(0000);
+        event.stopPropagation();
+        $('.popup_box').show();
+        $(document).on('click', function(event) {
+            console.log(1111);
+            var tanceng = $('.popup_box img');
+            if (!tanceng.is(event.target) && tanceng.has(event.target).length === 0) {
+                console.log(2222)
+                $('.popup_box').hide();
+            }
+        })
     })
     </script>
 </body>

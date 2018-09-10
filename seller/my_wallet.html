@@ -69,22 +69,24 @@
     </div>
     <div class="popup-box" style="display: none">
         <div class="popup">
-            <div class="content_box" style="">
-                <p class="tel_num">
-                    手机号码
-                    <input type="text" maxlength="11" placeholder="13612053621">
-                </p>
-                <p class="tel_num">
-                    验证码
-                    <input class="ver_code" type="text"><span>获取验证码</span>
-                </p>
-                <p class="choose_backtime switch" style="display: none">请输入提现金额</p>
-                <p class="back_time switch" style="display: none">
-                    <input type="text" maxlength="4" placeholder="最高可提现￥2000">
-                </p>
-                <div class="sure_btn_box my_sure">
-                    <p class="sure_btn "> 确定</p>
-                    <p class="add_day switch" style="display: none"><img src="../images/about_uss.png" alt="">将提现至微信零钱</p>
+            <div class="popup_in">
+                <div class="content_box" style="">
+                    <p class="tel_num">
+                        手机号码
+                        <input type="number" max="99999999999" placeholder="13612053621" onkeyup="if(this.value.length>11){this.value = this.value.slice(0,11)}">
+                    </p>
+                    <p class="tel_num">
+                        验证码
+                        <input class="ver_code" type="number" max="9999" onkeyup="if(this.value.length>4){this.value = this.value.slice(0,4)}"><span>获取验证码</span>
+                    </p>
+                    <p class="choose_backtime switch" style="display: none">请输入提现金额</p>
+                    <p class="back_time switch" style="display: none">
+                        <input type="number" maxlength="4" onkeyup="this.value.length>4?this.value = this.value.slice(0,4):this.value>2000?this.value=2000: ''" placeholder="最高可提现￥2000">
+                    </p>
+                    <div class="sure_btn_box my_sure">
+                        <p class="sure_btn "> 确定</p>
+                        <p class="add_day switch" style="display: none"><img src="../images/about_uss.png" alt="">将提现至微信零钱</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,8 +108,15 @@
 
     }
     /*弹窗*/
-    $('.withdraw').on('click', function() {
+    $('.withdraw').on('click', function(event) {
+        event.stopPropagation();
         $('.popup-box').show();
+        $(document).on('click', function() {
+            var tanceng = $('.popup_in');
+            if (!tanceng.is(event.target) && tanceng.has(event.target).length === 0) {
+                $('.popup-box').hide();
+            }
+        })
     })
     //提现记录
     $('.withdraw_list').on('click', function() { window.location.href = 'withdraw.html' })

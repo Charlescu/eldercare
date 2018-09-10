@@ -7,6 +7,10 @@ body {
     background-color: #F5F8FA;
 }
 
+.popup_in {
+    height: 8rem;
+}
+
 .head_box {
 
     margin: 0 auto;
@@ -101,6 +105,11 @@ body {
 
 
 
+
+
+
+
+
 /* 选项卡 */
 
 .select_card {
@@ -136,6 +145,11 @@ body {
     font-size: 0.28rem;
     width: 1.6rem !important;
 }
+
+
+
+
+
 
 
 
@@ -198,6 +212,11 @@ body {
     width: 0.3rem;
     height: 0.4rem;
 }
+
+
+
+
+
 
 
 
