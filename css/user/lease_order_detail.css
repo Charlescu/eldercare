@@ -12,6 +12,12 @@ textarea {
 }
 
 
+
+
+
+
+
+
 /* 租赁日期 */
 
 .address_box {
@@ -83,6 +89,12 @@ textarea {
 
 
 
+
+
+
+
+
+
 /* 商品 */
 
 .con_warp {
@@ -94,13 +106,33 @@ textarea {
     box-shadow: 0.08rem 0.08rem 0.2rem rgba(40, 40, 40, 0.16);
 }
 
+.top_orderstatus_box {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    width: 6.3rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0 auto;
+    font-size: 0.28rem;
+    border-bottom: 0.01rem solid #EBEBEB;
+}
+
+.top_orderstatus {
+    width: 1rem;
+    color: #53A6FA;
+}
+
 .buy_message {
     width: 6.3rem;
     height: 0.8rem;
     border-bottom: 0.01rem solid #EBEBEB;
     line-height: 0.8rem;
     font-size: 0.28rem;
-    margin-left: 0.3rem;
+
     font-weight: 600;
 }
 
@@ -192,6 +224,12 @@ textarea {
 
 
 
+
+
+
+
+
+
 /* 配送方式 */
 
 .peisong {
@@ -224,6 +262,12 @@ textarea {
     padding: 0.28rem 0;
     margin: 0 auto;
 }
+
+
+
+
+
+
 
 
 
@@ -340,6 +384,12 @@ textarea {
 
 
 
+
+
+
+
+
+
 /* 支付方式 */
 
 .zhifu {
@@ -415,6 +465,12 @@ textarea {
 
 
 
+
+
+
+
+
+
 /* 底部支付 */
 
 .footer {
@@ -446,6 +502,7 @@ textarea {
 
 .choose_item {
     margin: 0 0.26rem;
+    width: 1rem;
     font-size: 0.24rem;
     border-radius: 0.38rem;
     padding: 0 0.2rem 0 0.2rem;
