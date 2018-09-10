@@ -33,7 +33,7 @@
         <div class="con_warp">
             <div class="top_orderstatus_box">
                 <p class="buy_message buy_message_top">订单号:123456</p>
-                <p class="top_orderstatus">待付款</p>
+                <p class="top_orderstatus">待评价</p>
             </div>
             <ul class="con_list_ul">
                 <li class="con_list_li">
@@ -58,7 +58,7 @@
         <div class="xiaoji_box">
             <p class="xiaoji">共一件商品 小计 : ￥2000.00</p>
         </div>
-        <div class="zhifu">
+        <div class="zhifu" style="display: none">
             <div class=" pay_method">
                 <div class="method_choose">
                     <p class="wx_pay pay_item"> 微信支付<span><img class="hand" src="../images/hand.png" alt="">推荐使用</span> </p>
@@ -73,7 +73,7 @@
     </div>
     <footer class="footer">
         <!-- 待付款 -->
-        <div class="pay_box">
+        <div class="pay_box" style="display: none">
             <p class="choose_item choose">付款</p>
             <p class="choose_item">取消</p>
         </div>
@@ -82,7 +82,7 @@
             <p class="choose_item choose sigle_again">再来一单</p>
         </div>
         <!-- 评价 -->
-        <div class="pay_box " style="display: none">
+        <div class="pay_box ">
             <p class="choose_item choose evaluate">评价</p>
         </div>
     </footer>
@@ -91,7 +91,6 @@
     <script>
     $(document).ready(function() {
         get_main_content();
-
 
 
         //取消支付切换
@@ -105,7 +104,9 @@
     function get_main_content() {
 
     }
-
+    $('.evaluate').on('click', function() {
+        window.location.href = "pingjia.html"
+    })
     //地址管理
     $('.youjiantou').on('click', function() {
         window.location.href = "address_manage.html";

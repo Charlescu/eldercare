@@ -107,6 +107,17 @@ textarea {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* 更改状态页面 */
 
 .img_all_box {
@@ -137,4 +148,26 @@ textarea {
     height: 0.6rem;
     margin: 0.4rem 0 0 0.4rem;
     opacity: 0.1;
+}
+
+.content_box_area {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding: 0;
+    height: 6rem;
+    flex-direction: column;
+}
+
+.pingjiatu {
+    position: absolute;
+    top: 3rem;
+    margin-left: 0.2rem;
+}
+
+.textareass {
+    padding-top: 0.2rem;
+    margin: 0 auto;
 }

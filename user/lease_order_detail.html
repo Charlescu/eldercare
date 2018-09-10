@@ -102,12 +102,14 @@
     </footer>
     <div class="popup-box" style="display:none">
         <div class="popup">
-            <div class="content_box">
-                <p class="choose_backtime">选择归还时间</p>
-                <p class="back_time">2018年06月31日</p>
-                <div class="sure_btn_box">
-                    <p class="sure_btn"> 确定支付￥200</p>
-                    <p class="add_day"><img src="../images/about_uss.png" alt="">增加一天</p>
+            <div class="popup_inbox">
+                <div class="content_box">
+                    <p class="choose_backtime">选择归还时间</p>
+                    <p class="back_time">2018年06月31日</p>
+                    <div class="sure_btn_box">
+                        <p class="sure_btn"> 确定支付￥200</p>
+                        <p class="add_day"><img src="../images/about_uss.png" alt="">增加一天</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -130,6 +132,9 @@
     function get_main_content() {
 
     }
+
+
+
     //前往支付
     $('.footer_buycar').on('click', function() {
         window.location.href = "take_it.html"
@@ -138,9 +143,16 @@
     $('.cash_p').on('click', function() {
         window.location.href = "deposit_free.html"
     })
-    //续租
+    //关闭弹窗
     $('.choose_item').on('click', function() {
+        event.stopPropagation();
         $('.popup-box').show();
+        $(document).on('click', function(event) {
+            var tanceng = $('.popup_inbox');
+            if (!tanceng.is(event.target) && tanceng.has(event.target).length === 0) {
+                $('.popup-box').hide();
+            }
+        });
     })
     </script>
 </body>
