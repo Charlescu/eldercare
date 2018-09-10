@@ -6,11 +6,10 @@ body {
     padding-bottom: 1.25rem;
 }
 
-
-
-
-
-
+textarea {
+    outline: none;
+    margin-top: -0.07rem;
+}
 
 
 /* 租赁日期 */
@@ -74,6 +73,8 @@ body {
     margin-top: 0.02rem;
     font-size: 0.24rem;
 }
+
+
 
 
 
@@ -189,6 +190,8 @@ body {
 
 
 
+
+
 /* 配送方式 */
 
 .peisong {
@@ -221,6 +224,8 @@ body {
     padding: 0.28rem 0;
     margin: 0 auto;
 }
+
+
 
 
 
@@ -333,6 +338,8 @@ body {
 
 
 
+
+
 /* 支付方式 */
 
 .zhifu {
@@ -397,6 +404,8 @@ body {
 .cancel {
     margin: 0.5rem 0.4rem 0 0;
 }
+
+
 
 
 
