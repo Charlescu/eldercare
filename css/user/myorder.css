@@ -12,21 +12,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 选项卡 */
 
 .select_card {
@@ -97,6 +82,10 @@ body {
     background: url('../../images/myorder3.png') no-repeat;
     background-size: 0.26rem 0.3rem;
 }
+
+
+
+
 
 
 
@@ -193,6 +182,10 @@ input:-ms-input-placeholder {
 
 
 
+
+
+
+
 /* 第二层选项卡 */
 
 .status_box {
@@ -215,6 +208,10 @@ li.select_item {
     border-radius: 0.02rem;
     border-bottom: 0.04rem solid #53A6FA;
 }
+
+
+
+
 
 
 
@@ -325,7 +322,7 @@ li.select_item {
 
 .goods_box {
     position: absolute;
-    width: 5rem;
+    width: 4.63rem;
     vertical-align: top;
     margin-left: 0.37rem;
     display: inline-block;
@@ -360,7 +357,7 @@ li.select_item {
 
 .goods_time {
     position: absolute;
-    left: 1.65rem;
+    left: 1.85rem;
     font-size: 0.19rem;
     color: #999999;
 }
@@ -396,6 +393,10 @@ li.select_item {
 .add_img {
     float: right;
 }
+
+
+
+
 
 
 
