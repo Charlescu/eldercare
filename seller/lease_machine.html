@@ -27,56 +27,62 @@
                     <ul class="select_card_ul con_title">
                         <li class="select_card_list choose">
                             <span>家用轮椅</span>
-                            <p>·</p>
+                            <p clsaa='dian'>·</p>
                         </li>
                         <li class="select_card_list ">
                             <span>家用轮椅</span>
-                            <p>·</p>
+                            <p clsaa='dian'>·</p>
                         </li>
                         <li class="select_card_list ">
                             <span>家用轮椅</span>
-                            <p>·</p>
+                            <p clsaa='dian'>·</p>
                         </li>
                         <li class="select_card_list ">
                             <span>家用轮椅</span>
-                            <p>·</p>
+                            <p clsaa='dian'>·</p>
                         </li>
                         <li class="select_card_list ">
                             <span>家用轮椅</span>
-                            <p>·</p>
+                            <p clsaa='dian'>·</p>
                         </li>
                         <li class="select_card_list ">
                             <span>家用轮椅</span>
-                            <p>·</p>
+                            <p clsaa='dian'>·</p>
                         </li>
                         <li class="select_card_list ">
                             <span>家用轮椅</span>
-                            <p>·</p>
+                            <p clsaa='dian'>·</p>
                         </li>
                     </ul>
                 </div>
                 <div class="machine_outbox">
                     <div class="machine_list_box">
-                        <div class="machine_list">
-                            <div class="machine_box">
-                                <img class="machine_pic" src="../images/5653ceba1a219@2x.png" alt="">
-                                <div class="desc_pic_box">
-                                    <p class="desc_title">HO56C手动轮椅车</p>
-                                    <span class="desc_content">体积更小轻松放入汽车后备箱</span>
-                                    <div class="money_box">
-                                        <p class="money">￥200.00/天</p>
-                                        <p class="nums">（库存<span class="span_nums">3</span>件）</p>
+                        <div id="wrapper" style="min-height: 13rem; overflow-y: auto;background: #F5F8FA">
+                            <div id="scroller" class="mescroll">
+                                <div class="content_item first_ul">
+                                    <div class="machine_list">
+                                        <div class="machine_box">
+                                            <img class="machine_pic" src="../images/5653ceba1a219@2x.png" alt="">
+                                            <div class="desc_pic_box">
+                                                <p class="desc_title">HO56C手动轮椅车</p>
+                                                <span class="desc_content">体积更小轻松放入汽车后备箱</span>
+                                                <div class="money_box">
+                                                    <p class="money">￥200.00/天</p>
+                                                    <p class="nums">（库存<span class="span_nums">3</span>件）</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="manage_box">
+                                            <div class="manage_box_list loose_box ">
+                                                <img class="machine_img" src="../images/loose_machine.png" alt="">
+                                                <p>报失器械</p>
+                                            </div>
+                                            <div class="manage_box_list add_box">
+                                                <img class="machine_img" src="../images/add_machine.png" alt="">
+                                                <p>申请增加</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="manage_box">
-                                <div class="manage_box_list loose_box ">
-                                    <img class="machine_img" src="../images/loose_machine.png" alt="">
-                                    <p>报失器械</p>
-                                </div>
-                                <div class="manage_box_list add_box">
-                                    <img class="machine_img" src="../images/add_machine.png" alt="">
-                                    <p>申请增加</p>
                                 </div>
                             </div>
                         </div>
@@ -105,6 +111,8 @@
     </div>
     <footer class="footer">
     </footer>
+    <script src="../js/iscroll.js">
+    </script>
     <script>
     $(document).ready(function() {
         get_main_content();
@@ -120,6 +128,48 @@
         //
         $('.desc_pic_box').on('click', function() { window.location.href = 'manage_detail.html' })
     })
+    //分页
+    var myscroll = new iScroll("wrapper", {
+        scrollbarClass: 'myScrollbar',
+        useTransition: false,
+        onScrollMove: function() { //拉动时 
+            /* if (this.y < this.maxScrollY) { $( ".pull-loading").html( "释放加载"); $( ".pull-loading").addClass( "loading"); } else { $( ".pull-loading").html( "上拉加载..."); $( ".pull-loading").removeClass( "loading"); }*/
+        },
+        onScrollEnd: function() { //拉动结束时 //上拉加载 
+            /*if (page > all_page) { $(".pull-loading").hide(); } else { if ($(".pull-loading").hasClass('loading')) { $(".pull-loading").html("加载完毕"); setInterval(function() { $(".pull-loading").html("上拉加载..."); }, 1000); } }*/
+            pull_load();
+        }
+    });
+    //初始化绑定iScroll控件
+    document.addEventListener('touchmove', function(e) {
+        myscroll.refresh();
+    }, false);
+    var page = '',
+        html, type;
+
+    function pull_load() {
+        page++
+        html += ` <li class="con_list_li">
+                            
+                            <div class="goods_box">
+                               
+                            </div>
+                        </li>`
+        $('.first_ul').append(html);
+        $.ajax({
+            type: '',
+            url: baseUrl + '',
+            data: {
+                token: localStorage.getItem('token'),
+                type: type,
+                page: page,
+            },
+            success: function(res) {
+                /* $('.con_list_ul').append(page);*/
+            },
+            error: function(res) {}
+        })
+    }
     //报失器械
     $('.loose_box').on('click', function() { window.location.href = 'loose_machine.html' })
 

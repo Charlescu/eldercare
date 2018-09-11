@@ -41,6 +41,8 @@ body {
 
 
 
+
+
 /* 商品 */
 
 
@@ -120,7 +122,7 @@ body {
 
 .goods_nums {
     float: right;
-    margin: -0.3rem 0.24rem 0 1.9rem;
+
     text-align: center;
     color: #666666;
 }
@@ -136,6 +138,7 @@ body {
     display: -o-flex;
     display: flex;
     margin-top: 0.2rem;
+    justify-content: space-between;
 }
 
 .change_status {

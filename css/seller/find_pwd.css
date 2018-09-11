@@ -47,6 +47,8 @@ body {
     display: inline-block;
 }
 
+
+
 .pwd_box {
     vertical-align: middle;
     border-radius: 0.05rem;
@@ -90,7 +92,7 @@ body {
     font-size: 0.20rem;
 
     color: #53A6FA;
-    padding: 0 0.1rem 0 0.1rem;
+    padding: 0 0.1rem 0 0.25rem;
 
     border: 0.01rem solid #53A6FA;
     border-radius: 0.1rem;

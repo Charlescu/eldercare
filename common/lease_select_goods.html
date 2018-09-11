@@ -15,20 +15,27 @@
 
 <body>
     <div class="container">
-        <div class="goods_box">
-            <img class="goods_pic" src="../images/listbanner4.png" alt="">
-        </div>
-        <div class="goods_box">
-            <img src="../images/listbanner5.png" alt="">
-        </div>
-        <div class="goods_box">
-            <img src="../images/listbanner7.png" alt="">
-        </div>
-        <div class="goods_box">
-            <img src="../images/listbanner6.png" alt="">
+        <div id="wrapper" style="min-height: 13rem; overflow-y: auto;">
+            <div id="scroller" class="mescroll">
+                <div class="content_item first_ul">
+                    <div class="goods_box">
+                        <img class="goods_pic" src="../images/listbanner4.png" alt="">
+                    </div>
+                    <div class="goods_box">
+                        <img src="../images/listbanner5.png" alt="">
+                    </div>
+                    <div class="goods_box">
+                        <img src="../images/listbanner7.png" alt="">
+                    </div>
+                    <div class="goods_box">
+                        <img src="../images/listbanner6.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+<script src="../js/iscroll.js" type="text/javascript" charset="utf-8"></script>
 <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
@@ -55,6 +62,48 @@ function get_main_content() {
 
 }
 //商品跳转
+
+var myscroll = new iScroll("wrapper", {
+    scrollbarClass: 'myScrollbar',
+    useTransition: false,
+    onScrollMove: function() { //拉动时 
+        /* if (this.y < this.maxScrollY) { $( ".pull-loading").html( "释放加载"); $( ".pull-loading").addClass( "loading"); } else { $( ".pull-loading").html( "上拉加载..."); $( ".pull-loading").removeClass( "loading"); }*/
+    },
+    onScrollEnd: function() { //拉动结束时 //上拉加载 
+        /*if (page > all_page) { $(".pull-loading").hide(); } else { if ($(".pull-loading").hasClass('loading')) { $(".pull-loading").html("加载完毕"); setInterval(function() { $(".pull-loading").html("上拉加载..."); }, 1000); } }*/
+        pull_load();
+    }
+});
+//初始化绑定iScroll控件
+document.addEventListener('touchmove', function(e) {
+    myscroll.refresh();
+}, false);
+var page = '',
+    html, type;
+
+function pull_load() {
+    page++
+    html += ` <li class="con_list_li">
+                            
+                            <div class="goods_box">
+                               
+                            </div>
+                        </li>`
+    $('.first_ul').append(html);
+    $.ajax({
+        type: '',
+        url: baseUrl + '',
+        data: {
+            token: localStorage.getItem('token'),
+            type: type,
+            page: page,
+        },
+        success: function(res) {
+            /* $('.con_list_ul').append(page);*/
+        },
+        error: function(res) {}
+    })
+}
 </script>
 
 </html>

@@ -47,8 +47,8 @@
                     </ul>
                 </div>
                 <!-- 待付款 -->
-                <div class="list_box_item">
-                    <div class="order_list">
+                <div class="list_box_item list_box_itemss">
+                    <div class="order_list first_ul">
                         <div class="order_product_box">
                             <div class="top_orderstatus_box">
                                 <p class="buy_message buyorder_number">订单号:123456</p>
@@ -185,17 +185,17 @@
                         <img class="category_search_icon" src="../images/search.png" alt="">
                     </div>
                     <ul class="status_box">
-                        <li class="orderstatus_list_item select_item" data-page="1">全部</li>
-                        <li class="orderstatus_list_item" data-page="1">待付款</li>
-                        <li class="orderstatus_list_item" data-page="1">待拿货</li>
-                        <li class="orderstatus_list_item" data-page="1">待归还</li>
-                        <li class="orderstatus_list_item" data-page="1">待评价</li>
-                        <li class="orderstatus_list_item" data-page="1">已完成</li>
-                        <li class="orderstatus_list_item" data-page="1">已取消</li>
+                        <li class="orderstatus_list_item select_item list_list">全部</li>
+                        <li class="orderstatus_list_item">待付款</li>
+                        <li class="orderstatus_list_item">待拿货</li>
+                        <li class="orderstatus_list_item">待归还</li>
+                        <li class="orderstatus_list_item">待评价</li>
+                        <li class="orderstatus_list_item">已完成</li>
+                        <li class="orderstatus_list_item">已取消</li>
                     </ul>
                 </div>
-                <div class="list_box_item">
-                    <div class="order_list">
+                <div class="list_box_item list_box_items">
+                    <div class="order_list first_ul ">
                         <div class="order_product_box">
                             <div class="top_orderstatus_box">
                                 <p class="buy_message buyorder_number">订单号:123456</p>
@@ -338,15 +338,15 @@
         //第一个选项卡
         var $menu_box = $('.content_head .con_title>li');
         $menu_box.click(function() {
-
             $(this).addClass('con_curr').siblings().removeClass('con_curr');
             var index = $menu_box.index(this);
             $('.con_all .con_warp').eq(index).show().siblings().hide();
         });
+        //
+
         //第二个选项卡
         var $select_status = $('.mid_box .status_box>li');
         $select_status.click(function() {
-
             $(this).addClass('select_item').siblings().removeClass('select_item');
             var index = $select_status.index(this);
             $('.list_box_item .order_list').eq(index).show().siblings().hide();
@@ -361,14 +361,32 @@
         $('.buy_ul_item').on('click', function() { window.location.href = 'buy_order_detail.html' })
         //查看租赁订单
         $('.lease_ul_item').on('click', function() { window.location.href = 'lease_order_detail.html' })
-        pull_load()
+
     })
     var page = '',
         type;
 
+    //分页加载
+    document.addEventListener('scroll', function() {
+        if ($(window).scrollTop() >= $(document).height() - $(window).height()) {
+            pull_load();
+        }
+        // if (window.innerHeight + document.body.scrollTop === document.body.clientHeight) {
+        //     // 当页面高度 + 滚动高度 === 文档整体高度时为滚动至底部 执行异步加载方法等等
+        // console.log(1)
+        // }
+    });
+
+
+    var page = '',
+        type = $('.con_curr').data('type');
+    console.log(type);
+    var html = '';
+
     function pull_load() {
         page++
-        console.log(page);
+        html += ``
+        $('.first_ul').append(html);
         $.ajax({
             type: '',
             url: baseUrl + '',
@@ -378,11 +396,9 @@
                 page: page,
             },
             success: function(res) {
-
+                /* $('.con_list_ul').append(page);*/
             },
-            error: function(res) {
-
-            }
+            error: function(res) {}
         })
     }
     //支付跳转
