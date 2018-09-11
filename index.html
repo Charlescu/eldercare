@@ -143,6 +143,7 @@ $('.get_good_time').click(function(event) {
         defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
         onConfirm: function(result) {
             console.log(result[0].lable + result[1].lable + result[2].lable);
+            console.log(result[0].lable);
             $('.start_time').text(result[1].lable + result[2].lable);
 
         }
