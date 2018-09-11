@@ -47,7 +47,7 @@
                     </ul>
                 </div>
                 <!-- 待付款 -->
-                <div class="list_box_item list_box_itemss">
+                <div class="list_box_item list_box_items">
                     <div class="order_list first_ul">
                         <div class="order_product_box">
                             <div class="top_orderstatus_box">
@@ -316,14 +316,14 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- 待完成 -->
-                        <div class="order_list" style="display: none">
-                        </div>
-                        <div class="order_list" style="display: none;"></div>
-                        <div class="order_list" style="display: none;"></div>
-                        <div class="order_list" style="display: none;"></div>
-                        <div class="order_list" style="display: none;"></div>
                     </div>
+                    <!-- begin:待完成 -->
+                    <div class="order_list" style="display: none">
+                    </div>
+                    <div class="order_list" style="display: none;"></div>
+                    <div class="order_list" style="display: none;"></div>
+                    <div class="order_list" style="display: none;"></div>
+                    <div class="order_list" style="display: none;"></div>
                 </div>
             </div>
         </div>
@@ -349,7 +349,7 @@
         $select_status.click(function() {
             $(this).addClass('select_item').siblings().removeClass('select_item');
             var index = $select_status.index(this);
-            $('.list_box_item .order_list').eq(index).show().siblings().hide();
+            $('.list_box_items .order_list').eq(index).show().siblings().hide();
         });
         //取消支付切换
         var $spay_status = $('.pay_box>p');

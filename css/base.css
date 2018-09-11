@@ -8,6 +8,8 @@ body {
     font-family: 'pingfang', sans-serif;
     width: 100%;
 
+
+
     position: relative;
     font-size: 0.24rem;
 
@@ -45,7 +47,7 @@ textarea {
     background: inherit;
     border: none;
     padding: 0;
-    padding-left: 0.2rem;
+    padding-left: 0;
     font-size: 0.32rem;
     margin-bottom: 0;
     height: auto;
@@ -64,6 +66,9 @@ input {
 input:focus {
     outline: none;
 }
+
+
+
 
 
 
@@ -109,6 +114,9 @@ input:focus {
 .mainpage_botlist span {
     display: block;
 }
+
+
+
 
 
 
@@ -182,6 +190,9 @@ input:focus {
 
 
 
+
+
+
 /* 提现记录 */
 
 .withdraw_listhead_ul {
@@ -200,6 +211,9 @@ input:focus {
 .head_item {
     width: 1.6rem;
 }
+
+
+
 
 
 

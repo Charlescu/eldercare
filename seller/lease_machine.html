@@ -11,6 +11,11 @@
     <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+    .dian img {
+        width: 0.16rem;
+    }
+    </style>
 </head>
 
 <body>
@@ -27,31 +32,31 @@
                     <ul class="select_card_ul con_title">
                         <li class="select_card_list choose">
                             <span>家用轮椅</span>
-                            <p clsaa='dian'>·</p>
+                            <p class='dian'>·</p>
                         </li>
                         <li class="select_card_list ">
                             <span>家用轮椅</span>
-                            <p clsaa='dian'>·</p>
+                            <p class='dian'>·</p>
                         </li>
                         <li class="select_card_list ">
                             <span>家用轮椅</span>
-                            <p clsaa='dian'>·</p>
+                            <p class='dian'>·</p>
                         </li>
                         <li class="select_card_list ">
                             <span>家用轮椅</span>
-                            <p clsaa='dian'>·</p>
+                            <p class='dian'>·</p>
                         </li>
                         <li class="select_card_list ">
                             <span>家用轮椅</span>
-                            <p clsaa='dian'>·</p>
+                            <p class='dian'>·</p>
                         </li>
                         <li class="select_card_list ">
                             <span>家用轮椅</span>
-                            <p clsaa='dian'>·</p>
+                            <p class='dian'>·</p>
                         </li>
                         <li class="select_card_list ">
                             <span>家用轮椅</span>
-                            <p clsaa='dian'>·</p>
+                            <p class='dian'>·</p>
                         </li>
                     </ul>
                 </div>
@@ -128,48 +133,7 @@
         //
         $('.desc_pic_box').on('click', function() { window.location.href = 'manage_detail.html' })
     })
-    //分页
-    var myscroll = new iScroll("wrapper", {
-        scrollbarClass: 'myScrollbar',
-        useTransition: false,
-        onScrollMove: function() { //拉动时 
-            /* if (this.y < this.maxScrollY) { $( ".pull-loading").html( "释放加载"); $( ".pull-loading").addClass( "loading"); } else { $( ".pull-loading").html( "上拉加载..."); $( ".pull-loading").removeClass( "loading"); }*/
-        },
-        onScrollEnd: function() { //拉动结束时 //上拉加载 
-            /*if (page > all_page) { $(".pull-loading").hide(); } else { if ($(".pull-loading").hasClass('loading')) { $(".pull-loading").html("加载完毕"); setInterval(function() { $(".pull-loading").html("上拉加载..."); }, 1000); } }*/
-            pull_load();
-        }
-    });
-    //初始化绑定iScroll控件
-    document.addEventListener('touchmove', function(e) {
-        myscroll.refresh();
-    }, false);
-    var page = '',
-        html, type;
 
-    function pull_load() {
-        page++
-        html += ` <li class="con_list_li">
-                            
-                            <div class="goods_box">
-                               
-                            </div>
-                        </li>`
-        $('.first_ul').append(html);
-        $.ajax({
-            type: '',
-            url: baseUrl + '',
-            data: {
-                token: localStorage.getItem('token'),
-                type: type,
-                page: page,
-            },
-            success: function(res) {
-                /* $('.con_list_ul').append(page);*/
-            },
-            error: function(res) {}
-        })
-    }
     //报失器械
     $('.loose_box').on('click', function() { window.location.href = 'loose_machine.html' })
 

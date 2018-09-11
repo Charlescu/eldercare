@@ -78,11 +78,11 @@ p {
 }
 
 textarea {
-    padding-top: 0.2rem;
-    border: 0.01rem solid #EBEBEB;
+
+    text-indent: 2em;
     background: #FAFAFA;
     border-radius: 0.1rem;
-    margin-bottom: 0.2rem;
+    margin-right: 0.1rem;
     outline: none;
 }
 
@@ -110,17 +110,28 @@ textarea {
 }
 
 .text_content {
-    width: 6.1rem;
+    width: 6.3rem;
     height: 3rem;
+
     background-color: #FAFAFA;
     border-radius: 0.1rem;
     border: 0.01rem solid #EBEBEB;
     padding-top: 0.2rem;
-    padding-left: 0.2rem;
     padding-right: 0.2rem;
     text-indent: 0.3rem;
     word-wrap: break-word;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

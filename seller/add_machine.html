@@ -7,10 +7,23 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/commonlist.css">
+    <link rel="stylesheet" href="../css/weui.css">
+    <link rel="stylesheet" href="../css/myweui.css">
+    <script src="../js/weui.js"></script>
+    <script src="../js/myweui.js"></script>
     <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
     <style>
+    .xiangxia {
+        width: 0.6rem;
+        opacity: 0.2;
+        vertical-align: middle;
+        margin-bottom: -0.1rem;
+    }
 
+    .shijain {
+        width: 3.8rem;
+    }
     </style>
 </head>
 
@@ -23,14 +36,16 @@
             </div>
             <div class="content_box">
                 <p class="reason_title">请填写增加数量</p>
-                <!-- <p class="num_box">
-                    <input type="text"><span>台</span></p>
-                <p class="reason_title">期望到货时间</p> -->
                 <p class="num_box">
                     <input type="number"><span>台</span></p>
+                <p class="reason_title">期望到货时间</p>
+                <p class="num_box">
+                    <input type="text" class="shijian"><span><img class="xiangxia" src="../images/downward.png" alt=""></span></p>
                 <p class="reason_title">请填写增加原因</p>
                 <div class="out_box">
-                    <div class="text_content"> fdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfdd</div>
+                    <div class="text_content">
+                        <textarea name="" id="" cols="45" rows="10">fdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfddfdsfdd</textarea>
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,6 +53,7 @@
     <footer class="footer">
         <p>提交申请</p>
     </footer>
+    <script src="../js/picker.min.js"></script>
     <script>
     $(document).ready(function() {
         get_main_content();
@@ -56,6 +72,35 @@
     function get_main_content() {
 
     }
+    // 开始时间
+    document.querySelector('.xiangxia').addEventListener('click', function() {
+        weui.datePicker({
+            start: new Date(),
+            end: '2030-12-29',
+            /**
+             * https://zh.wikipedia.org/wiki/Cron
+             * cron 表达式后三位
+             * 示例：
+             *  * * *                每天
+             *  5 * *                每个月的5日
+             *  1-10 * *             每个月的前10日
+             *  1,5,10 * *           每个月的1号、5号、10号
+             *  *\/2 * *             每个月的 1、3、5、7...日，注意写的时候斜杠“/”前面没有反斜杠“\”，这是因为是注释所以需要转义
+             *  * 2 0                2月的每个周日
+             *  * * 0,6              每个周末
+             *  * * 3                每周三
+             */
+
+            defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
+            onChange: function(result) {
+                console.log(result);
+            },
+            onConfirm: function(result) {
+                $('.shijian').val(result[0] + '年' + result[1] + '月' + result[2] + '日')
+            },
+            id: 'datePicker'
+        });
+    });
     </script>
 </body>
 
