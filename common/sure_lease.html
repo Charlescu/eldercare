@@ -89,6 +89,7 @@
         <p class="footer_buycar">前往支付</p>
     </footer>
     </div>
+    <script src="../js/picker.min.js"></script>
     <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
     <script>
@@ -106,37 +107,76 @@
     function get_main_content() {
 
     }
-    //datepicker,日期选择器
-    $('.start_date').click(function(event) {
-        var _this = this;
+    var first_time, next_time;
+    // 开始时间
+    document.querySelector('.start_date').addEventListener('click', function() {
         weui.datePicker({
             start: new Date(),
-            end: 2030,
-            defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
-            onConfirm: function(result) {
-                $('.start_date').text(result[1].label + result[2].label);
-                setTimeout(function() {
-                    ends_time();
-                }, 500);
+            end: '2030-12-29',
+            /**
+             * https://zh.wikipedia.org/wiki/Cron
+             * cron 表达式后三位
+             * 示例：
+             *  * * *                每天
+             *  5 * *                每个月的5日
+             *  1-10 * *             每个月的前10日
+             *  1,5,10 * *           每个月的1号、5号、10号
+             *  *\/2 * *             每个月的 1、3、5、7...日，注意写的时候斜杠“/”前面没有反斜杠“\”，这是因为是注释所以需要转义
+             *  * 2 0                2月的每个周日
+             *  * * 0,6              每个周末
+             *  * * 3                每周三
+             */
 
-            }
+            defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
+            onChange: function(result) {
+                console.log(result);
+            },
+            onConfirm: function(result) {
+                $('.start_date').text(result[1] + '月' + result[2] + '日')
+                first_time = new Date(result[0] + '-' + result[1] + '-' + result[2]);
+
+                console.log(first_time);
+                setTimeout(get_nextTime(), 1500)
+            },
+            id: 'datePicker'
         });
     });
-    var end_time;
+    //结束时间
+    function get_nextTime() {
+        document.querySelector('.end_date').addEventListener('click', function() {
+            weui.datePicker({
+                start: new Date(),
+                end: '2030-12-29',
+                /**
+                 * https://zh.wikipedia.org/wiki/Cron
+                 * cron 表达式后三位
+                 * 示例：
+                 *  * * *                每天
+                 *  5 * *                每个月的5日
+                 *  1-10 * *             每个月的前10日
+                 *  1,5,10 * *           每个月的1号、5号、10号
+                 *  *\/2 * *             每个月的 1、3、5、7...日，注意写的时候斜杠“/”前面没有反斜杠“\”，这是因为是注释所以需要转义
+                 *  * 2 0                2月的每个周日
+                 *  * * 0,6              每个周末
+                 *  * * 3                每周三
+                 */
 
-    function ends_time() {
-        var _this = this;
-        weui.datePicker({
-            start: new Date() + 1,
-            end: 2030,
-            defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate() + 1],
-            onConfirm: function(result) {
-                $('.end_date').text('~' + result[1].label + result[2].label);
-                end_time = result[0].label + result[1].label + result[2].label;
-                console.log(end_time);
-            }
+                defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
+                onChange: function(result) {
+                    console.log(result);
+                },
+                onConfirm: function(result) {
+                    $('.end_date').text('~' + result[1] + '月' + result[2] + '日')
+                    next_time = new Date(result[0] + '-' + result[1] + '-' + result[2]);
+                    nYlts = parseInt(Math.abs(next_time - first_time) / 1000 / 60 / 60 / 24);
+                    $('.time_end').text('共' + nYlts + '天')
+                    console.log(nYlts);
+                },
+                id: 'datePicker'
+            });
         });
     }
+
 
 
     //前往支付
