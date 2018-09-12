@@ -78,7 +78,7 @@ p {
 }
 
 textarea {
-
+    line-height: 0.45rem;
     text-indent: 2em;
     background: #FAFAFA;
     border-radius: 0.1rem;
@@ -121,6 +121,8 @@ textarea {
     text-indent: 0.3rem;
     word-wrap: break-word;
 }
+
+
 
 
 

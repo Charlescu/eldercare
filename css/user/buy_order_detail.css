@@ -15,20 +15,6 @@ html {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 地址管理 */
 
 .address_box {
@@ -52,6 +38,7 @@ html {
 }
 
 .user_name {
+    display: inline-block;
     vertical-align: top;
     margin-left: 0.21rem;
     font-size: 0.26rem;
@@ -88,6 +75,8 @@ html {
     margin-right: 0.31rem;
     width: 0.24rem;
 }
+
+
 
 
 
@@ -211,6 +200,8 @@ html {
 
 
 
+
+
 /* 配送方式 */
 
 .peisong {
@@ -258,6 +249,8 @@ html {
     line-height: 0.93rem;
     color: #53A6FA;
 }
+
+
 
 
 
@@ -343,6 +336,8 @@ html {
 .cancel {
     margin: 0.5rem 0.4rem 0 0;
 }
+
+
 
 
 

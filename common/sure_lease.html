@@ -90,7 +90,7 @@
             <div class="beizhu_box">
                 <p class="beizhu_title"> 备注信息： </p>
                 <p class="beizhu_content">
-                    <textarea name="" id="" cols="30" rows="3">晚一些的发货发的撒佛挡杀佛的萨芬</textarea>
+                    <textarea name="" id="" cols="35" rows="3">晚一些的发货发的撒佛挡杀佛的萨芬</textarea>
                 </p>
             </div>
         </div>
@@ -125,12 +125,15 @@
     $(document).ready(function() {
         get_main_content();
 
+
+        //初始化时间
+        var local_month = new Date().getMonth() + 1,
+            local_day = new Date().getDate();
+        next_local_day = new Date().getDate() + 2;
         var $menu_box = $('.content_body .con_title>li');
-        $menu_box.click(function() {
-            $(this).addClass('con_curr').siblings().removeClass('con_curr');
-            var index = $menu_box.index(this);
-            $('.con_all .con_warp').eq(index).show().siblings().hide();
-        });
+        $('.start_date').text(local_month + '月' + local_day + '日');
+        $('.end_date').text('~' + local_month + '月' + next_local_day + '日');
+
     })
 
     function get_main_content() {

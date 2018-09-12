@@ -49,7 +49,7 @@
                     <input class="shuru" type="text" maxlength="5" placeholder="赵先生">
                 </p>
                 <p class="user_phone">
-                    <input class="shuru" type="number" maxlength="11" placeholder="15122953260">
+                    <input class="shuru" type="number" maxlength="11" onkeyup="this.value = this.value.slice(0,11)" placeholder="15122953260">
                 </p>
             </div>
             <div class="local_box">
@@ -84,7 +84,7 @@
             <div class="beizhu_box">
                 <p class="beizhu_title"> 备注信息： </p>
                 <p class="beizhu_content">
-                    <textarea name="" id="" cols="30" rows="3">晚一些的发货发的撒佛挡杀佛的萨芬</textarea>
+                    <textarea name="" id="" cols="35" rows="3">晚一些的发货发的撒佛挡杀佛的萨芬</textarea>
                 </p>
             </div>
         </div>
@@ -112,6 +112,7 @@
         <p class="footer_buycar">前往支付</p>
     </footer>
     </div>
+    <script src="../js/picker.min.js"></script>
     <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
     <script>

@@ -12,7 +12,31 @@
     <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
     <style>
+    .shuru {
+        width: 2rem;
+        outline: none;
+    }
 
+    .beizhu_title {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0.08rem;
+    }
+
+    textarea {
+        outline: none;
+        margin: 0 auto;
+        margin-top: 0.1rem;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        line-height: 0.35rem;
+    }
+
+    .beizhu_content {
+        display: inline-block;
+        border-radius: 0.1rem;
+        border: 0.01rem solid #EBEBEB;
+    }
     </style>
 </head>
 
@@ -22,8 +46,12 @@
             <img class="youjiantou" src="../images/youjiantou1.png" alt="">
             <div class="user_box">
                 <img class="head_img" src="../images/head_img.png" alt="">
-                <span class="user_name">赵先生</span>
-                <p class="user_phone">15122953260</p>
+                <p class="user_name">
+                    <input class="shuru" type="text" maxlength="5" placeholder="赵先生">
+                </p>
+                <p class="user_phone">
+                    <input class="shuru" type="number" maxlength="11" onkeyup="this.value = this.value.slice(0,11)" placeholder="15122953260">
+                </p>
             </div>
             <div class="local_box">
                 <img class="location_img" src="../images/3336556@2x.png" alt="">
@@ -52,7 +80,10 @@
                 <p> 配送方式<span>    快递：￥8.00</span></p>
             </div>
             <div class="beizhu_box">
-                <p> 备注信息：晚一些的发货</p>
+                <p class="beizhu_title"> 备注信息： </p>
+                <p class="beizhu_content">
+                    <textarea name="" id="" cols="35" rows="3">晚一些的发货发的撒佛挡杀佛的萨芬晚一些的发货发的撒佛挡杀佛的萨芬晚一些的发货发的撒佛挡杀佛的萨芬</textarea>
+                </p>
             </div>
         </div>
         <div class="xiaoji_box">

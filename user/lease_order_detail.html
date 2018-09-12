@@ -8,11 +8,39 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/swiper.min.css">
     <link rel="stylesheet" href="../css/user/lease_order_detail.css">
+    <link rel="stylesheet" href="../css/weui.css">
+    <link rel="stylesheet" href="../css/myweui.css">
+    <script src="../js/weui.js"></script>
+    <script src="../js/myweui.js"></script>
     <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
     <style>
+    .shuru {
+        width: 2rem;
+        outline: none;
+    }
 
+    .beizhu_title {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0.08rem;
+    }
+
+    textarea {
+        outline: none;
+        margin: 0 auto;
+        margin-top: 0.1rem;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        line-height: 0.35rem;
+    }
+
+    .beizhu_content {
+        display: inline-block;
+        border-radius: 0.1rem;
+        border: 0.01rem solid #EBEBEB;
+    }
     </style>
 </head>
 
@@ -26,8 +54,12 @@
             </div>
             <div class="user_box">
                 <img class="head_img" src="../images/head_img.png" alt="">
-                <span class="user_name">赵先生</span>
-                <p class="user_phone">15122953260</p>
+                <p class="user_name">
+                    <input class="shuru" type="text" maxlength="5" placeholder="赵先生">
+                </p>
+                <p class="user_phone">
+                    <input class="shuru" type="number" maxlength="11" onkeyup="this.value = this.value.slice(0,11)" placeholder="15122953260">
+                </p>
             </div>
         </div>
         <div class="con_warp">
@@ -63,9 +95,10 @@
                     <p> 押金
                         <p class="cash_p"><img src="../images/about_us.png" alt="">申请免押金</p> <span>￥8.00</span></p>
                 </div>
-                <div class="beizhu_box ">
-                    <p> 备注信息：
-                        <textarea name="" id="" cols="30" rows="1">晚一些的发货发的撒佛挡杀佛的萨芬</textarea>
+                <div class="beizhu_box">
+                    <p class="beizhu_title"> 备注信息： </p>
+                    <p class="beizhu_content">
+                        <textarea name="" id="" cols="35" rows="3">晚一些的发货发的撒佛挡杀佛的萨芬晚一些的发货发的撒佛挡杀佛的萨芬晚一些的发货发的撒佛挡杀佛的萨芬</textarea>
                     </p>
                 </div>
             </div>
@@ -120,13 +153,15 @@
     $(document).ready(function() {
         get_main_content();
 
+        //初始化时间
+        var local_year = new Date().getFullYear(),
+            local_month = new Date().getMonth() + 1,
+            local_day = new Date().getDate(),
+            next_local_day = new Date().getDate() + 2;
         var $menu_box = $('.content_body .con_title>li');
-        $menu_box.click(function() {
-            $(this).addClass('con_curr').siblings().removeClass('con_curr');
-            var index = $menu_box.index(this);
-            $('.con_all .con_warp').eq(index).show().siblings().hide();
-        });
-
+        $('.start_date').text(local_month + '月' + local_day + '日');
+        $('.end_date').text('~' + local_month + '月' + next_local_day + '日');
+        $('.back_time').text(local_year + '年' + local_month + '月' + local_day + '日');
 
     })
 
@@ -195,7 +230,7 @@
                 onConfirm: function(result) {
                     $('.end_date').text('~' + result[1] + '月' + result[2] + '日')
                     next_time = new Date(result[0] + '-' + result[1] + '-' + result[2]);
-                    nYlts = parseInt(Math.abs(next_time - first_time) / 1000 / 60 / 60 / 24);
+                    nYlts = parseInt((Math.abs(next_time - first_time) / 1000 / 60 / 60 / 24) + 1);
                     $('.time_end').text('共' + nYlts + '天')
                     console.log(nYlts);
                 },
@@ -203,7 +238,37 @@
             });
         });
     }
+    //续租
+    // 开始时间
+    document.querySelector('.back_time').addEventListener('click', function() {
+        weui.datePicker({
+            start: new Date(),
+            end: '2030-12-29',
+            /**
+             * https://zh.wikipedia.org/wiki/Cron
+             * cron 表达式后三位
+             * 示例：
+             *  * * *                每天
+             *  5 * *                每个月的5日
+             *  1-10 * *             每个月的前10日
+             *  1,5,10 * *           每个月的1号、5号、10号
+             *  *\/2 * *             每个月的 1、3、5、7...日，注意写的时候斜杠“/”前面没有反斜杠“\”，这是因为是注释所以需要转义
+             *  * 2 0                2月的每个周日
+             *  * * 0,6              每个周末
+             *  * * 3                每周三
+             */
 
+            defaultValue: [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()],
+            onChange: function(result) {
+                console.log(result);
+            },
+            onConfirm: function(result) {
+                first_time = result[0] + '年' + result[1] + '月' + result[2] + '日';
+                $('.back_time').text(first_time);
+            },
+            id: 'datePicker'
+        });
+    });
     //前往支付
     $('.footer_buycar').on('click', function() {
         window.location.href = "take_it.html"
@@ -217,10 +282,15 @@
         event.stopPropagation();
         $('.popup-box').show();
         $(document).on('click', function(event) {
-            var tanceng = $('.popup_inbox');
-            if (!tanceng.is(event.target) && tanceng.has(event.target).length === 0) {
-                $('.popup-box').hide();
+            if (!$('.weui-picker').is(':hidden')) {
+                return;
+            } else {
+                var tanceng = $('.popup_inbox');
+                if (!tanceng.is(event.target) && tanceng.has(event.target).length === 0) {
+                    $('.popup-box').hide();
+                }
             }
+
         });
     })
     </script>
