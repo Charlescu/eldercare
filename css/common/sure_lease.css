@@ -4,11 +4,7 @@ body {
     background-color: #F5F8FA;
 }
 
-textarea {
-    outline: none;
 
-    margin-top: -0.07rem;
-}
 
 .container {
     padding-top: 0.2rem;
@@ -68,6 +64,7 @@ textarea {
 }
 
 .user_name {
+    display: inline-block;
     vertical-align: top;
     margin-left: 0.21rem;
     font-size: 0.26rem;

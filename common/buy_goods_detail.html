@@ -12,7 +12,14 @@
     <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
     <style>
+    .swiper-slide {
+        height: 5rem;
+    }
 
+    .swiper-slide img {
+        width: 7.5rem;
+        height: 5.65rem;
+    }
     </style>
 </head>
 
@@ -114,7 +121,15 @@
                     window.location.href = 'buy_car.html'
                 })
                 //购买商品轮播图 
-                var swiper = new Swiper('.swiper-container', { pagination: { el: '.swiper-pagination', clickable: true, }, });
+                var swiper = new Swiper('.swiper-container', {
+                    loop: true,
+                    speed: 2000,
+                    autoplay: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                });
                 //点击添加购物车
                 var goods_num = 0;
                 $('.footer_buycar').on('click', function() {

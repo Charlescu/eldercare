@@ -12,7 +12,14 @@
     <script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
     <style>
+    .swiper-slide {
+        height: 5rem;
+    }
 
+    .swiper-slide img {
+        width: 7.5rem;
+        height: 5.65rem;
+    }
     </style>
 </head>
 
@@ -20,7 +27,7 @@
     <div class="container">
         <div class="swiper">
             <div class="swiper-container swiper-container-horizontal swiper-container-ios">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper" style="height:5rem;">
                     <div class="swiper-slide swiper-slide-top swiper-slide-prev"><img src="../images/mainimage.png"></div>
                     <div class="swiper-slide swiper-slide-top swiper-slide-active"><img src="../images/mainimage.png"></div>
                     <div class="swiper-slide swiper-slide-top swiper-slide-next"><img src="../images/mainimage.png"></div>
@@ -105,10 +112,13 @@
                 }
                 //购买商品轮播图
                 var swiper = new Swiper('.swiper-container', {
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
+                    loop: true,
+    speed: 2000,
+    autoplay: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
                 });
                 //租赁跳转
                 $('.footer').on('click',function(){

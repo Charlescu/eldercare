@@ -15,8 +15,9 @@ window.onload = function() {
         ++$goods_num;
         console.log($goods_num);
         $('.join p').text($goods_num);
-        $('.xiaoji').text('共' + $goods_num + '件商品  小计：￥' + parseFloat(($('.goods_money').text().replace(/[^0-9]/ig, ""))) * $goods_num);
+        $('.xiaoji').text('共' + $goods_num + '件商品  小计：￥' + parseInt(($('.goods_money').text().replace(/[^0-9]/ig, "")) * 1000) * $goods_num / 1000);
         $('.all_price span').text('￥' + parseFloat(($('.goods_money').text().replace(/[^0-9]/ig, ""))) * $goods_num);
+        $('.buycar_box_money').text('￥' + parseFloat(($('.goods_money').text().replace(/[^0-9]/ig, ""))) * $goods_num)
         console.log();
         count_switch = true;
     });

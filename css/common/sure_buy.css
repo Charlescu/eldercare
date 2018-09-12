@@ -30,6 +30,7 @@ body {
 }
 
 .user_name {
+    display: inline-block;
     vertical-align: top;
     margin-left: 0.21rem;
     font-size: 0.26rem;
@@ -66,6 +67,7 @@ body {
     margin-right: 0.31rem;
     width: 0.24rem;
 }
+
 
 
 
@@ -181,6 +183,7 @@ body {
 
 
 
+
 /* 配送方式 */
 
 .peisong {
@@ -228,6 +231,7 @@ body {
     line-height: 0.93rem;
     color: #53A6FA;
 }
+
 
 
 
@@ -298,6 +302,7 @@ body {
 .cancel {
     margin: 0.5rem 0.4rem 0 0;
 }
+
 
 
 

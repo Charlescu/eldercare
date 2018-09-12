@@ -69,6 +69,12 @@ input:-ms-input-placeholder {
 
 
 
+
+
+
+
+
+
 /* 搜索结果 */
 
 .con_title {
@@ -78,12 +84,20 @@ input:-ms-input-placeholder {
 }
 
 .con_list_li {
+    width: 6.9rem;
     border-top: 0.01rem solid #EBEBEB;
     line-height: 0.6rem;
+    margin: 0 auto;
+}
+
+.con_list_img_box {
+    width: 1.82rem;
+    height: 1.82rem;
+    display: inline-block;
 }
 
 .con_list_img {
-    margin-left: 0.43rem;
+    padding-top: 0.1rem;
     display: inline-block;
     width: 1.82rem;
 }
@@ -94,9 +108,11 @@ input:-ms-input-placeholder {
 }
 
 .goods_box {
-    margin: 0.28rem auto;
-    margin-left: 0.5rem;
-    width: 4.38rem;
+    vertical-align: top;
+    margin: 0.14rem auto;
+
+    margin-left: 0.3rem;
+    width: 4.18rem;
     display: inline-block;
 }
 
