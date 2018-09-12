@@ -201,8 +201,10 @@ function get_main_content() {
 
 }
 //加载
+console.log($('.con_list').scrollLeft());
 document.addEventListener('scroll', function() {
-    if ($(window).scrollRight() >= $(document).width() - $(window).width()) {
+    if ($(window).scrollRight() > 0 /*$(document).width() - $(window).clientWidth()*/ ) {
+        console.log($(window).scrollRight() >= 0)
         pull_load();
     }
     // if (window.innerHeight + document.body.scrollTop === document.body.clientHeight) {
