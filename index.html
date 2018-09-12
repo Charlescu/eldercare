@@ -81,11 +81,13 @@
                             <img src="images/buy_list2.png" alt="">
                             <span>血压计<span>
                             <p class="check">查看</p>
-                        </li> <li>
+                        </li> 
+                        <li>
                             <img src="images/buy_list3.png" alt="">
                             <span>血压计<span>
                             <p class="check">查看</p>
-                        </li> <li>
+                        </li> 
+                        <li>
                             <img src="images/buy_list1.png" alt="">
                             <span>血压计<span>
                             <p class="check">查看</p>
@@ -200,7 +202,7 @@ function get_main_content() {
 }
 //加载
 document.addEventListener('scroll', function() {
-    if ($(window).scrollTop() >= $(document).height() - $(window).height()) {
+    if ($(window).scrollRight() >= $(document).width() - $(window).width()) {
         pull_load();
     }
     // if (window.innerHeight + document.body.scrollTop === document.body.clientHeight) {
@@ -217,13 +219,10 @@ var html = '';
 
 function pull_load() {
     page++
-    html += ` <li class="con_list_li">
-                            <img class="con_list_img" src="../images/5653ceba1a219@2x.png" alt="">
-                            <div class="goods_box">
-                                <p class="goods_title">HO56C手动轮椅车` + page + `</p>
-                                <span class="goods_content">体积更小轻松放入汽车后备箱</span>
-                                <p class="goods_money">￥2000.00<img class="goods_icon" src="../images/goods_icon.png" alt=""></p>
-                            </div>
+    html += `<li>
+                            <img src="images/buy_list1.png" alt="">
+                            <span>血压计<span>
+                            <p class="check">查看</p>
                         </li>`
     $('.first_ul').append(html);
     $.ajax({
