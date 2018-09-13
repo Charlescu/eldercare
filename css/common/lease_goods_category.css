@@ -5,6 +5,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /* .top_box {
     position: fixed;
     top: 0;
@@ -94,6 +102,14 @@ input:-ms-input-placeholder {
 
 
 
+
+
+
+
+
+
+
+
 /* 选择列表 */
 
 .select_card {
@@ -141,6 +157,13 @@ body::-webkit-scrollbar {
     line-height: 0.6rem;
 }
 
+.con_list_img_box {
+    width: 1.82rem;
+    height: 1.82rem;
+    margin-top: 0.2rem;
+    display: inline-block;
+}
+
 .con_list_img {
     margin-left: 0.43rem;
     display: inline-block;
@@ -153,7 +176,9 @@ body::-webkit-scrollbar {
 }
 
 .goods_box {
-    margin: 0.28rem auto;
+    margin: 0 auto;
+    vertical-align: top;
+    margin-top: 0.18rem;
     margin-left: 0.5rem;
     width: 4.38rem;
     display: inline-block;

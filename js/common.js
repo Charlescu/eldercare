@@ -85,17 +85,7 @@ window.onload = function() {
     });
     //二级联动
 
-    //加载AJAx
-    document.addEventListener('scroll', function() {
-        if ($(window).scrollTop() >= $(document).height() - $(window).height()) {
 
-            pull_load();
-        }
-        // if (window.innerHeight + document.body.scrollTop === document.body.clientHeight) {
-        //     // 当页面高度 + 滚动高度 === 文档整体高度时为滚动至底部 执行异步加载方法等等
-        // console.log(1)
-        // }
-    })
 
 
 }

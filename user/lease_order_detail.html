@@ -282,7 +282,8 @@
         event.stopPropagation();
         $('.popup-box').show();
         $(document).on('click', function(event) {
-            if (!$('.weui-picker').is(':hidden')) {
+            var tanchuang = $('.weui-picker');
+            if (tanchuang.is(event.target)) {
                 return;
             } else {
                 var tanceng = $('.popup_inbox');
