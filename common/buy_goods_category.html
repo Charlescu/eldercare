@@ -120,6 +120,16 @@
                                 <p class="goods_money">￥200.00/天<img class="goods_icon" src="../images/goods_icon.png" alt=""></p>
                             </div>
                         </li>
+                        <li class="con_list_li">
+                            <div class="con_list_img_box">
+                                <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
+                            </div>
+                            <div class="goods_box">
+                                <p class="goods_title">HO56C手动轮椅车6</p>
+                                <span class="goods_content">体积更小轻松放入汽车后备箱</span>
+                                <p class="goods_money">￥200.00/天<img class="goods_icon" src="../images/goods_icon.png" alt=""></p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="con_warp" style="display: none">
@@ -230,11 +240,13 @@
         function pull_load() {
             page++
             html += ` <li class="con_list_li">
-                            <img class="con_list_img" src="../images/5653ceba1a219@2x.png" alt="">
+                            <div class="con_list_img_box">
+                                <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
+                            </div>
                             <div class="goods_box">
-                                <p class="goods_title">HO56C手动轮椅车` + page + `</p>
+                                <p class="goods_title">HO56C手动轮椅车2</p>
                                 <span class="goods_content">体积更小轻松放入汽车后备箱</span>
-                                <p class="goods_money">￥2000.00<img class="goods_icon" src="../images/goods_icon.png" alt=""></p>
+                                <p class="goods_money">￥200.00/天<img class="goods_icon" src="../images/goods_icon.png" alt=""></p>
                             </div>
                         </li>`
             $('.first_ul').append(html);
