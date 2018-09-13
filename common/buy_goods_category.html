@@ -45,7 +45,7 @@
             </ul>
             <div class="con_all">
                 <div class="con_warp">
-                    <ul class="con_list_ul first_ul">
+                    <ul class="con_list first_ul">
                         <li class="con_list_li">
                             <div class="con_list_img_box">
                                 <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
@@ -89,7 +89,7 @@
                     </ul>
                 </div>
                 <div class="con_warp" style="display: none">
-                    <ul class="con_list">
+                    <ul class="con_list first_ul">
                         <li class="con_list_li">
                             <div class="con_list_img_box">
                                 <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
@@ -133,7 +133,7 @@
                     </ul>
                 </div>
                 <div class="con_warp" style="display: none">
-                    <ul class="con_list">
+                    <ul class="con_list first_ul">
                         <li class="con_list_li">
                             <div class="con_list_img_box">
                                 <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
@@ -167,8 +167,8 @@
                     </ul>
                 </div>
                 <div class="con_warp" style="display: none">
-                    <ul class="con_list">
-                        <li class="con_list_li">
+                    <ul class="con_list first_ul">
+                        <li class="con_list_li ">
                             <div class="con_list_img_box">
                                 <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
                             </div>
@@ -206,13 +206,17 @@
         $(document).ready(function() {
             get_main_content();
 
-            var $menu_box = $('.content_body .con_title>li');
-            $menu_box.click(function() {
-                $(this).addClass('con_curr').siblings().removeClass('con_curr');
-                var index = $menu_box.index(this);
-                $('.con_all .con_warp').eq(index).show().siblings().hide();
-            });
         })
+        var index;
+        var $menu_box = $('.content_body .con_title>li');
+        $menu_box.click(function() {
+            $(this).addClass('con_curr').siblings().removeClass('con_curr');
+
+            index = $menu_box.index(this);
+            $('.con_all .con_warp').eq(index).show().siblings().hide();
+            $('.con_all .con_warp').eq(index).find('.con_list').addClass('first_ul');
+            $('.con_all .con_warp').eq(index).siblings().find('.con_list').removeClass('first_ul');
+        });
         $('.con_list_li').on('click', function() {
             window.location.href = "lease_goods_detail.html"
         })
@@ -224,7 +228,7 @@
 
         }
         //分页
-        var k = 0;
+        var k = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
         document.addEventListener('scroll', function() {
             if ($(window).scrollTop() >= $(document).height() - $(window).height()) {
                 pull_load();
@@ -239,18 +243,24 @@
         var html = '';
 
         function pull_load() {
-            k = ++k
-            page++
-            html += ` <li class="con_list_li">
+            for (key in k) {
+                if (key < k.length && page < 20) {
+                    page++
+                    html += ` <li class="con_list_li">
                             <div class="con_list_img_box">
                                 <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
                             </div>
                             <div class="goods_box">
-                                <p class="goods_title">HO56C手动轮椅车` + k + `</p>
+                                <p class="goods_title">HO56C手动轮椅车` + k[key] + `</p>
                                 <span class="goods_content">体积更小轻松放入汽车后备箱</span>
                                 <p class="goods_money">￥200.00/天<img class="goods_icon" src="../images/goods_icon.png" alt=""></p>
                             </div>
                         </li>`
+                } else {
+                    key = 30;
+                    html = '';
+                }
+            }
             $('.first_ul').append(html);
             $.ajax({
                 type: '',
