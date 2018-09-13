@@ -224,6 +224,7 @@
 
         }
         //分页
+        var k = 0;
         document.addEventListener('scroll', function() {
             if ($(window).scrollTop() >= $(document).height() - $(window).height()) {
                 pull_load();
@@ -238,13 +239,14 @@
         var html = '';
 
         function pull_load() {
+            k = ++k
             page++
             html += ` <li class="con_list_li">
                             <div class="con_list_img_box">
                                 <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
                             </div>
                             <div class="goods_box">
-                                <p class="goods_title">HO56C手动轮椅车2</p>
+                                <p class="goods_title">HO56C手动轮椅车` + k + `</p>
                                 <span class="goods_content">体积更小轻松放入汽车后备箱</span>
                                 <p class="goods_money">￥200.00/天<img class="goods_icon" src="../images/goods_icon.png" alt=""></p>
                             </div>
