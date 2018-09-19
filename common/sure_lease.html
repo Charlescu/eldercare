@@ -200,7 +200,8 @@
                 onConfirm: function(result) {
                     $('.end_date').text('~' + result[1] + '月' + result[2] + '日')
                     next_time = new Date(result[0] + '-' + result[1] + '-' + result[2]);
-                    nYlts = parseInt((Math.abs(next_time - first_time) / 1000 / 60 / 60 / 24) + 1);
+                    nYlts = Math.ceil((next_time - first_time) < 0 ? setTimeout(function() { alert('0000');
+                        $('.time_end').text('共0天') }, 0) : (Math.abs(next_time - first_time) / 1000 / 60 / 60 / 24) + 1);
                     $('.time_end').text('共' + nYlts + '天')
                     console.log(nYlts);
                 },

@@ -15,6 +15,28 @@
     .con_warp {
         margin-top: 0.3rem;
     }
+
+    .final_search_img {
+
+        margin-top: -0.05rem;
+        vertical-align: middle;
+        width: 0.28rem;
+        height: 0.28rem;
+    }
+
+    .final_search {
+        width: 6.5rem;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .recent_search {
+        display: inline-block;
+    }
     </style>
 </head>
 
@@ -27,9 +49,12 @@
             <img class="search_search_icon" src="../images/search.png" alt="">
         </div>
         <div class="search_hitory">
-            <p class="final_search">
-                最近搜索
-            </p>
+            <div class="final_search">
+                <p class="recent_search">最近搜索</p>
+                <div class="del_box">
+                    <img class="final_search_img" src="../images/delete.png" alt="">
+                </div>
+            </div>
             <div class="search_history_list_box" style="display: none">
                 <p class="search_history_list">电动轮椅</p>
                 <p class="search_history_list">专业医疗电动轮椅</p>
@@ -38,53 +63,88 @@
             </div>
         </div>
         <div class="con_warp">
-            <ul class="con_list">
-                <li class="con_list_li">
-                    <div class="con_list_img_box">
-                        <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
-                    </div>
-                    <div class="goods_box">
-                        <p class="goods_title">HO56C手动轮椅车</p>
-                        <span class="goods_content">体积更小轻松放入汽车后备箱<span>
+            <div id="wrapper" style="">
+                <div id="scroller" class="mescroll">
+                    <ul class="con_list first_ul">
+                        <li class="con_list_li">
+                            <div class="con_list_img_box">
+                                <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
+                            </div>
+                            <div class="goods_box">
+                                <p class="goods_title">HO56C手动轮椅车</p>
+                                <span class="goods_content">体积更小轻松放入汽车后备箱</span>
                                 <p class="goods_money">$2000.00</p>
                             </div>
                         </li>
-
-
-                         <li class="con_list_li">
+                        <li class="con_list_li">
                             <div class="con_list_img_box">
-                            <img class="con_list_img" src="../images/5653ceba1a219@2x.png" alt="">
-                        </div>
+                                <img class="con_list_img" src="../images/5653ceba1a219@2x.png" alt="">
+                            </div>
                             <div class="goods_box">
                                 <p class="goods_title">HO56C手动轮椅车</p>
-                                <span class="goods_content">体积更小轻松放入汽车后备箱<span>
+                                <span class="goods_content">体积更小轻松放入汽车后备箱</span>
                                 <p class="goods_money">$2000.00</p>
                             </div>
                         </li>
-
-                         <li class="con_list_li">
+                        <li class="con_list_li">
                             <div class="con_list_img_box">
-                            <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
-                        </div>
+                                <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
+                            </div>
                             <div class="goods_box">
                                 <p class="goods_title">HO56C手动轮椅车</p>
-                                <span class="goods_content">体积更小轻松放入汽车后备箱<span>
+                                <span class="goods_content">体积更小轻松放入汽车后备箱</span>
                                 <p class="goods_money">$2000.00</p>
                             </div>
                         </li>
                     </ul>
+                </div>
             </div>
+        </div>
     </div>
+    <script src="../js/iscroll.js" type="text/javascript" charset="utf-8"></script>
     <script>
     $(document).ready(function() {
         get_main_content();
 
     })
-    $('.search_search_icon').on('click',function(){
+    $('.search_search_icon').on('click', function() {
         $('.search_hitory').hide();
         $('.con_warp').show();
     })
+
     function get_main_content() {
+
+    }
+    var myscroll = new iScroll("wrapper", {
+        scrollbarClass: 'myScrollbar',
+        useTransition: false,
+        onScrollMove: function() { //拉动时 
+            /* if (this.y < this.maxScrollY) { $( ".pull-loading").html( "释放加载"); $( ".pull-loading").addClass( "loading"); } else { $( ".pull-loading").html( "上拉加载..."); $( ".pull-loading").removeClass( "loading"); }*/
+        },
+        onScrollEnd: function() { //拉动结束时 //上拉加载 
+            /*if (page > all_page) { $(".pull-loading").hide(); } else { if ($(".pull-loading").hasClass('loading')) { $(".pull-loading").html("加载完毕"); setInterval(function() { $(".pull-loading").html("上拉加载..."); }, 1000); } }*/
+            pull_load();
+        }
+    });
+    //初始化绑定iScroll控件
+    document.addEventListener('touchmove', function(e) {
+        myscroll.refresh();
+    }, false);
+    var html = '';
+
+    function pull_load() {
+
+        html += ` <li class="con_list_li">
+                                <div class="con_list_img_box">
+                                    <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
+                                </div>
+                                <div class="goods_box">
+                                    <p class="goods_title">HO56C手动轮椅车</p>
+                                    <span class="goods_content">体积更小轻松放入汽车后备箱</span>
+                                    <p class="goods_money">$2000.00</p>
+                                </div>
+                            </li>`
+        $('.first_ul').append(html);
 
     }
     </script>
