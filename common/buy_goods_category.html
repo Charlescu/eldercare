@@ -228,16 +228,11 @@
 
         }
         //分页
+
         var k = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-        document.addEventListener('scroll', function() {
-            if ($(window).scrollTop() >= $(document).height() - $(window).height()) {
-                pull_load();
-            }
-            // if (window.innerHeight + document.body.scrollTop === document.body.clientHeight) {
-            //     // 当页面高度 + 滚动高度 === 文档整体高度时为滚动至底部 执行异步加载方法等等
-            // console.log(1)
-            // }
-        });
+        /* document.addEventListener('scroll', function() { if ($(window).scrollTop() >= $(document).height() - $(window).height()) { pull_load(); } // if (window.innerHeight + document.body.scrollTop === document.body.clientHeight) { // // 当页面高度 + 滚动高度 === 文档整体高度时为滚动至底部 执行异步加载方法等等 // console.log(1) // } });*/
+
+
         var page = '',
             type = $('.con_curr').data('type');
         var html = '';
@@ -262,19 +257,6 @@
                 }
             }
             $('.first_ul').append(html);
-            $.ajax({
-                type: '',
-                url: baseUrl + '',
-                data: {
-                    token: localStorage.getItem('token'),
-                    type: type,
-                    page: page,
-                },
-                success: function(res) {
-                    /* $('.con_list_ul').append(page);*/
-                },
-                error: function(res) {}
-            })
         }
         </script>
 </body>
