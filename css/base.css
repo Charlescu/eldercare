@@ -7,12 +7,9 @@ html,
 body {
     font-family: 'pingfang', sans-serif;
     width: 100%;
-
-
-
+    height: 100%;
     position: relative;
     font-size: 0.24rem;
-
     margin: 0;
     padding: 0;
 }
@@ -82,6 +79,8 @@ input:focus {
 
 
 
+
+
 /* 公共底栏 */
 
 .footer {
@@ -114,6 +113,8 @@ input:focus {
 .mainpage_botlist span {
     display: block;
 }
+
+
 
 
 
@@ -193,6 +194,8 @@ input:focus {
 
 
 
+
+
 /* 提现记录 */
 
 .withdraw_listhead_ul {
@@ -211,6 +214,8 @@ input:focus {
 .head_item {
     width: 1.6rem;
 }
+
+
 
 
 

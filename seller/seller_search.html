@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3-n搜索</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/seller/search_css.css">
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+    .search {
+        background-color: #FFF;
+    }
+
+    body {
+        background-color: #F5F8FA;
+    }
+
+    .con_list_li {
+        width: 6.9rem;
+        margin: 0 auto;
+        box-shadow: 0.08px 0.08rem 0.05rem rgba(6, 4, 41, 0.03);
+        border-radius: 0.1rem;
+        background-color: #fff;
+        margin-top: 0.2rem;
+    }
+
+    .final_search_img {
+
+        margin-top: -0.05rem;
+        vertical-align: middle;
+        width: 0.28rem;
+        height: 0.28rem;
+    }
+
+    .final_search {
+        width: 6.5rem;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .recent_search {
+        display: inline-block;
+    }
+
+    .machine_list {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .con_warp {
+        padding-top: 0.2rem;
+    }
+
+    .machine_box {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        margin: 0.1rem auto;
+    }
+
+    .manage_box {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        width: 6.5rem;
+        margin: 0 auto;
+        border-top: 0.01rem solid #EAEAEA;
+        padding-top: 0.2rem;
+    }
+
+    .machine_pic_box {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .machine_pic {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .desc_pic_box {
+        width: 5rem;
+        margin-left: 0.2rem;
+        overflow: hidden;
+    }
+
+    .money_box {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .machine_img {
+        width: 0.68rem;
+        height：0.68rem;
+    }
+
+    .manage_box_list {
+        margin: 0 auto;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="search">
+            <div class="search_search_box">
+                <div class="search_input_box">
+                    <input class="search_search_input" type="text" placeholder="专业电动医疗轮椅">
+                </div>
+                <img class="search_search_icon" src="../images/search.png" alt="">
+            </div>
+            <div class="search_hitory">
+                <div class="final_search">
+                    <p class="recent_search">相关商品</p>
+                    <div class="del_box">
+                        <img class="final_search_img" src="../images/delete.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="con_warp">
+            <div id="wrapper" style="">
+                <div id="scroller" class="mescroll">
+                    <ul class="con_list first_ul">
+                        <li class="con_list_li">
+                            <div id="scroller" class="mescroll">
+                                <div class="content_item first_ul">
+                                    <div class="machine_list">
+                                        <div class="machine_box">
+                                            <div class="machine_pic_box">
+                                                <img class="machine_pic" src="../images/5653ceba1a219@2x.png" alt="">
+                                            </div>
+                                            <div class="desc_pic_box">
+                                                <p class="desc_title">HO56C手动轮椅车</p>
+                                                <span class="desc_content">体积更小轻松放入汽车后备箱</span>
+                                                <div class="money_box">
+                                                    <p class="money">￥200.00/天</p>
+                                                    <p class="nums">（库存<span class="span_nums">3</span>件）</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="manage_box">
+                                            <div class="manage_box_list loose_box ">
+                                                <img class="machine_img" src="../images/loose_machine.png" alt="">
+                                                <p>报失器械</p>
+                                            </div>
+                                            <div class="manage_box_list add_box">
+                                                <img class="machine_img" src="../images/add_machine.png" alt="">
+                                                <p>申请增加</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="con_list_li">
+                            <div id="scroller" class="mescroll">
+                                <div class="content_item first_ul">
+                                    <div class="machine_list">
+                                        <div class="machine_box">
+                                            <div class="machine_pic_box">
+                                                <img class="machine_pic" src="../images/5653ceba1a219@2x.png" alt="">
+                                            </div>
+                                            <div class="desc_pic_box">
+                                                <p class="desc_title">HO56C手动轮椅车</p>
+                                                <span class="desc_content">体积更小轻松放入汽车后备箱</span>
+                                                <div class="money_box">
+                                                    <p class="money">￥200.00/天</p>
+                                                    <p class="nums">（库存<span class="span_nums">3</span>件）</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="manage_box">
+                                            <div class="manage_box_list loose_box ">
+                                                <img class="machine_img" src="../images/loose_machine.png" alt="">
+                                                <p>报失器械</p>
+                                            </div>
+                                            <div class="manage_box_list add_box">
+                                                <img class="machine_img" src="../images/add_machine.png" alt="">
+                                                <p>申请增加</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+    $(document).ready(function() {
+        get_main_content();
+
+    })
+    $('.search_search_icon').on('click', function() {
+        $('.search_hitory').hide();
+        $('.con_warp').show();
+    })
+
+    function get_main_content() {
+
+    }
+    var myscroll = new iScroll("wrapper", {
+        scrollbarClass: 'myScrollbar',
+        useTransition: false,
+        onScrollMove: function() { //拉动时 
+            /* if (this.y < this.maxScrollY) { $( ".pull-loading").html( "释放加载"); $( ".pull-loading").addClass( "loading"); } else { $( ".pull-loading").html( "上拉加载..."); $( ".pull-loading").removeClass( "loading"); }*/
+        },
+        onScrollEnd: function() { //拉动结束时 //上拉加载 
+            /*if (page > all_page) { $(".pull-loading").hide(); } else { if ($(".pull-loading").hasClass('loading')) { $(".pull-loading").html("加载完毕"); setInterval(function() { $(".pull-loading").html("上拉加载..."); }, 1000); } }*/
+            pull_load();
+        }
+    });
+    //初始化绑定iScroll控件
+    document.addEventListener('touchmove', function(e) {
+        myscroll.refresh();
+    }, false);
+    var html = '';
+
+    function pull_load() {
+
+        html += ` <li class="con_list_li">
+                                <div class="con_list_img_box">
+                                    <img class="con_list_img" src="../images/14994082982514idfz7@2x.png" alt="">
+                                </div>
+                                <div class="goods_box">
+                                    <p class="goods_title">HO56C手动轮椅车</p>
+                                    <span class="goods_content">体积更小轻松放入汽车后备箱</span>
+                                    <p class="goods_money">$2000.00</p>
+                                </div>
+                            </li>`
+        $('.first_ul').append(html);
+
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+/*     搜索框 */
+
+.search_search_box {
+    margin: 0.25rem 0 0.36rem 0;
+    margin-left: 0.4rem;
+    display: inline-block;
+    text-align: center;
+
+    width: 6.55rem;
+    height: 0.6rem;
+}
+
+.search_input_box {
+    text-align: center;
+    width: 5.96rem;
+    border-radius: 0.1rem;
+    display: inline-block;
+    background-color: #F5F5F5;
+}
+
+.search_search_input {
+    text-align: center;
+    line-height: 0.6rem;
+}
+
+.search_search_icon {
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+
+    float: right;
+    margin: 0.15rem auto;
+    margin-left: 0.29rem;
+}
+
+input::-webkit-input-placeholder {
+    color: #CCCCCC;
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #CCCCCC;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #CCCCCC;
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #CCCCCC;
+}
+
+.search_hitory {
+    margin-left: 0.43rem;
+    padding-bottom: 0.05rem;
+}
+
+.search_history_list {
+    display: inline-block;
+    line-height: 0.24rem;
+    font-size: 0.24rem;
+    margin: 0.2rem auto;
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.22rem;
+    border: 1px solid #cccccc;
+    color: #cccccc;
+}
+
+
+
+
+
+/* 搜索结果 */
+
+.con_title {
+    text-align: center;
+    height: 0.6rem;
+    margin-bottom: 0.22rem;
+}
+
+.con_list_li {
+    width: 6.9rem;
+    line-height: 0.6rem;
+    margin: 0 auto;
+}
+
+.con_list_img_box {
+    width: 1.82rem;
+    height: 1.82rem;
+    display: inline-block;
+}
+
+.con_list_img {
+    padding-top: 0.1rem;
+    display: inline-block;
+    width: 1.82rem;
+}
+
+.goods_icon {
+    width: 0.51rem;
+    float: right;
+}
+
+.goods_box {
+    vertical-align: top;
+    margin: 0.14rem auto;
+
+    margin-left: 0.3rem;
+    width: 4.18rem;
+    display: inline-block;
+}
+
+.goods_title {
+    font-size: 0.34rem;
+}
+
+.goods_content {
+    font-size: 0.28rem;
+    color: #999999;
+}
+
+.goods_money {
+    font-size: 0.28rem;
+    color: #53A6FA;
+}
